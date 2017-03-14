@@ -41,21 +41,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="print_64.c" pinned="false" current-in-tab="false">
+      <file leaf-file-name="print_64.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/srcs/print_64.c">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="41" />
+              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="61" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="print_32.c" pinned="false" current-in-tab="true">
+      <file leaf-file-name="print_32.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/srcs/print_32.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+            <state relative-caret-position="224">
+              <caret line="62" column="50" selection-start-line="62" selection-start-column="50" selection-end-line="62" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_david/test.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -137,6 +147,7 @@
         <option value="$PROJECT_DIR$/srcs/handle_ar.c" />
         <option value="$PROJECT_DIR$/srcs/handle_fat.c" />
         <option value="$PROJECT_DIR$/srcs/print_type.c" />
+        <option value="$PROJECT_DIR$/test_david/test.sh" />
         <option value="$PROJECT_DIR$/srcs/print_64.c" />
         <option value="$PROJECT_DIR$/srcs/print_32.c" />
       </list>
@@ -206,7 +217,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="srcs" />
+              <option name="myItemId" value="test_david" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -424,12 +435,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1489411041421</updated>
-      <workItem from="1489411042817" duration="46989000" />
+      <workItem from="1489411042817" duration="47703000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46989000" />
+    <option name="totallyTimeSpent" value="47703000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -862,18 +873,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/srcs/print_64.c">
+    <entry file="file://$PROJECT_DIR$/test_david/test_facile.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="41" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_david/test_moins_facile.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_david/test.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/srcs/print_32.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+        <state relative-caret-position="224">
+          <caret line="62" column="50" selection-start-line="62" selection-start-column="50" selection-end-line="62" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs/print_64.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="61" selection-end-column="50" />
           <folding />
         </state>
       </provider>

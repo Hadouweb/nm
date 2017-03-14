@@ -60,7 +60,7 @@ int 				compare_32(t_node_symbol_32 *ns1, t_node_symbol_32 *ns2)
 
 	cmp = ft_strcmp(ns1->output, ns2->output);
 	if (cmp == 0)
-		cmp = ns2->c - ns1->c;
+		cmp = ns1->nl->n_value - ns2->nl->n_value;
 	return cmp;
 }
 
