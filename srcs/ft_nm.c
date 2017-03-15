@@ -15,27 +15,45 @@ void		ft_nm(t_process *process)
 		handle_ar(process);
 }
 
-int			main(int ac, char **av)
+int		loop_arg(char *file_name)
 {
-	int			fd;
+	int 		fd;
 	t_process	process;
 
 	ft_bzero(&process, sizeof(process));
 	process.list_symbol.head = NULL;
 	process.list_symbol.tail = NULL;
-	if (ac != 2)
-		return (error("Please give me an arg\n"));
-	if ((fd = open(av[1], O_RDONLY)) < 0)
+	if ((fd = open(file_name, O_RDONLY)) < 0)
 		return (error("open error\n"));
 	if (fstat(fd, &process.buff_stat) < 0)
 		return (error("fstat error\n"));
 	if ((process.ptr = mmap(0, process.buff_stat.st_size,
-	PROT_READ, MAP_PRIVATE, fd, 0)) == MAP_FAILED)
+							PROT_READ, MAP_PRIVATE, fd, 0)) == MAP_FAILED)
 		return (error("mmap error\n"));
 	process.ptr_start = process.ptr;
-	process.file_name = av[1];
+	process.file_name = file_name;
 	ft_nm(&process);
 	if (munmap(process.ptr_start, process.buff_stat.st_size) < 0)
 		return (error("munmap error\n"));
+	return (0);
+}
+
+int			main(int ac, char **av)
+{
+	int 	i;
+
+	if (ac == 1)
+		loop_arg("a.out");
+	else if (ac == 2)
+		loop_arg(av[1]);
+	else if (ac > 2)
+	{
+		i = 1;
+		while (i < ac)
+		{
+			loop_arg(av[i]);
+			i++;
+		}
+	}
 	return (0);
 }
