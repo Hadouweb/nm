@@ -15,6 +15,7 @@ void				print_sym_value_32(uint32_t sym_value, char type)
 		while (align--)
 			write(1, "0", 1);
 		ft_putstr(str);
+		free(str);
 	}
 	else
 		write(1, "        ", 8);

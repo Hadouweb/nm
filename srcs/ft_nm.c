@@ -27,13 +27,18 @@ void	clear_symbol_list(t_list *list)
 		link = link->next;
 		free(node);
 	}
+	ft_bzero(list, sizeof(t_list));
 }
 
 void	clear_process(t_process *process)
 {
 	clear_symbol_list(&process->list_symbol);
-	process->segment_64 = NULL;
-	process->section_64 = NULL;
+	free(process->section_64);
+	free(process->section_32);
+	process->text_nsect = 0;
+	process->data_nsect = 0;
+	process->bss_nsect = 0;
+	process->nsects = 0;
 	process->load_command = NULL;
 	process->sym = NULL;
 }
@@ -55,7 +60,6 @@ int		loop_arg(char *file_name, int nb_file)
 	process.ptr_start = process.ptr;
 	process.file_name = file_name;
 	ft_nm(&process);
-	clear_process(&process);
 	if (munmap(process.ptr_start, process.buff_stat.st_size) < 0)
 		return (error("munmap error\n"));
 	return (0);

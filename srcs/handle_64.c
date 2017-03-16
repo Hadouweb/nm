@@ -56,18 +56,6 @@ void	handle_64(t_process *process)
 	int 					i;
 	struct load_command		*lc;
 
-	//printf("handle_64\n");
-	process->text_nsect = 0;
-	process->data_nsect = 0;
-	process->bss_nsect = 0;
-	process->list_symbol.head = NULL;
-	process->list_symbol.tail = NULL;
-	process->list_symbol.size = 0;
-	process->segment_64 = NULL;
-	process->section_64 = NULL;
-	process->load_command = NULL;
-	process->sym = NULL;
-
 	process->header_64 = (struct mach_header_64*)process->ptr;
 	ncmds = process->header_64->ncmds;
 	process->load_command = (void*)process->ptr + sizeof(*process->header_64);
@@ -89,4 +77,5 @@ void	handle_64(t_process *process)
 		add_section_64(process);
 	if (process->sym)
 		sort_symbol_64(process);
+	clear_process(process);
 }

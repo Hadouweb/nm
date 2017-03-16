@@ -92,6 +92,8 @@ void				handle_ar(t_process *process);
 char				*ulltoa_base(unsigned long long value, int base);
 uint32_t			convert_uint32(uint32_t a);
 
+void				clear_process(t_process *process);
+
 void				debug_header_64(struct mach_header_64 *header);
 void				debug_header_32(struct mach_header *header);
 void				debug_load_command(struct load_command *lc);
