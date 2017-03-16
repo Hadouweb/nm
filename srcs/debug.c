@@ -93,7 +93,7 @@ void	debug_symtab_command(struct symtab_command *sym)
  * 	   uint64_t n_value;	// value of this symbol (or stab offset)
  * };
  */
-void	debug_nlist_64(char *string_table, struct nlist_64 *nlist)
+void	debug_nlist_64(struct nlist_64 *nlist)
 {
 	printf("***** NLIST_64 ******\n");
 	printf("n_strx: %u\n", nlist->n_un.n_strx);
@@ -114,10 +114,10 @@ void	debug_nlist_64(char *string_table, struct nlist_64 *nlist)
  * 	   uint32_t n_value;	// value of this symbol (or stab offset)
  * };
  */
-void	debug_nlist_32(char *string_table, struct nlist *nlist)
+void	debug_nlist_32(struct nlist *nlist)
 {
 	printf("***** NLIST_32 ******\n");
-	printf("n_strx: %u (%s)\n", nlist->n_un.n_strx, string_table + nlist->n_un.n_strx);
+	printf("n_strx: %u\n", nlist->n_un.n_strx);
 	printf("n_type: %u (%x)\n", nlist->n_type, nlist->n_type);
 	printf("n_sect: %u\n", nlist->n_sect);
 	printf("n_desc: %u\n", nlist->n_desc);

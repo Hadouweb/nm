@@ -29,14 +29,14 @@ NAME = ft_nm
 all: $(NAME)
 
 $(NAME): $(LIBNAME) $(OBJ)
-	@$(CC) $(LIB) -o $(NAME) $^
+	@$(CC) $(FLAG) $(LIB) -o $(NAME) $^
 	@echo "\n\033[39mCompilation done.\033[0m"
 
 $(LIBNAME):
 	@make -C $(LIBFT_PATH) -j8
 
 %.o: %.c
-	@$(CC) -o $@ -c $< $(HEADER)
+	@$(CC) $(FLAG) -o $@ -c $< $(HEADER)
 	@echo "\033[34m█\033[0m\c"
 
 clean:

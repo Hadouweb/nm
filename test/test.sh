@@ -6,6 +6,32 @@ TESTNM=1
 TESTOTOOL=0
 
 if [ $TESTNM != 0 ]; then
+	echo "Test NM no arg a.out exist:"
+    nm &> their ; ../ft_nm &> mine
+    [ $? == 1 ] && exit 0;
+    COUNT=$(diff their mine | wc -l)
+    if [ $COUNT != 0 ]; then
+        echo "No arg a.out exist test NM : FAILED! : (default a.out) : see their, mine."
+        exit 1
+    else
+        echo "No arg a.out exist NM : SUCCESS! : (default a.out)"
+    fi
+	[ $? == 1 ] && exit 0;
+
+
+	echo "Test NM multi arg:"
+	FILE1="./32/ft_nm32 ./32/main32"
+    nm $FILE1 > their ; ../ft_nm $FILE1 > mine
+    [ $? == 1 ] && exit 0;
+    COUNT=$(diff their mine | wc -l)
+    if [ $COUNT != 0 ]; then
+        echo "No multi arg test NM : FAILED! : "$FILE1" : see their, mine."
+        exit 1
+    else
+        echo "No multi arg NM : SUCCESS! : "$FILE1
+    fi
+	[ $? == 1 ] && exit 0;
+
 	echo "Test NM 32bits on 32/:"
 	find "./32" -type f -print0 | \
 	while IFS='' read -r -d '' filename; do

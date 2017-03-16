@@ -26,6 +26,12 @@ void	print_64(t_process *process)
 	t_node_symbol_64	*ns;
 
 	node = process->list_symbol.head;
+	if (process->nb_file > 1 && process->is_lib == 0)
+	{
+		ft_putchar('\n');
+		ft_putstr(process->file_name);
+		ft_putstr(":\n");
+	}
 	while (node)
 	{
 		ns = PTR_NODE(node, t_node_symbol_64, link);
@@ -89,7 +95,7 @@ void				insertion_sort_symbol_64(t_process *process,
 
 void				sort_symbol_64(t_process *process)
 {
-	int 				i;
+	uint32_t 			i;
 	char 				*string_table;
 	struct nlist_64		*array;
 	char 				*output;

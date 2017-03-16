@@ -1,7 +1,7 @@
 #include "ft_nm.h"
 
 static void		add_memory_type_32(t_process *process, struct section *section,
-	struct segment_command *segment, int k)
+	int k)
 {
 	if(ft_strcmp(section->sectname, SECT_TEXT) == 0)
 		process->text_nsect = k + 1;
@@ -14,7 +14,7 @@ static void		add_memory_type_32(t_process *process, struct section *section,
 static void		add_section_32_subfunc(t_process *process,
 	int *k, struct load_command *lc)
 {
-	int 						j;
+	uint32_t 					j;
 	struct segment_command 		*sg;
 	struct section 				*s;
 
@@ -24,7 +24,7 @@ static void		add_section_32_subfunc(t_process *process,
 	while (j < sg->nsects)
 	{
 		process->section_32[*k] = s + j;
-		add_memory_type_32(process, process->section_32[*k], sg, *k);
+		add_memory_type_32(process, process->section_32[*k], *k);
 		(*k)++;
 		j++;
 	}
@@ -32,7 +32,7 @@ static void		add_section_32_subfunc(t_process *process,
 
 void			add_section_32(t_process *process)
 {
-	int							i;
+	uint32_t					i;
 	int 						k;
 	struct load_command			*lc;
 

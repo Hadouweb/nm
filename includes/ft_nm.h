@@ -53,6 +53,8 @@ typedef struct					s_process
 	unsigned char				bss_nsect;
 	t_list						list_symbol;
 	struct stat					buff_stat;
+	int 						nb_file;
+	unsigned char				is_lib;
 }								t_process;
 
 int 				error(char *str);
@@ -94,8 +96,8 @@ void				debug_header_64(struct mach_header_64 *header);
 void				debug_header_32(struct mach_header *header);
 void				debug_load_command(struct load_command *lc);
 void				debug_symtab_command(struct symtab_command *sym);
-void				debug_nlist_64(char *string_table, struct nlist_64 *nlist);
-void				debug_nlist_32(char *string_table, struct nlist *nlist);
+void				debug_nlist_64(struct nlist_64 *nlist);
+void				debug_nlist_32(struct nlist *nlist);
 void				debug_segment_cmd_32(struct segment_command *segment);
 void				debug_segment_cmd_64(struct segment_command_64 *segment);
 void				debug_section_32(struct section *section);

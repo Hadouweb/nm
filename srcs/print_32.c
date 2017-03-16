@@ -27,6 +27,12 @@ void				print_32(t_process *process)
 	t_node_symbol_32	*ns;
 
 	node = process->list_symbol.head;
+	if (process->nb_file > 1 && process->is_lib == 0)
+	{
+		ft_putchar('\n');
+		ft_putstr(process->file_name);
+		ft_putstr(":\n");
+	}
 	while (node)
 	{
 		ns = PTR_NODE(node, t_node_symbol_32, link);
@@ -90,7 +96,7 @@ void				insertion_sort_symbol_32(t_process *process,
 
 void				sort_symbol_32(t_process *process)
 {
-	int 				i;
+	uint32_t 			i;
 	char 				*string_table;
 	struct nlist		*array;
 	char 				*output;
