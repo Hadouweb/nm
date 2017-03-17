@@ -9,10 +9,14 @@ void		ft_nm(t_process *process)
 		handle_64(process);
 	else if (magic_number == MH_MAGIC)
 		handle_32(process);
+    else if (magic_number == MH_CIGAM)
+        handle_32(process);
 	else if (magic_number == FAT_CIGAM)
 		handle_fat_big_endian(process);
 	else if (ft_strncmp(process->ptr, ARMAG, SARMAG) == 0)
 		handle_ar(process);
+    else
+        printf("MAGIC_NUMBER %x\n", magic_number);
 }
 
 void	clear_symbol_list(t_list *list)
@@ -41,6 +45,7 @@ void	clear_process(t_process *process)
 	process->nsects = 0;
 	process->load_command = NULL;
 	process->sym = NULL;
+    process->is_big_endian = 0;
 }
 
 int		loop_arg(char *file_name, int nb_file)

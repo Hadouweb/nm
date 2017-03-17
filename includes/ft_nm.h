@@ -54,6 +54,7 @@ typedef struct					s_process
 	t_list						list_symbol;
 	struct stat					buff_stat;
 	int 						nb_file;
+    int                         is_big_endian;
 	unsigned char				is_lib;
 }								t_process;
 

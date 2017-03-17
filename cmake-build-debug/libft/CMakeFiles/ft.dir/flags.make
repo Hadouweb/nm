@@ -6,5 +6,5 @@ C_FLAGS = -g
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/nle-bret/projects/nm/includes -I/Users/nle-bret/projects/nm/libft/includes -I/Users/nle-bret/projects/nm/libft/./includes 
+C_INCLUDES = -I/Users/nle-bret/project/nm/includes -I/Users/nle-bret/project/nm/libft/includes -I/Users/nle-bret/project/nm/libft/./includes 
 

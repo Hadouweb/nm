@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/nle-bret/projects/nm
+CMAKE_SOURCE_DIR = /Users/nle-bret/project/nm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/nle-bret/projects/nm/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/nle-bret/project/nm/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/nle-bret/projects/nm/cmake-build-debug/CMakeFiles /Users/nle-bret/projects/nm/cmake-build-debug/libft/CMakeFiles/progress.marks
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 libft/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nle-bret/projects/nm/cmake-build-debug/CMakeFiles 0
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles /Users/nle-bret/project/nm/cmake-build-debug/libft/CMakeFiles/progress.marks
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 libft/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 libft/clean
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 libft/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 libft/preinstall
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 libft/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 libft/preinstall
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 libft/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 libft/CMakeFiles/ft.dir/rule:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 libft/CMakeFiles/ft.dir/rule
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 libft/CMakeFiles/ft.dir/rule
 .PHONY : libft/CMakeFiles/ft.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ ft: libft/CMakeFiles/ft.dir/rule
 
 # fast build rule for target.
 ft/fast:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/build
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/build
 .PHONY : ft/fast
 
 srcs/bit/ft_bitdump.o: srcs/bit/ft_bitdump.c.o
@@ -131,7 +131,7 @@ srcs/bit/ft_bitdump.o: srcs/bit/ft_bitdump.c.o
 
 # target to build an object file
 srcs/bit/ft_bitdump.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/bit/ft_bitdump.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/bit/ft_bitdump.c.o
 .PHONY : srcs/bit/ft_bitdump.c.o
 
 srcs/bit/ft_bitdump.i: srcs/bit/ft_bitdump.c.i
@@ -140,7 +140,7 @@ srcs/bit/ft_bitdump.i: srcs/bit/ft_bitdump.c.i
 
 # target to preprocess a source file
 srcs/bit/ft_bitdump.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/bit/ft_bitdump.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/bit/ft_bitdump.c.i
 .PHONY : srcs/bit/ft_bitdump.c.i
 
 srcs/bit/ft_bitdump.s: srcs/bit/ft_bitdump.c.s
@@ -149,7 +149,7 @@ srcs/bit/ft_bitdump.s: srcs/bit/ft_bitdump.c.s
 
 # target to generate assembly for a file
 srcs/bit/ft_bitdump.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/bit/ft_bitdump.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/bit/ft_bitdump.c.s
 .PHONY : srcs/bit/ft_bitdump.c.s
 
 srcs/bit/ft_hexdump.o: srcs/bit/ft_hexdump.c.o
@@ -158,7 +158,7 @@ srcs/bit/ft_hexdump.o: srcs/bit/ft_hexdump.c.o
 
 # target to build an object file
 srcs/bit/ft_hexdump.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/bit/ft_hexdump.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/bit/ft_hexdump.c.o
 .PHONY : srcs/bit/ft_hexdump.c.o
 
 srcs/bit/ft_hexdump.i: srcs/bit/ft_hexdump.c.i
@@ -167,7 +167,7 @@ srcs/bit/ft_hexdump.i: srcs/bit/ft_hexdump.c.i
 
 # target to preprocess a source file
 srcs/bit/ft_hexdump.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/bit/ft_hexdump.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/bit/ft_hexdump.c.i
 .PHONY : srcs/bit/ft_hexdump.c.i
 
 srcs/bit/ft_hexdump.s: srcs/bit/ft_hexdump.c.s
@@ -176,7 +176,7 @@ srcs/bit/ft_hexdump.s: srcs/bit/ft_hexdump.c.s
 
 # target to generate assembly for a file
 srcs/bit/ft_hexdump.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/bit/ft_hexdump.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/bit/ft_hexdump.c.s
 .PHONY : srcs/bit/ft_hexdump.c.s
 
 srcs/bit/ft_printbit.o: srcs/bit/ft_printbit.c.o
@@ -185,7 +185,7 @@ srcs/bit/ft_printbit.o: srcs/bit/ft_printbit.c.o
 
 # target to build an object file
 srcs/bit/ft_printbit.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/bit/ft_printbit.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/bit/ft_printbit.c.o
 .PHONY : srcs/bit/ft_printbit.c.o
 
 srcs/bit/ft_printbit.i: srcs/bit/ft_printbit.c.i
@@ -194,7 +194,7 @@ srcs/bit/ft_printbit.i: srcs/bit/ft_printbit.c.i
 
 # target to preprocess a source file
 srcs/bit/ft_printbit.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/bit/ft_printbit.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/bit/ft_printbit.c.i
 .PHONY : srcs/bit/ft_printbit.c.i
 
 srcs/bit/ft_printbit.s: srcs/bit/ft_printbit.c.s
@@ -203,7 +203,7 @@ srcs/bit/ft_printbit.s: srcs/bit/ft_printbit.c.s
 
 # target to generate assembly for a file
 srcs/bit/ft_printbit.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/bit/ft_printbit.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/bit/ft_printbit.c.s
 .PHONY : srcs/bit/ft_printbit.c.s
 
 srcs/bit/ft_reversebit.o: srcs/bit/ft_reversebit.c.o
@@ -212,7 +212,7 @@ srcs/bit/ft_reversebit.o: srcs/bit/ft_reversebit.c.o
 
 # target to build an object file
 srcs/bit/ft_reversebit.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/bit/ft_reversebit.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/bit/ft_reversebit.c.o
 .PHONY : srcs/bit/ft_reversebit.c.o
 
 srcs/bit/ft_reversebit.i: srcs/bit/ft_reversebit.c.i
@@ -221,7 +221,7 @@ srcs/bit/ft_reversebit.i: srcs/bit/ft_reversebit.c.i
 
 # target to preprocess a source file
 srcs/bit/ft_reversebit.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/bit/ft_reversebit.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/bit/ft_reversebit.c.i
 .PHONY : srcs/bit/ft_reversebit.c.i
 
 srcs/bit/ft_reversebit.s: srcs/bit/ft_reversebit.c.s
@@ -230,7 +230,7 @@ srcs/bit/ft_reversebit.s: srcs/bit/ft_reversebit.c.s
 
 # target to generate assembly for a file
 srcs/bit/ft_reversebit.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/bit/ft_reversebit.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/bit/ft_reversebit.c.s
 .PHONY : srcs/bit/ft_reversebit.c.s
 
 srcs/get_next_line.o: srcs/get_next_line.c.o
@@ -239,7 +239,7 @@ srcs/get_next_line.o: srcs/get_next_line.c.o
 
 # target to build an object file
 srcs/get_next_line.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/get_next_line.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/get_next_line.c.o
 .PHONY : srcs/get_next_line.c.o
 
 srcs/get_next_line.i: srcs/get_next_line.c.i
@@ -248,7 +248,7 @@ srcs/get_next_line.i: srcs/get_next_line.c.i
 
 # target to preprocess a source file
 srcs/get_next_line.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/get_next_line.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/get_next_line.c.i
 .PHONY : srcs/get_next_line.c.i
 
 srcs/get_next_line.s: srcs/get_next_line.c.s
@@ -257,7 +257,7 @@ srcs/get_next_line.s: srcs/get_next_line.c.s
 
 # target to generate assembly for a file
 srcs/get_next_line.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/get_next_line.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/get_next_line.c.s
 .PHONY : srcs/get_next_line.c.s
 
 srcs/is/ft_isalnum.o: srcs/is/ft_isalnum.c.o
@@ -266,7 +266,7 @@ srcs/is/ft_isalnum.o: srcs/is/ft_isalnum.c.o
 
 # target to build an object file
 srcs/is/ft_isalnum.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isalnum.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isalnum.c.o
 .PHONY : srcs/is/ft_isalnum.c.o
 
 srcs/is/ft_isalnum.i: srcs/is/ft_isalnum.c.i
@@ -275,7 +275,7 @@ srcs/is/ft_isalnum.i: srcs/is/ft_isalnum.c.i
 
 # target to preprocess a source file
 srcs/is/ft_isalnum.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isalnum.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isalnum.c.i
 .PHONY : srcs/is/ft_isalnum.c.i
 
 srcs/is/ft_isalnum.s: srcs/is/ft_isalnum.c.s
@@ -284,7 +284,7 @@ srcs/is/ft_isalnum.s: srcs/is/ft_isalnum.c.s
 
 # target to generate assembly for a file
 srcs/is/ft_isalnum.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isalnum.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isalnum.c.s
 .PHONY : srcs/is/ft_isalnum.c.s
 
 srcs/is/ft_isalpha.o: srcs/is/ft_isalpha.c.o
@@ -293,7 +293,7 @@ srcs/is/ft_isalpha.o: srcs/is/ft_isalpha.c.o
 
 # target to build an object file
 srcs/is/ft_isalpha.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isalpha.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isalpha.c.o
 .PHONY : srcs/is/ft_isalpha.c.o
 
 srcs/is/ft_isalpha.i: srcs/is/ft_isalpha.c.i
@@ -302,7 +302,7 @@ srcs/is/ft_isalpha.i: srcs/is/ft_isalpha.c.i
 
 # target to preprocess a source file
 srcs/is/ft_isalpha.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isalpha.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isalpha.c.i
 .PHONY : srcs/is/ft_isalpha.c.i
 
 srcs/is/ft_isalpha.s: srcs/is/ft_isalpha.c.s
@@ -311,7 +311,7 @@ srcs/is/ft_isalpha.s: srcs/is/ft_isalpha.c.s
 
 # target to generate assembly for a file
 srcs/is/ft_isalpha.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isalpha.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isalpha.c.s
 .PHONY : srcs/is/ft_isalpha.c.s
 
 srcs/is/ft_isascii.o: srcs/is/ft_isascii.c.o
@@ -320,7 +320,7 @@ srcs/is/ft_isascii.o: srcs/is/ft_isascii.c.o
 
 # target to build an object file
 srcs/is/ft_isascii.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isascii.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isascii.c.o
 .PHONY : srcs/is/ft_isascii.c.o
 
 srcs/is/ft_isascii.i: srcs/is/ft_isascii.c.i
@@ -329,7 +329,7 @@ srcs/is/ft_isascii.i: srcs/is/ft_isascii.c.i
 
 # target to preprocess a source file
 srcs/is/ft_isascii.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isascii.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isascii.c.i
 .PHONY : srcs/is/ft_isascii.c.i
 
 srcs/is/ft_isascii.s: srcs/is/ft_isascii.c.s
@@ -338,7 +338,7 @@ srcs/is/ft_isascii.s: srcs/is/ft_isascii.c.s
 
 # target to generate assembly for a file
 srcs/is/ft_isascii.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isascii.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isascii.c.s
 .PHONY : srcs/is/ft_isascii.c.s
 
 srcs/is/ft_isdigit.o: srcs/is/ft_isdigit.c.o
@@ -347,7 +347,7 @@ srcs/is/ft_isdigit.o: srcs/is/ft_isdigit.c.o
 
 # target to build an object file
 srcs/is/ft_isdigit.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isdigit.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isdigit.c.o
 .PHONY : srcs/is/ft_isdigit.c.o
 
 srcs/is/ft_isdigit.i: srcs/is/ft_isdigit.c.i
@@ -356,7 +356,7 @@ srcs/is/ft_isdigit.i: srcs/is/ft_isdigit.c.i
 
 # target to preprocess a source file
 srcs/is/ft_isdigit.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isdigit.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isdigit.c.i
 .PHONY : srcs/is/ft_isdigit.c.i
 
 srcs/is/ft_isdigit.s: srcs/is/ft_isdigit.c.s
@@ -365,7 +365,7 @@ srcs/is/ft_isdigit.s: srcs/is/ft_isdigit.c.s
 
 # target to generate assembly for a file
 srcs/is/ft_isdigit.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isdigit.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isdigit.c.s
 .PHONY : srcs/is/ft_isdigit.c.s
 
 srcs/is/ft_islower.o: srcs/is/ft_islower.c.o
@@ -374,7 +374,7 @@ srcs/is/ft_islower.o: srcs/is/ft_islower.c.o
 
 # target to build an object file
 srcs/is/ft_islower.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_islower.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_islower.c.o
 .PHONY : srcs/is/ft_islower.c.o
 
 srcs/is/ft_islower.i: srcs/is/ft_islower.c.i
@@ -383,7 +383,7 @@ srcs/is/ft_islower.i: srcs/is/ft_islower.c.i
 
 # target to preprocess a source file
 srcs/is/ft_islower.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_islower.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_islower.c.i
 .PHONY : srcs/is/ft_islower.c.i
 
 srcs/is/ft_islower.s: srcs/is/ft_islower.c.s
@@ -392,7 +392,7 @@ srcs/is/ft_islower.s: srcs/is/ft_islower.c.s
 
 # target to generate assembly for a file
 srcs/is/ft_islower.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_islower.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_islower.c.s
 .PHONY : srcs/is/ft_islower.c.s
 
 srcs/is/ft_isprint.o: srcs/is/ft_isprint.c.o
@@ -401,7 +401,7 @@ srcs/is/ft_isprint.o: srcs/is/ft_isprint.c.o
 
 # target to build an object file
 srcs/is/ft_isprint.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isprint.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isprint.c.o
 .PHONY : srcs/is/ft_isprint.c.o
 
 srcs/is/ft_isprint.i: srcs/is/ft_isprint.c.i
@@ -410,7 +410,7 @@ srcs/is/ft_isprint.i: srcs/is/ft_isprint.c.i
 
 # target to preprocess a source file
 srcs/is/ft_isprint.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isprint.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isprint.c.i
 .PHONY : srcs/is/ft_isprint.c.i
 
 srcs/is/ft_isprint.s: srcs/is/ft_isprint.c.s
@@ -419,7 +419,7 @@ srcs/is/ft_isprint.s: srcs/is/ft_isprint.c.s
 
 # target to generate assembly for a file
 srcs/is/ft_isprint.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isprint.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isprint.c.s
 .PHONY : srcs/is/ft_isprint.c.s
 
 srcs/is/ft_isupper.o: srcs/is/ft_isupper.c.o
@@ -428,7 +428,7 @@ srcs/is/ft_isupper.o: srcs/is/ft_isupper.c.o
 
 # target to build an object file
 srcs/is/ft_isupper.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isupper.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isupper.c.o
 .PHONY : srcs/is/ft_isupper.c.o
 
 srcs/is/ft_isupper.i: srcs/is/ft_isupper.c.i
@@ -437,7 +437,7 @@ srcs/is/ft_isupper.i: srcs/is/ft_isupper.c.i
 
 # target to preprocess a source file
 srcs/is/ft_isupper.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isupper.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isupper.c.i
 .PHONY : srcs/is/ft_isupper.c.i
 
 srcs/is/ft_isupper.s: srcs/is/ft_isupper.c.s
@@ -446,7 +446,7 @@ srcs/is/ft_isupper.s: srcs/is/ft_isupper.c.s
 
 # target to generate assembly for a file
 srcs/is/ft_isupper.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isupper.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/is/ft_isupper.c.s
 .PHONY : srcs/is/ft_isupper.c.s
 
 srcs/list/ft_list_del.o: srcs/list/ft_list_del.c.o
@@ -455,7 +455,7 @@ srcs/list/ft_list_del.o: srcs/list/ft_list_del.c.o
 
 # target to build an object file
 srcs/list/ft_list_del.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_del.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_del.c.o
 .PHONY : srcs/list/ft_list_del.c.o
 
 srcs/list/ft_list_del.i: srcs/list/ft_list_del.c.i
@@ -464,7 +464,7 @@ srcs/list/ft_list_del.i: srcs/list/ft_list_del.c.i
 
 # target to preprocess a source file
 srcs/list/ft_list_del.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_del.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_del.c.i
 .PHONY : srcs/list/ft_list_del.c.i
 
 srcs/list/ft_list_del.s: srcs/list/ft_list_del.c.s
@@ -473,7 +473,7 @@ srcs/list/ft_list_del.s: srcs/list/ft_list_del.c.s
 
 # target to generate assembly for a file
 srcs/list/ft_list_del.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_del.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_del.c.s
 .PHONY : srcs/list/ft_list_del.c.s
 
 srcs/list/ft_list_print.o: srcs/list/ft_list_print.c.o
@@ -482,7 +482,7 @@ srcs/list/ft_list_print.o: srcs/list/ft_list_print.c.o
 
 # target to build an object file
 srcs/list/ft_list_print.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_print.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_print.c.o
 .PHONY : srcs/list/ft_list_print.c.o
 
 srcs/list/ft_list_print.i: srcs/list/ft_list_print.c.i
@@ -491,7 +491,7 @@ srcs/list/ft_list_print.i: srcs/list/ft_list_print.c.i
 
 # target to preprocess a source file
 srcs/list/ft_list_print.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_print.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_print.c.i
 .PHONY : srcs/list/ft_list_print.c.i
 
 srcs/list/ft_list_print.s: srcs/list/ft_list_print.c.s
@@ -500,7 +500,7 @@ srcs/list/ft_list_print.s: srcs/list/ft_list_print.c.s
 
 # target to generate assembly for a file
 srcs/list/ft_list_print.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_print.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_print.c.s
 .PHONY : srcs/list/ft_list_print.c.s
 
 srcs/list/ft_list_push_after_node.o: srcs/list/ft_list_push_after_node.c.o
@@ -509,7 +509,7 @@ srcs/list/ft_list_push_after_node.o: srcs/list/ft_list_push_after_node.c.o
 
 # target to build an object file
 srcs/list/ft_list_push_after_node.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_push_after_node.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_push_after_node.c.o
 .PHONY : srcs/list/ft_list_push_after_node.c.o
 
 srcs/list/ft_list_push_after_node.i: srcs/list/ft_list_push_after_node.c.i
@@ -518,7 +518,7 @@ srcs/list/ft_list_push_after_node.i: srcs/list/ft_list_push_after_node.c.i
 
 # target to preprocess a source file
 srcs/list/ft_list_push_after_node.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_push_after_node.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_push_after_node.c.i
 .PHONY : srcs/list/ft_list_push_after_node.c.i
 
 srcs/list/ft_list_push_after_node.s: srcs/list/ft_list_push_after_node.c.s
@@ -527,7 +527,7 @@ srcs/list/ft_list_push_after_node.s: srcs/list/ft_list_push_after_node.c.s
 
 # target to generate assembly for a file
 srcs/list/ft_list_push_after_node.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_push_after_node.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_push_after_node.c.s
 .PHONY : srcs/list/ft_list_push_after_node.c.s
 
 srcs/list/ft_list_push_back.o: srcs/list/ft_list_push_back.c.o
@@ -536,7 +536,7 @@ srcs/list/ft_list_push_back.o: srcs/list/ft_list_push_back.c.o
 
 # target to build an object file
 srcs/list/ft_list_push_back.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_push_back.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_push_back.c.o
 .PHONY : srcs/list/ft_list_push_back.c.o
 
 srcs/list/ft_list_push_back.i: srcs/list/ft_list_push_back.c.i
@@ -545,7 +545,7 @@ srcs/list/ft_list_push_back.i: srcs/list/ft_list_push_back.c.i
 
 # target to preprocess a source file
 srcs/list/ft_list_push_back.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_push_back.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_push_back.c.i
 .PHONY : srcs/list/ft_list_push_back.c.i
 
 srcs/list/ft_list_push_back.s: srcs/list/ft_list_push_back.c.s
@@ -554,7 +554,7 @@ srcs/list/ft_list_push_back.s: srcs/list/ft_list_push_back.c.s
 
 # target to generate assembly for a file
 srcs/list/ft_list_push_back.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_push_back.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_push_back.c.s
 .PHONY : srcs/list/ft_list_push_back.c.s
 
 srcs/list/ft_list_push_before_node.o: srcs/list/ft_list_push_before_node.c.o
@@ -563,7 +563,7 @@ srcs/list/ft_list_push_before_node.o: srcs/list/ft_list_push_before_node.c.o
 
 # target to build an object file
 srcs/list/ft_list_push_before_node.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_push_before_node.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_push_before_node.c.o
 .PHONY : srcs/list/ft_list_push_before_node.c.o
 
 srcs/list/ft_list_push_before_node.i: srcs/list/ft_list_push_before_node.c.i
@@ -572,7 +572,7 @@ srcs/list/ft_list_push_before_node.i: srcs/list/ft_list_push_before_node.c.i
 
 # target to preprocess a source file
 srcs/list/ft_list_push_before_node.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_push_before_node.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_push_before_node.c.i
 .PHONY : srcs/list/ft_list_push_before_node.c.i
 
 srcs/list/ft_list_push_before_node.s: srcs/list/ft_list_push_before_node.c.s
@@ -581,7 +581,7 @@ srcs/list/ft_list_push_before_node.s: srcs/list/ft_list_push_before_node.c.s
 
 # target to generate assembly for a file
 srcs/list/ft_list_push_before_node.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_push_before_node.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_push_before_node.c.s
 .PHONY : srcs/list/ft_list_push_before_node.c.s
 
 srcs/list/ft_list_push_front.o: srcs/list/ft_list_push_front.c.o
@@ -590,7 +590,7 @@ srcs/list/ft_list_push_front.o: srcs/list/ft_list_push_front.c.o
 
 # target to build an object file
 srcs/list/ft_list_push_front.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_push_front.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_push_front.c.o
 .PHONY : srcs/list/ft_list_push_front.c.o
 
 srcs/list/ft_list_push_front.i: srcs/list/ft_list_push_front.c.i
@@ -599,7 +599,7 @@ srcs/list/ft_list_push_front.i: srcs/list/ft_list_push_front.c.i
 
 # target to preprocess a source file
 srcs/list/ft_list_push_front.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_push_front.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_push_front.c.i
 .PHONY : srcs/list/ft_list_push_front.c.i
 
 srcs/list/ft_list_push_front.s: srcs/list/ft_list_push_front.c.s
@@ -608,7 +608,7 @@ srcs/list/ft_list_push_front.s: srcs/list/ft_list_push_front.c.s
 
 # target to generate assembly for a file
 srcs/list/ft_list_push_front.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_push_front.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_push_front.c.s
 .PHONY : srcs/list/ft_list_push_front.c.s
 
 srcs/list/ft_list_size.o: srcs/list/ft_list_size.c.o
@@ -617,7 +617,7 @@ srcs/list/ft_list_size.o: srcs/list/ft_list_size.c.o
 
 # target to build an object file
 srcs/list/ft_list_size.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_size.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_size.c.o
 .PHONY : srcs/list/ft_list_size.c.o
 
 srcs/list/ft_list_size.i: srcs/list/ft_list_size.c.i
@@ -626,7 +626,7 @@ srcs/list/ft_list_size.i: srcs/list/ft_list_size.c.i
 
 # target to preprocess a source file
 srcs/list/ft_list_size.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_size.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_size.c.i
 .PHONY : srcs/list/ft_list_size.c.i
 
 srcs/list/ft_list_size.s: srcs/list/ft_list_size.c.s
@@ -635,7 +635,7 @@ srcs/list/ft_list_size.s: srcs/list/ft_list_size.c.s
 
 # target to generate assembly for a file
 srcs/list/ft_list_size.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_size.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_size.c.s
 .PHONY : srcs/list/ft_list_size.c.s
 
 srcs/list/ft_list_str_split.o: srcs/list/ft_list_str_split.c.o
@@ -644,7 +644,7 @@ srcs/list/ft_list_str_split.o: srcs/list/ft_list_str_split.c.o
 
 # target to build an object file
 srcs/list/ft_list_str_split.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_str_split.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_str_split.c.o
 .PHONY : srcs/list/ft_list_str_split.c.o
 
 srcs/list/ft_list_str_split.i: srcs/list/ft_list_str_split.c.i
@@ -653,7 +653,7 @@ srcs/list/ft_list_str_split.i: srcs/list/ft_list_str_split.c.i
 
 # target to preprocess a source file
 srcs/list/ft_list_str_split.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_str_split.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_str_split.c.i
 .PHONY : srcs/list/ft_list_str_split.c.i
 
 srcs/list/ft_list_str_split.s: srcs/list/ft_list_str_split.c.s
@@ -662,7 +662,7 @@ srcs/list/ft_list_str_split.s: srcs/list/ft_list_str_split.c.s
 
 # target to generate assembly for a file
 srcs/list/ft_list_str_split.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_str_split.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_str_split.c.s
 .PHONY : srcs/list/ft_list_str_split.c.s
 
 srcs/list/ft_list_to_tab.o: srcs/list/ft_list_to_tab.c.o
@@ -671,7 +671,7 @@ srcs/list/ft_list_to_tab.o: srcs/list/ft_list_to_tab.c.o
 
 # target to build an object file
 srcs/list/ft_list_to_tab.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_to_tab.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_to_tab.c.o
 .PHONY : srcs/list/ft_list_to_tab.c.o
 
 srcs/list/ft_list_to_tab.i: srcs/list/ft_list_to_tab.c.i
@@ -680,7 +680,7 @@ srcs/list/ft_list_to_tab.i: srcs/list/ft_list_to_tab.c.i
 
 # target to preprocess a source file
 srcs/list/ft_list_to_tab.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_to_tab.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_to_tab.c.i
 .PHONY : srcs/list/ft_list_to_tab.c.i
 
 srcs/list/ft_list_to_tab.s: srcs/list/ft_list_to_tab.c.s
@@ -689,7 +689,7 @@ srcs/list/ft_list_to_tab.s: srcs/list/ft_list_to_tab.c.s
 
 # target to generate assembly for a file
 srcs/list/ft_list_to_tab.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_to_tab.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/list/ft_list_to_tab.c.s
 .PHONY : srcs/list/ft_list_to_tab.c.s
 
 srcs/mem/ft_bzero.o: srcs/mem/ft_bzero.c.o
@@ -698,7 +698,7 @@ srcs/mem/ft_bzero.o: srcs/mem/ft_bzero.c.o
 
 # target to build an object file
 srcs/mem/ft_bzero.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_bzero.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_bzero.c.o
 .PHONY : srcs/mem/ft_bzero.c.o
 
 srcs/mem/ft_bzero.i: srcs/mem/ft_bzero.c.i
@@ -707,7 +707,7 @@ srcs/mem/ft_bzero.i: srcs/mem/ft_bzero.c.i
 
 # target to preprocess a source file
 srcs/mem/ft_bzero.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_bzero.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_bzero.c.i
 .PHONY : srcs/mem/ft_bzero.c.i
 
 srcs/mem/ft_bzero.s: srcs/mem/ft_bzero.c.s
@@ -716,7 +716,7 @@ srcs/mem/ft_bzero.s: srcs/mem/ft_bzero.c.s
 
 # target to generate assembly for a file
 srcs/mem/ft_bzero.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_bzero.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_bzero.c.s
 .PHONY : srcs/mem/ft_bzero.c.s
 
 srcs/mem/ft_memalloc.o: srcs/mem/ft_memalloc.c.o
@@ -725,7 +725,7 @@ srcs/mem/ft_memalloc.o: srcs/mem/ft_memalloc.c.o
 
 # target to build an object file
 srcs/mem/ft_memalloc.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memalloc.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memalloc.c.o
 .PHONY : srcs/mem/ft_memalloc.c.o
 
 srcs/mem/ft_memalloc.i: srcs/mem/ft_memalloc.c.i
@@ -734,7 +734,7 @@ srcs/mem/ft_memalloc.i: srcs/mem/ft_memalloc.c.i
 
 # target to preprocess a source file
 srcs/mem/ft_memalloc.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memalloc.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memalloc.c.i
 .PHONY : srcs/mem/ft_memalloc.c.i
 
 srcs/mem/ft_memalloc.s: srcs/mem/ft_memalloc.c.s
@@ -743,7 +743,7 @@ srcs/mem/ft_memalloc.s: srcs/mem/ft_memalloc.c.s
 
 # target to generate assembly for a file
 srcs/mem/ft_memalloc.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memalloc.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memalloc.c.s
 .PHONY : srcs/mem/ft_memalloc.c.s
 
 srcs/mem/ft_memccpy.o: srcs/mem/ft_memccpy.c.o
@@ -752,7 +752,7 @@ srcs/mem/ft_memccpy.o: srcs/mem/ft_memccpy.c.o
 
 # target to build an object file
 srcs/mem/ft_memccpy.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memccpy.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memccpy.c.o
 .PHONY : srcs/mem/ft_memccpy.c.o
 
 srcs/mem/ft_memccpy.i: srcs/mem/ft_memccpy.c.i
@@ -761,7 +761,7 @@ srcs/mem/ft_memccpy.i: srcs/mem/ft_memccpy.c.i
 
 # target to preprocess a source file
 srcs/mem/ft_memccpy.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memccpy.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memccpy.c.i
 .PHONY : srcs/mem/ft_memccpy.c.i
 
 srcs/mem/ft_memccpy.s: srcs/mem/ft_memccpy.c.s
@@ -770,7 +770,7 @@ srcs/mem/ft_memccpy.s: srcs/mem/ft_memccpy.c.s
 
 # target to generate assembly for a file
 srcs/mem/ft_memccpy.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memccpy.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memccpy.c.s
 .PHONY : srcs/mem/ft_memccpy.c.s
 
 srcs/mem/ft_memchr.o: srcs/mem/ft_memchr.c.o
@@ -779,7 +779,7 @@ srcs/mem/ft_memchr.o: srcs/mem/ft_memchr.c.o
 
 # target to build an object file
 srcs/mem/ft_memchr.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memchr.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memchr.c.o
 .PHONY : srcs/mem/ft_memchr.c.o
 
 srcs/mem/ft_memchr.i: srcs/mem/ft_memchr.c.i
@@ -788,7 +788,7 @@ srcs/mem/ft_memchr.i: srcs/mem/ft_memchr.c.i
 
 # target to preprocess a source file
 srcs/mem/ft_memchr.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memchr.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memchr.c.i
 .PHONY : srcs/mem/ft_memchr.c.i
 
 srcs/mem/ft_memchr.s: srcs/mem/ft_memchr.c.s
@@ -797,7 +797,7 @@ srcs/mem/ft_memchr.s: srcs/mem/ft_memchr.c.s
 
 # target to generate assembly for a file
 srcs/mem/ft_memchr.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memchr.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memchr.c.s
 .PHONY : srcs/mem/ft_memchr.c.s
 
 srcs/mem/ft_memcmp.o: srcs/mem/ft_memcmp.c.o
@@ -806,7 +806,7 @@ srcs/mem/ft_memcmp.o: srcs/mem/ft_memcmp.c.o
 
 # target to build an object file
 srcs/mem/ft_memcmp.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memcmp.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memcmp.c.o
 .PHONY : srcs/mem/ft_memcmp.c.o
 
 srcs/mem/ft_memcmp.i: srcs/mem/ft_memcmp.c.i
@@ -815,7 +815,7 @@ srcs/mem/ft_memcmp.i: srcs/mem/ft_memcmp.c.i
 
 # target to preprocess a source file
 srcs/mem/ft_memcmp.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memcmp.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memcmp.c.i
 .PHONY : srcs/mem/ft_memcmp.c.i
 
 srcs/mem/ft_memcmp.s: srcs/mem/ft_memcmp.c.s
@@ -824,7 +824,7 @@ srcs/mem/ft_memcmp.s: srcs/mem/ft_memcmp.c.s
 
 # target to generate assembly for a file
 srcs/mem/ft_memcmp.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memcmp.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memcmp.c.s
 .PHONY : srcs/mem/ft_memcmp.c.s
 
 srcs/mem/ft_memcpy.o: srcs/mem/ft_memcpy.c.o
@@ -833,7 +833,7 @@ srcs/mem/ft_memcpy.o: srcs/mem/ft_memcpy.c.o
 
 # target to build an object file
 srcs/mem/ft_memcpy.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memcpy.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memcpy.c.o
 .PHONY : srcs/mem/ft_memcpy.c.o
 
 srcs/mem/ft_memcpy.i: srcs/mem/ft_memcpy.c.i
@@ -842,7 +842,7 @@ srcs/mem/ft_memcpy.i: srcs/mem/ft_memcpy.c.i
 
 # target to preprocess a source file
 srcs/mem/ft_memcpy.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memcpy.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memcpy.c.i
 .PHONY : srcs/mem/ft_memcpy.c.i
 
 srcs/mem/ft_memcpy.s: srcs/mem/ft_memcpy.c.s
@@ -851,7 +851,7 @@ srcs/mem/ft_memcpy.s: srcs/mem/ft_memcpy.c.s
 
 # target to generate assembly for a file
 srcs/mem/ft_memcpy.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memcpy.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memcpy.c.s
 .PHONY : srcs/mem/ft_memcpy.c.s
 
 srcs/mem/ft_memdel.o: srcs/mem/ft_memdel.c.o
@@ -860,7 +860,7 @@ srcs/mem/ft_memdel.o: srcs/mem/ft_memdel.c.o
 
 # target to build an object file
 srcs/mem/ft_memdel.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memdel.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memdel.c.o
 .PHONY : srcs/mem/ft_memdel.c.o
 
 srcs/mem/ft_memdel.i: srcs/mem/ft_memdel.c.i
@@ -869,7 +869,7 @@ srcs/mem/ft_memdel.i: srcs/mem/ft_memdel.c.i
 
 # target to preprocess a source file
 srcs/mem/ft_memdel.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memdel.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memdel.c.i
 .PHONY : srcs/mem/ft_memdel.c.i
 
 srcs/mem/ft_memdel.s: srcs/mem/ft_memdel.c.s
@@ -878,7 +878,7 @@ srcs/mem/ft_memdel.s: srcs/mem/ft_memdel.c.s
 
 # target to generate assembly for a file
 srcs/mem/ft_memdel.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memdel.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memdel.c.s
 .PHONY : srcs/mem/ft_memdel.c.s
 
 srcs/mem/ft_memmove.o: srcs/mem/ft_memmove.c.o
@@ -887,7 +887,7 @@ srcs/mem/ft_memmove.o: srcs/mem/ft_memmove.c.o
 
 # target to build an object file
 srcs/mem/ft_memmove.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memmove.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memmove.c.o
 .PHONY : srcs/mem/ft_memmove.c.o
 
 srcs/mem/ft_memmove.i: srcs/mem/ft_memmove.c.i
@@ -896,7 +896,7 @@ srcs/mem/ft_memmove.i: srcs/mem/ft_memmove.c.i
 
 # target to preprocess a source file
 srcs/mem/ft_memmove.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memmove.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memmove.c.i
 .PHONY : srcs/mem/ft_memmove.c.i
 
 srcs/mem/ft_memmove.s: srcs/mem/ft_memmove.c.s
@@ -905,7 +905,7 @@ srcs/mem/ft_memmove.s: srcs/mem/ft_memmove.c.s
 
 # target to generate assembly for a file
 srcs/mem/ft_memmove.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memmove.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memmove.c.s
 .PHONY : srcs/mem/ft_memmove.c.s
 
 srcs/mem/ft_memset.o: srcs/mem/ft_memset.c.o
@@ -914,7 +914,7 @@ srcs/mem/ft_memset.o: srcs/mem/ft_memset.c.o
 
 # target to build an object file
 srcs/mem/ft_memset.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memset.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memset.c.o
 .PHONY : srcs/mem/ft_memset.c.o
 
 srcs/mem/ft_memset.i: srcs/mem/ft_memset.c.i
@@ -923,7 +923,7 @@ srcs/mem/ft_memset.i: srcs/mem/ft_memset.c.i
 
 # target to preprocess a source file
 srcs/mem/ft_memset.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memset.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memset.c.i
 .PHONY : srcs/mem/ft_memset.c.i
 
 srcs/mem/ft_memset.s: srcs/mem/ft_memset.c.s
@@ -932,7 +932,7 @@ srcs/mem/ft_memset.s: srcs/mem/ft_memset.c.s
 
 # target to generate assembly for a file
 srcs/mem/ft_memset.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memset.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/mem/ft_memset.c.s
 .PHONY : srcs/mem/ft_memset.c.s
 
 srcs/print/ft_print_addr.o: srcs/print/ft_print_addr.c.o
@@ -941,7 +941,7 @@ srcs/print/ft_print_addr.o: srcs/print/ft_print_addr.c.o
 
 # target to build an object file
 srcs/print/ft_print_addr.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_print_addr.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_print_addr.c.o
 .PHONY : srcs/print/ft_print_addr.c.o
 
 srcs/print/ft_print_addr.i: srcs/print/ft_print_addr.c.i
@@ -950,7 +950,7 @@ srcs/print/ft_print_addr.i: srcs/print/ft_print_addr.c.i
 
 # target to preprocess a source file
 srcs/print/ft_print_addr.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_print_addr.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_print_addr.c.i
 .PHONY : srcs/print/ft_print_addr.c.i
 
 srcs/print/ft_print_addr.s: srcs/print/ft_print_addr.c.s
@@ -959,7 +959,7 @@ srcs/print/ft_print_addr.s: srcs/print/ft_print_addr.c.s
 
 # target to generate assembly for a file
 srcs/print/ft_print_addr.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_print_addr.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_print_addr.c.s
 .PHONY : srcs/print/ft_print_addr.c.s
 
 srcs/print/ft_putchar.o: srcs/print/ft_putchar.c.o
@@ -968,7 +968,7 @@ srcs/print/ft_putchar.o: srcs/print/ft_putchar.c.o
 
 # target to build an object file
 srcs/print/ft_putchar.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putchar.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putchar.c.o
 .PHONY : srcs/print/ft_putchar.c.o
 
 srcs/print/ft_putchar.i: srcs/print/ft_putchar.c.i
@@ -977,7 +977,7 @@ srcs/print/ft_putchar.i: srcs/print/ft_putchar.c.i
 
 # target to preprocess a source file
 srcs/print/ft_putchar.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putchar.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putchar.c.i
 .PHONY : srcs/print/ft_putchar.c.i
 
 srcs/print/ft_putchar.s: srcs/print/ft_putchar.c.s
@@ -986,7 +986,7 @@ srcs/print/ft_putchar.s: srcs/print/ft_putchar.c.s
 
 # target to generate assembly for a file
 srcs/print/ft_putchar.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putchar.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putchar.c.s
 .PHONY : srcs/print/ft_putchar.c.s
 
 srcs/print/ft_putchar_fd.o: srcs/print/ft_putchar_fd.c.o
@@ -995,7 +995,7 @@ srcs/print/ft_putchar_fd.o: srcs/print/ft_putchar_fd.c.o
 
 # target to build an object file
 srcs/print/ft_putchar_fd.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putchar_fd.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putchar_fd.c.o
 .PHONY : srcs/print/ft_putchar_fd.c.o
 
 srcs/print/ft_putchar_fd.i: srcs/print/ft_putchar_fd.c.i
@@ -1004,7 +1004,7 @@ srcs/print/ft_putchar_fd.i: srcs/print/ft_putchar_fd.c.i
 
 # target to preprocess a source file
 srcs/print/ft_putchar_fd.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putchar_fd.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putchar_fd.c.i
 .PHONY : srcs/print/ft_putchar_fd.c.i
 
 srcs/print/ft_putchar_fd.s: srcs/print/ft_putchar_fd.c.s
@@ -1013,7 +1013,7 @@ srcs/print/ft_putchar_fd.s: srcs/print/ft_putchar_fd.c.s
 
 # target to generate assembly for a file
 srcs/print/ft_putchar_fd.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putchar_fd.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putchar_fd.c.s
 .PHONY : srcs/print/ft_putchar_fd.c.s
 
 srcs/print/ft_putendl.o: srcs/print/ft_putendl.c.o
@@ -1022,7 +1022,7 @@ srcs/print/ft_putendl.o: srcs/print/ft_putendl.c.o
 
 # target to build an object file
 srcs/print/ft_putendl.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putendl.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putendl.c.o
 .PHONY : srcs/print/ft_putendl.c.o
 
 srcs/print/ft_putendl.i: srcs/print/ft_putendl.c.i
@@ -1031,7 +1031,7 @@ srcs/print/ft_putendl.i: srcs/print/ft_putendl.c.i
 
 # target to preprocess a source file
 srcs/print/ft_putendl.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putendl.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putendl.c.i
 .PHONY : srcs/print/ft_putendl.c.i
 
 srcs/print/ft_putendl.s: srcs/print/ft_putendl.c.s
@@ -1040,7 +1040,7 @@ srcs/print/ft_putendl.s: srcs/print/ft_putendl.c.s
 
 # target to generate assembly for a file
 srcs/print/ft_putendl.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putendl.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putendl.c.s
 .PHONY : srcs/print/ft_putendl.c.s
 
 srcs/print/ft_putendl_fd.o: srcs/print/ft_putendl_fd.c.o
@@ -1049,7 +1049,7 @@ srcs/print/ft_putendl_fd.o: srcs/print/ft_putendl_fd.c.o
 
 # target to build an object file
 srcs/print/ft_putendl_fd.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putendl_fd.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putendl_fd.c.o
 .PHONY : srcs/print/ft_putendl_fd.c.o
 
 srcs/print/ft_putendl_fd.i: srcs/print/ft_putendl_fd.c.i
@@ -1058,7 +1058,7 @@ srcs/print/ft_putendl_fd.i: srcs/print/ft_putendl_fd.c.i
 
 # target to preprocess a source file
 srcs/print/ft_putendl_fd.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putendl_fd.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putendl_fd.c.i
 .PHONY : srcs/print/ft_putendl_fd.c.i
 
 srcs/print/ft_putendl_fd.s: srcs/print/ft_putendl_fd.c.s
@@ -1067,7 +1067,7 @@ srcs/print/ft_putendl_fd.s: srcs/print/ft_putendl_fd.c.s
 
 # target to generate assembly for a file
 srcs/print/ft_putendl_fd.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putendl_fd.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putendl_fd.c.s
 .PHONY : srcs/print/ft_putendl_fd.c.s
 
 srcs/print/ft_putnbr.o: srcs/print/ft_putnbr.c.o
@@ -1076,7 +1076,7 @@ srcs/print/ft_putnbr.o: srcs/print/ft_putnbr.c.o
 
 # target to build an object file
 srcs/print/ft_putnbr.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putnbr.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putnbr.c.o
 .PHONY : srcs/print/ft_putnbr.c.o
 
 srcs/print/ft_putnbr.i: srcs/print/ft_putnbr.c.i
@@ -1085,7 +1085,7 @@ srcs/print/ft_putnbr.i: srcs/print/ft_putnbr.c.i
 
 # target to preprocess a source file
 srcs/print/ft_putnbr.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putnbr.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putnbr.c.i
 .PHONY : srcs/print/ft_putnbr.c.i
 
 srcs/print/ft_putnbr.s: srcs/print/ft_putnbr.c.s
@@ -1094,7 +1094,7 @@ srcs/print/ft_putnbr.s: srcs/print/ft_putnbr.c.s
 
 # target to generate assembly for a file
 srcs/print/ft_putnbr.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putnbr.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putnbr.c.s
 .PHONY : srcs/print/ft_putnbr.c.s
 
 srcs/print/ft_putnbr_base.o: srcs/print/ft_putnbr_base.c.o
@@ -1103,7 +1103,7 @@ srcs/print/ft_putnbr_base.o: srcs/print/ft_putnbr_base.c.o
 
 # target to build an object file
 srcs/print/ft_putnbr_base.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putnbr_base.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putnbr_base.c.o
 .PHONY : srcs/print/ft_putnbr_base.c.o
 
 srcs/print/ft_putnbr_base.i: srcs/print/ft_putnbr_base.c.i
@@ -1112,7 +1112,7 @@ srcs/print/ft_putnbr_base.i: srcs/print/ft_putnbr_base.c.i
 
 # target to preprocess a source file
 srcs/print/ft_putnbr_base.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putnbr_base.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putnbr_base.c.i
 .PHONY : srcs/print/ft_putnbr_base.c.i
 
 srcs/print/ft_putnbr_base.s: srcs/print/ft_putnbr_base.c.s
@@ -1121,7 +1121,7 @@ srcs/print/ft_putnbr_base.s: srcs/print/ft_putnbr_base.c.s
 
 # target to generate assembly for a file
 srcs/print/ft_putnbr_base.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putnbr_base.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putnbr_base.c.s
 .PHONY : srcs/print/ft_putnbr_base.c.s
 
 srcs/print/ft_putnbr_fd.o: srcs/print/ft_putnbr_fd.c.o
@@ -1130,7 +1130,7 @@ srcs/print/ft_putnbr_fd.o: srcs/print/ft_putnbr_fd.c.o
 
 # target to build an object file
 srcs/print/ft_putnbr_fd.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putnbr_fd.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putnbr_fd.c.o
 .PHONY : srcs/print/ft_putnbr_fd.c.o
 
 srcs/print/ft_putnbr_fd.i: srcs/print/ft_putnbr_fd.c.i
@@ -1139,7 +1139,7 @@ srcs/print/ft_putnbr_fd.i: srcs/print/ft_putnbr_fd.c.i
 
 # target to preprocess a source file
 srcs/print/ft_putnbr_fd.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putnbr_fd.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putnbr_fd.c.i
 .PHONY : srcs/print/ft_putnbr_fd.c.i
 
 srcs/print/ft_putnbr_fd.s: srcs/print/ft_putnbr_fd.c.s
@@ -1148,7 +1148,7 @@ srcs/print/ft_putnbr_fd.s: srcs/print/ft_putnbr_fd.c.s
 
 # target to generate assembly for a file
 srcs/print/ft_putnbr_fd.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putnbr_fd.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putnbr_fd.c.s
 .PHONY : srcs/print/ft_putnbr_fd.c.s
 
 srcs/print/ft_putstr.o: srcs/print/ft_putstr.c.o
@@ -1157,7 +1157,7 @@ srcs/print/ft_putstr.o: srcs/print/ft_putstr.c.o
 
 # target to build an object file
 srcs/print/ft_putstr.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putstr.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putstr.c.o
 .PHONY : srcs/print/ft_putstr.c.o
 
 srcs/print/ft_putstr.i: srcs/print/ft_putstr.c.i
@@ -1166,7 +1166,7 @@ srcs/print/ft_putstr.i: srcs/print/ft_putstr.c.i
 
 # target to preprocess a source file
 srcs/print/ft_putstr.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putstr.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putstr.c.i
 .PHONY : srcs/print/ft_putstr.c.i
 
 srcs/print/ft_putstr.s: srcs/print/ft_putstr.c.s
@@ -1175,7 +1175,7 @@ srcs/print/ft_putstr.s: srcs/print/ft_putstr.c.s
 
 # target to generate assembly for a file
 srcs/print/ft_putstr.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putstr.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putstr.c.s
 .PHONY : srcs/print/ft_putstr.c.s
 
 srcs/print/ft_putstr_fd.o: srcs/print/ft_putstr_fd.c.o
@@ -1184,7 +1184,7 @@ srcs/print/ft_putstr_fd.o: srcs/print/ft_putstr_fd.c.o
 
 # target to build an object file
 srcs/print/ft_putstr_fd.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putstr_fd.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putstr_fd.c.o
 .PHONY : srcs/print/ft_putstr_fd.c.o
 
 srcs/print/ft_putstr_fd.i: srcs/print/ft_putstr_fd.c.i
@@ -1193,7 +1193,7 @@ srcs/print/ft_putstr_fd.i: srcs/print/ft_putstr_fd.c.i
 
 # target to preprocess a source file
 srcs/print/ft_putstr_fd.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putstr_fd.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putstr_fd.c.i
 .PHONY : srcs/print/ft_putstr_fd.c.i
 
 srcs/print/ft_putstr_fd.s: srcs/print/ft_putstr_fd.c.s
@@ -1202,7 +1202,7 @@ srcs/print/ft_putstr_fd.s: srcs/print/ft_putstr_fd.c.s
 
 # target to generate assembly for a file
 srcs/print/ft_putstr_fd.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putstr_fd.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/print/ft_putstr_fd.c.s
 .PHONY : srcs/print/ft_putstr_fd.c.s
 
 srcs/str/ft_atoi.o: srcs/str/ft_atoi.c.o
@@ -1211,7 +1211,7 @@ srcs/str/ft_atoi.o: srcs/str/ft_atoi.c.o
 
 # target to build an object file
 srcs/str/ft_atoi.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_atoi.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_atoi.c.o
 .PHONY : srcs/str/ft_atoi.c.o
 
 srcs/str/ft_atoi.i: srcs/str/ft_atoi.c.i
@@ -1220,7 +1220,7 @@ srcs/str/ft_atoi.i: srcs/str/ft_atoi.c.i
 
 # target to preprocess a source file
 srcs/str/ft_atoi.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_atoi.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_atoi.c.i
 .PHONY : srcs/str/ft_atoi.c.i
 
 srcs/str/ft_atoi.s: srcs/str/ft_atoi.c.s
@@ -1229,7 +1229,7 @@ srcs/str/ft_atoi.s: srcs/str/ft_atoi.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_atoi.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_atoi.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_atoi.c.s
 .PHONY : srcs/str/ft_atoi.c.s
 
 srcs/str/ft_atoi_base.o: srcs/str/ft_atoi_base.c.o
@@ -1238,7 +1238,7 @@ srcs/str/ft_atoi_base.o: srcs/str/ft_atoi_base.c.o
 
 # target to build an object file
 srcs/str/ft_atoi_base.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_atoi_base.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_atoi_base.c.o
 .PHONY : srcs/str/ft_atoi_base.c.o
 
 srcs/str/ft_atoi_base.i: srcs/str/ft_atoi_base.c.i
@@ -1247,7 +1247,7 @@ srcs/str/ft_atoi_base.i: srcs/str/ft_atoi_base.c.i
 
 # target to preprocess a source file
 srcs/str/ft_atoi_base.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_atoi_base.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_atoi_base.c.i
 .PHONY : srcs/str/ft_atoi_base.c.i
 
 srcs/str/ft_atoi_base.s: srcs/str/ft_atoi_base.c.s
@@ -1256,7 +1256,7 @@ srcs/str/ft_atoi_base.s: srcs/str/ft_atoi_base.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_atoi_base.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_atoi_base.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_atoi_base.c.s
 .PHONY : srcs/str/ft_atoi_base.c.s
 
 srcs/str/ft_del_char.o: srcs/str/ft_del_char.c.o
@@ -1265,7 +1265,7 @@ srcs/str/ft_del_char.o: srcs/str/ft_del_char.c.o
 
 # target to build an object file
 srcs/str/ft_del_char.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_del_char.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_del_char.c.o
 .PHONY : srcs/str/ft_del_char.c.o
 
 srcs/str/ft_del_char.i: srcs/str/ft_del_char.c.i
@@ -1274,7 +1274,7 @@ srcs/str/ft_del_char.i: srcs/str/ft_del_char.c.i
 
 # target to preprocess a source file
 srcs/str/ft_del_char.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_del_char.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_del_char.c.i
 .PHONY : srcs/str/ft_del_char.c.i
 
 srcs/str/ft_del_char.s: srcs/str/ft_del_char.c.s
@@ -1283,7 +1283,7 @@ srcs/str/ft_del_char.s: srcs/str/ft_del_char.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_del_char.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_del_char.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_del_char.c.s
 .PHONY : srcs/str/ft_del_char.c.s
 
 srcs/str/ft_itoa.o: srcs/str/ft_itoa.c.o
@@ -1292,7 +1292,7 @@ srcs/str/ft_itoa.o: srcs/str/ft_itoa.c.o
 
 # target to build an object file
 srcs/str/ft_itoa.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_itoa.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_itoa.c.o
 .PHONY : srcs/str/ft_itoa.c.o
 
 srcs/str/ft_itoa.i: srcs/str/ft_itoa.c.i
@@ -1301,7 +1301,7 @@ srcs/str/ft_itoa.i: srcs/str/ft_itoa.c.i
 
 # target to preprocess a source file
 srcs/str/ft_itoa.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_itoa.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_itoa.c.i
 .PHONY : srcs/str/ft_itoa.c.i
 
 srcs/str/ft_itoa.s: srcs/str/ft_itoa.c.s
@@ -1310,7 +1310,7 @@ srcs/str/ft_itoa.s: srcs/str/ft_itoa.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_itoa.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_itoa.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_itoa.c.s
 .PHONY : srcs/str/ft_itoa.c.s
 
 srcs/str/ft_itoa_base.o: srcs/str/ft_itoa_base.c.o
@@ -1319,7 +1319,7 @@ srcs/str/ft_itoa_base.o: srcs/str/ft_itoa_base.c.o
 
 # target to build an object file
 srcs/str/ft_itoa_base.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_itoa_base.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_itoa_base.c.o
 .PHONY : srcs/str/ft_itoa_base.c.o
 
 srcs/str/ft_itoa_base.i: srcs/str/ft_itoa_base.c.i
@@ -1328,7 +1328,7 @@ srcs/str/ft_itoa_base.i: srcs/str/ft_itoa_base.c.i
 
 # target to preprocess a source file
 srcs/str/ft_itoa_base.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_itoa_base.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_itoa_base.c.i
 .PHONY : srcs/str/ft_itoa_base.c.i
 
 srcs/str/ft_itoa_base.s: srcs/str/ft_itoa_base.c.s
@@ -1337,7 +1337,7 @@ srcs/str/ft_itoa_base.s: srcs/str/ft_itoa_base.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_itoa_base.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_itoa_base.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_itoa_base.c.s
 .PHONY : srcs/str/ft_itoa_base.c.s
 
 srcs/str/ft_ltoa.o: srcs/str/ft_ltoa.c.o
@@ -1346,7 +1346,7 @@ srcs/str/ft_ltoa.o: srcs/str/ft_ltoa.c.o
 
 # target to build an object file
 srcs/str/ft_ltoa.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_ltoa.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_ltoa.c.o
 .PHONY : srcs/str/ft_ltoa.c.o
 
 srcs/str/ft_ltoa.i: srcs/str/ft_ltoa.c.i
@@ -1355,7 +1355,7 @@ srcs/str/ft_ltoa.i: srcs/str/ft_ltoa.c.i
 
 # target to preprocess a source file
 srcs/str/ft_ltoa.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_ltoa.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_ltoa.c.i
 .PHONY : srcs/str/ft_ltoa.c.i
 
 srcs/str/ft_ltoa.s: srcs/str/ft_ltoa.c.s
@@ -1364,7 +1364,7 @@ srcs/str/ft_ltoa.s: srcs/str/ft_ltoa.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_ltoa.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_ltoa.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_ltoa.c.s
 .PHONY : srcs/str/ft_ltoa.c.s
 
 srcs/str/ft_nblen.o: srcs/str/ft_nblen.c.o
@@ -1373,7 +1373,7 @@ srcs/str/ft_nblen.o: srcs/str/ft_nblen.c.o
 
 # target to build an object file
 srcs/str/ft_nblen.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_nblen.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_nblen.c.o
 .PHONY : srcs/str/ft_nblen.c.o
 
 srcs/str/ft_nblen.i: srcs/str/ft_nblen.c.i
@@ -1382,7 +1382,7 @@ srcs/str/ft_nblen.i: srcs/str/ft_nblen.c.i
 
 # target to preprocess a source file
 srcs/str/ft_nblen.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_nblen.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_nblen.c.i
 .PHONY : srcs/str/ft_nblen.c.i
 
 srcs/str/ft_nblen.s: srcs/str/ft_nblen.c.s
@@ -1391,7 +1391,7 @@ srcs/str/ft_nblen.s: srcs/str/ft_nblen.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_nblen.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_nblen.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_nblen.c.s
 .PHONY : srcs/str/ft_nblen.c.s
 
 srcs/str/ft_stradd_char.o: srcs/str/ft_stradd_char.c.o
@@ -1400,7 +1400,7 @@ srcs/str/ft_stradd_char.o: srcs/str/ft_stradd_char.c.o
 
 # target to build an object file
 srcs/str/ft_stradd_char.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_stradd_char.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_stradd_char.c.o
 .PHONY : srcs/str/ft_stradd_char.c.o
 
 srcs/str/ft_stradd_char.i: srcs/str/ft_stradd_char.c.i
@@ -1409,7 +1409,7 @@ srcs/str/ft_stradd_char.i: srcs/str/ft_stradd_char.c.i
 
 # target to preprocess a source file
 srcs/str/ft_stradd_char.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_stradd_char.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_stradd_char.c.i
 .PHONY : srcs/str/ft_stradd_char.c.i
 
 srcs/str/ft_stradd_char.s: srcs/str/ft_stradd_char.c.s
@@ -1418,7 +1418,7 @@ srcs/str/ft_stradd_char.s: srcs/str/ft_stradd_char.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_stradd_char.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_stradd_char.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_stradd_char.c.s
 .PHONY : srcs/str/ft_stradd_char.c.s
 
 srcs/str/ft_strcat.o: srcs/str/ft_strcat.c.o
@@ -1427,7 +1427,7 @@ srcs/str/ft_strcat.o: srcs/str/ft_strcat.c.o
 
 # target to build an object file
 srcs/str/ft_strcat.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strcat.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strcat.c.o
 .PHONY : srcs/str/ft_strcat.c.o
 
 srcs/str/ft_strcat.i: srcs/str/ft_strcat.c.i
@@ -1436,7 +1436,7 @@ srcs/str/ft_strcat.i: srcs/str/ft_strcat.c.i
 
 # target to preprocess a source file
 srcs/str/ft_strcat.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strcat.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strcat.c.i
 .PHONY : srcs/str/ft_strcat.c.i
 
 srcs/str/ft_strcat.s: srcs/str/ft_strcat.c.s
@@ -1445,7 +1445,7 @@ srcs/str/ft_strcat.s: srcs/str/ft_strcat.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_strcat.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strcat.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strcat.c.s
 .PHONY : srcs/str/ft_strcat.c.s
 
 srcs/str/ft_strchr.o: srcs/str/ft_strchr.c.o
@@ -1454,7 +1454,7 @@ srcs/str/ft_strchr.o: srcs/str/ft_strchr.c.o
 
 # target to build an object file
 srcs/str/ft_strchr.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strchr.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strchr.c.o
 .PHONY : srcs/str/ft_strchr.c.o
 
 srcs/str/ft_strchr.i: srcs/str/ft_strchr.c.i
@@ -1463,7 +1463,7 @@ srcs/str/ft_strchr.i: srcs/str/ft_strchr.c.i
 
 # target to preprocess a source file
 srcs/str/ft_strchr.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strchr.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strchr.c.i
 .PHONY : srcs/str/ft_strchr.c.i
 
 srcs/str/ft_strchr.s: srcs/str/ft_strchr.c.s
@@ -1472,7 +1472,7 @@ srcs/str/ft_strchr.s: srcs/str/ft_strchr.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_strchr.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strchr.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strchr.c.s
 .PHONY : srcs/str/ft_strchr.c.s
 
 srcs/str/ft_strclr.o: srcs/str/ft_strclr.c.o
@@ -1481,7 +1481,7 @@ srcs/str/ft_strclr.o: srcs/str/ft_strclr.c.o
 
 # target to build an object file
 srcs/str/ft_strclr.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strclr.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strclr.c.o
 .PHONY : srcs/str/ft_strclr.c.o
 
 srcs/str/ft_strclr.i: srcs/str/ft_strclr.c.i
@@ -1490,7 +1490,7 @@ srcs/str/ft_strclr.i: srcs/str/ft_strclr.c.i
 
 # target to preprocess a source file
 srcs/str/ft_strclr.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strclr.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strclr.c.i
 .PHONY : srcs/str/ft_strclr.c.i
 
 srcs/str/ft_strclr.s: srcs/str/ft_strclr.c.s
@@ -1499,7 +1499,7 @@ srcs/str/ft_strclr.s: srcs/str/ft_strclr.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_strclr.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strclr.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strclr.c.s
 .PHONY : srcs/str/ft_strclr.c.s
 
 srcs/str/ft_strcmp.o: srcs/str/ft_strcmp.c.o
@@ -1508,7 +1508,7 @@ srcs/str/ft_strcmp.o: srcs/str/ft_strcmp.c.o
 
 # target to build an object file
 srcs/str/ft_strcmp.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strcmp.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strcmp.c.o
 .PHONY : srcs/str/ft_strcmp.c.o
 
 srcs/str/ft_strcmp.i: srcs/str/ft_strcmp.c.i
@@ -1517,7 +1517,7 @@ srcs/str/ft_strcmp.i: srcs/str/ft_strcmp.c.i
 
 # target to preprocess a source file
 srcs/str/ft_strcmp.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strcmp.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strcmp.c.i
 .PHONY : srcs/str/ft_strcmp.c.i
 
 srcs/str/ft_strcmp.s: srcs/str/ft_strcmp.c.s
@@ -1526,7 +1526,7 @@ srcs/str/ft_strcmp.s: srcs/str/ft_strcmp.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_strcmp.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strcmp.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strcmp.c.s
 .PHONY : srcs/str/ft_strcmp.c.s
 
 srcs/str/ft_strcpy.o: srcs/str/ft_strcpy.c.o
@@ -1535,7 +1535,7 @@ srcs/str/ft_strcpy.o: srcs/str/ft_strcpy.c.o
 
 # target to build an object file
 srcs/str/ft_strcpy.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strcpy.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strcpy.c.o
 .PHONY : srcs/str/ft_strcpy.c.o
 
 srcs/str/ft_strcpy.i: srcs/str/ft_strcpy.c.i
@@ -1544,7 +1544,7 @@ srcs/str/ft_strcpy.i: srcs/str/ft_strcpy.c.i
 
 # target to preprocess a source file
 srcs/str/ft_strcpy.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strcpy.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strcpy.c.i
 .PHONY : srcs/str/ft_strcpy.c.i
 
 srcs/str/ft_strcpy.s: srcs/str/ft_strcpy.c.s
@@ -1553,7 +1553,7 @@ srcs/str/ft_strcpy.s: srcs/str/ft_strcpy.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_strcpy.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strcpy.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strcpy.c.s
 .PHONY : srcs/str/ft_strcpy.c.s
 
 srcs/str/ft_strcpy_limit.o: srcs/str/ft_strcpy_limit.c.o
@@ -1562,7 +1562,7 @@ srcs/str/ft_strcpy_limit.o: srcs/str/ft_strcpy_limit.c.o
 
 # target to build an object file
 srcs/str/ft_strcpy_limit.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strcpy_limit.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strcpy_limit.c.o
 .PHONY : srcs/str/ft_strcpy_limit.c.o
 
 srcs/str/ft_strcpy_limit.i: srcs/str/ft_strcpy_limit.c.i
@@ -1571,7 +1571,7 @@ srcs/str/ft_strcpy_limit.i: srcs/str/ft_strcpy_limit.c.i
 
 # target to preprocess a source file
 srcs/str/ft_strcpy_limit.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strcpy_limit.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strcpy_limit.c.i
 .PHONY : srcs/str/ft_strcpy_limit.c.i
 
 srcs/str/ft_strcpy_limit.s: srcs/str/ft_strcpy_limit.c.s
@@ -1580,7 +1580,7 @@ srcs/str/ft_strcpy_limit.s: srcs/str/ft_strcpy_limit.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_strcpy_limit.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strcpy_limit.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strcpy_limit.c.s
 .PHONY : srcs/str/ft_strcpy_limit.c.s
 
 srcs/str/ft_strdel.o: srcs/str/ft_strdel.c.o
@@ -1589,7 +1589,7 @@ srcs/str/ft_strdel.o: srcs/str/ft_strdel.c.o
 
 # target to build an object file
 srcs/str/ft_strdel.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strdel.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strdel.c.o
 .PHONY : srcs/str/ft_strdel.c.o
 
 srcs/str/ft_strdel.i: srcs/str/ft_strdel.c.i
@@ -1598,7 +1598,7 @@ srcs/str/ft_strdel.i: srcs/str/ft_strdel.c.i
 
 # target to preprocess a source file
 srcs/str/ft_strdel.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strdel.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strdel.c.i
 .PHONY : srcs/str/ft_strdel.c.i
 
 srcs/str/ft_strdel.s: srcs/str/ft_strdel.c.s
@@ -1607,7 +1607,7 @@ srcs/str/ft_strdel.s: srcs/str/ft_strdel.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_strdel.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strdel.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strdel.c.s
 .PHONY : srcs/str/ft_strdel.c.s
 
 srcs/str/ft_strdup.o: srcs/str/ft_strdup.c.o
@@ -1616,7 +1616,7 @@ srcs/str/ft_strdup.o: srcs/str/ft_strdup.c.o
 
 # target to build an object file
 srcs/str/ft_strdup.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strdup.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strdup.c.o
 .PHONY : srcs/str/ft_strdup.c.o
 
 srcs/str/ft_strdup.i: srcs/str/ft_strdup.c.i
@@ -1625,7 +1625,7 @@ srcs/str/ft_strdup.i: srcs/str/ft_strdup.c.i
 
 # target to preprocess a source file
 srcs/str/ft_strdup.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strdup.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strdup.c.i
 .PHONY : srcs/str/ft_strdup.c.i
 
 srcs/str/ft_strdup.s: srcs/str/ft_strdup.c.s
@@ -1634,7 +1634,7 @@ srcs/str/ft_strdup.s: srcs/str/ft_strdup.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_strdup.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strdup.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strdup.c.s
 .PHONY : srcs/str/ft_strdup.c.s
 
 srcs/str/ft_strequ.o: srcs/str/ft_strequ.c.o
@@ -1643,7 +1643,7 @@ srcs/str/ft_strequ.o: srcs/str/ft_strequ.c.o
 
 # target to build an object file
 srcs/str/ft_strequ.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strequ.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strequ.c.o
 .PHONY : srcs/str/ft_strequ.c.o
 
 srcs/str/ft_strequ.i: srcs/str/ft_strequ.c.i
@@ -1652,7 +1652,7 @@ srcs/str/ft_strequ.i: srcs/str/ft_strequ.c.i
 
 # target to preprocess a source file
 srcs/str/ft_strequ.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strequ.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strequ.c.i
 .PHONY : srcs/str/ft_strequ.c.i
 
 srcs/str/ft_strequ.s: srcs/str/ft_strequ.c.s
@@ -1661,7 +1661,7 @@ srcs/str/ft_strequ.s: srcs/str/ft_strequ.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_strequ.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strequ.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strequ.c.s
 .PHONY : srcs/str/ft_strequ.c.s
 
 srcs/str/ft_striter.o: srcs/str/ft_striter.c.o
@@ -1670,7 +1670,7 @@ srcs/str/ft_striter.o: srcs/str/ft_striter.c.o
 
 # target to build an object file
 srcs/str/ft_striter.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_striter.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_striter.c.o
 .PHONY : srcs/str/ft_striter.c.o
 
 srcs/str/ft_striter.i: srcs/str/ft_striter.c.i
@@ -1679,7 +1679,7 @@ srcs/str/ft_striter.i: srcs/str/ft_striter.c.i
 
 # target to preprocess a source file
 srcs/str/ft_striter.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_striter.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_striter.c.i
 .PHONY : srcs/str/ft_striter.c.i
 
 srcs/str/ft_striter.s: srcs/str/ft_striter.c.s
@@ -1688,7 +1688,7 @@ srcs/str/ft_striter.s: srcs/str/ft_striter.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_striter.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_striter.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_striter.c.s
 .PHONY : srcs/str/ft_striter.c.s
 
 srcs/str/ft_striteri.o: srcs/str/ft_striteri.c.o
@@ -1697,7 +1697,7 @@ srcs/str/ft_striteri.o: srcs/str/ft_striteri.c.o
 
 # target to build an object file
 srcs/str/ft_striteri.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_striteri.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_striteri.c.o
 .PHONY : srcs/str/ft_striteri.c.o
 
 srcs/str/ft_striteri.i: srcs/str/ft_striteri.c.i
@@ -1706,7 +1706,7 @@ srcs/str/ft_striteri.i: srcs/str/ft_striteri.c.i
 
 # target to preprocess a source file
 srcs/str/ft_striteri.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_striteri.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_striteri.c.i
 .PHONY : srcs/str/ft_striteri.c.i
 
 srcs/str/ft_striteri.s: srcs/str/ft_striteri.c.s
@@ -1715,7 +1715,7 @@ srcs/str/ft_striteri.s: srcs/str/ft_striteri.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_striteri.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_striteri.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_striteri.c.s
 .PHONY : srcs/str/ft_striteri.c.s
 
 srcs/str/ft_strjoin.o: srcs/str/ft_strjoin.c.o
@@ -1724,7 +1724,7 @@ srcs/str/ft_strjoin.o: srcs/str/ft_strjoin.c.o
 
 # target to build an object file
 srcs/str/ft_strjoin.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strjoin.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strjoin.c.o
 .PHONY : srcs/str/ft_strjoin.c.o
 
 srcs/str/ft_strjoin.i: srcs/str/ft_strjoin.c.i
@@ -1733,7 +1733,7 @@ srcs/str/ft_strjoin.i: srcs/str/ft_strjoin.c.i
 
 # target to preprocess a source file
 srcs/str/ft_strjoin.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strjoin.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strjoin.c.i
 .PHONY : srcs/str/ft_strjoin.c.i
 
 srcs/str/ft_strjoin.s: srcs/str/ft_strjoin.c.s
@@ -1742,7 +1742,7 @@ srcs/str/ft_strjoin.s: srcs/str/ft_strjoin.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_strjoin.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strjoin.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strjoin.c.s
 .PHONY : srcs/str/ft_strjoin.c.s
 
 srcs/str/ft_strjoin_free.o: srcs/str/ft_strjoin_free.c.o
@@ -1751,7 +1751,7 @@ srcs/str/ft_strjoin_free.o: srcs/str/ft_strjoin_free.c.o
 
 # target to build an object file
 srcs/str/ft_strjoin_free.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strjoin_free.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strjoin_free.c.o
 .PHONY : srcs/str/ft_strjoin_free.c.o
 
 srcs/str/ft_strjoin_free.i: srcs/str/ft_strjoin_free.c.i
@@ -1760,7 +1760,7 @@ srcs/str/ft_strjoin_free.i: srcs/str/ft_strjoin_free.c.i
 
 # target to preprocess a source file
 srcs/str/ft_strjoin_free.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strjoin_free.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strjoin_free.c.i
 .PHONY : srcs/str/ft_strjoin_free.c.i
 
 srcs/str/ft_strjoin_free.s: srcs/str/ft_strjoin_free.c.s
@@ -1769,7 +1769,7 @@ srcs/str/ft_strjoin_free.s: srcs/str/ft_strjoin_free.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_strjoin_free.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strjoin_free.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strjoin_free.c.s
 .PHONY : srcs/str/ft_strjoin_free.c.s
 
 srcs/str/ft_strlcat.o: srcs/str/ft_strlcat.c.o
@@ -1778,7 +1778,7 @@ srcs/str/ft_strlcat.o: srcs/str/ft_strlcat.c.o
 
 # target to build an object file
 srcs/str/ft_strlcat.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strlcat.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strlcat.c.o
 .PHONY : srcs/str/ft_strlcat.c.o
 
 srcs/str/ft_strlcat.i: srcs/str/ft_strlcat.c.i
@@ -1787,7 +1787,7 @@ srcs/str/ft_strlcat.i: srcs/str/ft_strlcat.c.i
 
 # target to preprocess a source file
 srcs/str/ft_strlcat.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strlcat.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strlcat.c.i
 .PHONY : srcs/str/ft_strlcat.c.i
 
 srcs/str/ft_strlcat.s: srcs/str/ft_strlcat.c.s
@@ -1796,7 +1796,7 @@ srcs/str/ft_strlcat.s: srcs/str/ft_strlcat.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_strlcat.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strlcat.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strlcat.c.s
 .PHONY : srcs/str/ft_strlcat.c.s
 
 srcs/str/ft_strlen.o: srcs/str/ft_strlen.c.o
@@ -1805,7 +1805,7 @@ srcs/str/ft_strlen.o: srcs/str/ft_strlen.c.o
 
 # target to build an object file
 srcs/str/ft_strlen.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strlen.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strlen.c.o
 .PHONY : srcs/str/ft_strlen.c.o
 
 srcs/str/ft_strlen.i: srcs/str/ft_strlen.c.i
@@ -1814,7 +1814,7 @@ srcs/str/ft_strlen.i: srcs/str/ft_strlen.c.i
 
 # target to preprocess a source file
 srcs/str/ft_strlen.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strlen.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strlen.c.i
 .PHONY : srcs/str/ft_strlen.c.i
 
 srcs/str/ft_strlen.s: srcs/str/ft_strlen.c.s
@@ -1823,7 +1823,7 @@ srcs/str/ft_strlen.s: srcs/str/ft_strlen.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_strlen.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strlen.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strlen.c.s
 .PHONY : srcs/str/ft_strlen.c.s
 
 srcs/str/ft_strlen_limit.o: srcs/str/ft_strlen_limit.c.o
@@ -1832,7 +1832,7 @@ srcs/str/ft_strlen_limit.o: srcs/str/ft_strlen_limit.c.o
 
 # target to build an object file
 srcs/str/ft_strlen_limit.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strlen_limit.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strlen_limit.c.o
 .PHONY : srcs/str/ft_strlen_limit.c.o
 
 srcs/str/ft_strlen_limit.i: srcs/str/ft_strlen_limit.c.i
@@ -1841,7 +1841,7 @@ srcs/str/ft_strlen_limit.i: srcs/str/ft_strlen_limit.c.i
 
 # target to preprocess a source file
 srcs/str/ft_strlen_limit.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strlen_limit.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strlen_limit.c.i
 .PHONY : srcs/str/ft_strlen_limit.c.i
 
 srcs/str/ft_strlen_limit.s: srcs/str/ft_strlen_limit.c.s
@@ -1850,7 +1850,7 @@ srcs/str/ft_strlen_limit.s: srcs/str/ft_strlen_limit.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_strlen_limit.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strlen_limit.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strlen_limit.c.s
 .PHONY : srcs/str/ft_strlen_limit.c.s
 
 srcs/str/ft_strmap.o: srcs/str/ft_strmap.c.o
@@ -1859,7 +1859,7 @@ srcs/str/ft_strmap.o: srcs/str/ft_strmap.c.o
 
 # target to build an object file
 srcs/str/ft_strmap.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strmap.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strmap.c.o
 .PHONY : srcs/str/ft_strmap.c.o
 
 srcs/str/ft_strmap.i: srcs/str/ft_strmap.c.i
@@ -1868,7 +1868,7 @@ srcs/str/ft_strmap.i: srcs/str/ft_strmap.c.i
 
 # target to preprocess a source file
 srcs/str/ft_strmap.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strmap.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strmap.c.i
 .PHONY : srcs/str/ft_strmap.c.i
 
 srcs/str/ft_strmap.s: srcs/str/ft_strmap.c.s
@@ -1877,7 +1877,7 @@ srcs/str/ft_strmap.s: srcs/str/ft_strmap.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_strmap.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strmap.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strmap.c.s
 .PHONY : srcs/str/ft_strmap.c.s
 
 srcs/str/ft_strmapi.o: srcs/str/ft_strmapi.c.o
@@ -1886,7 +1886,7 @@ srcs/str/ft_strmapi.o: srcs/str/ft_strmapi.c.o
 
 # target to build an object file
 srcs/str/ft_strmapi.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strmapi.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strmapi.c.o
 .PHONY : srcs/str/ft_strmapi.c.o
 
 srcs/str/ft_strmapi.i: srcs/str/ft_strmapi.c.i
@@ -1895,7 +1895,7 @@ srcs/str/ft_strmapi.i: srcs/str/ft_strmapi.c.i
 
 # target to preprocess a source file
 srcs/str/ft_strmapi.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strmapi.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strmapi.c.i
 .PHONY : srcs/str/ft_strmapi.c.i
 
 srcs/str/ft_strmapi.s: srcs/str/ft_strmapi.c.s
@@ -1904,7 +1904,7 @@ srcs/str/ft_strmapi.s: srcs/str/ft_strmapi.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_strmapi.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strmapi.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strmapi.c.s
 .PHONY : srcs/str/ft_strmapi.c.s
 
 srcs/str/ft_strncat.o: srcs/str/ft_strncat.c.o
@@ -1913,7 +1913,7 @@ srcs/str/ft_strncat.o: srcs/str/ft_strncat.c.o
 
 # target to build an object file
 srcs/str/ft_strncat.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strncat.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strncat.c.o
 .PHONY : srcs/str/ft_strncat.c.o
 
 srcs/str/ft_strncat.i: srcs/str/ft_strncat.c.i
@@ -1922,7 +1922,7 @@ srcs/str/ft_strncat.i: srcs/str/ft_strncat.c.i
 
 # target to preprocess a source file
 srcs/str/ft_strncat.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strncat.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strncat.c.i
 .PHONY : srcs/str/ft_strncat.c.i
 
 srcs/str/ft_strncat.s: srcs/str/ft_strncat.c.s
@@ -1931,7 +1931,7 @@ srcs/str/ft_strncat.s: srcs/str/ft_strncat.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_strncat.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strncat.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strncat.c.s
 .PHONY : srcs/str/ft_strncat.c.s
 
 srcs/str/ft_strncmp.o: srcs/str/ft_strncmp.c.o
@@ -1940,7 +1940,7 @@ srcs/str/ft_strncmp.o: srcs/str/ft_strncmp.c.o
 
 # target to build an object file
 srcs/str/ft_strncmp.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strncmp.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strncmp.c.o
 .PHONY : srcs/str/ft_strncmp.c.o
 
 srcs/str/ft_strncmp.i: srcs/str/ft_strncmp.c.i
@@ -1949,7 +1949,7 @@ srcs/str/ft_strncmp.i: srcs/str/ft_strncmp.c.i
 
 # target to preprocess a source file
 srcs/str/ft_strncmp.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strncmp.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strncmp.c.i
 .PHONY : srcs/str/ft_strncmp.c.i
 
 srcs/str/ft_strncmp.s: srcs/str/ft_strncmp.c.s
@@ -1958,7 +1958,7 @@ srcs/str/ft_strncmp.s: srcs/str/ft_strncmp.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_strncmp.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strncmp.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strncmp.c.s
 .PHONY : srcs/str/ft_strncmp.c.s
 
 srcs/str/ft_strncpy.o: srcs/str/ft_strncpy.c.o
@@ -1967,7 +1967,7 @@ srcs/str/ft_strncpy.o: srcs/str/ft_strncpy.c.o
 
 # target to build an object file
 srcs/str/ft_strncpy.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strncpy.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strncpy.c.o
 .PHONY : srcs/str/ft_strncpy.c.o
 
 srcs/str/ft_strncpy.i: srcs/str/ft_strncpy.c.i
@@ -1976,7 +1976,7 @@ srcs/str/ft_strncpy.i: srcs/str/ft_strncpy.c.i
 
 # target to preprocess a source file
 srcs/str/ft_strncpy.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strncpy.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strncpy.c.i
 .PHONY : srcs/str/ft_strncpy.c.i
 
 srcs/str/ft_strncpy.s: srcs/str/ft_strncpy.c.s
@@ -1985,7 +1985,7 @@ srcs/str/ft_strncpy.s: srcs/str/ft_strncpy.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_strncpy.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strncpy.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strncpy.c.s
 .PHONY : srcs/str/ft_strncpy.c.s
 
 srcs/str/ft_strndup.o: srcs/str/ft_strndup.c.o
@@ -1994,7 +1994,7 @@ srcs/str/ft_strndup.o: srcs/str/ft_strndup.c.o
 
 # target to build an object file
 srcs/str/ft_strndup.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strndup.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strndup.c.o
 .PHONY : srcs/str/ft_strndup.c.o
 
 srcs/str/ft_strndup.i: srcs/str/ft_strndup.c.i
@@ -2003,7 +2003,7 @@ srcs/str/ft_strndup.i: srcs/str/ft_strndup.c.i
 
 # target to preprocess a source file
 srcs/str/ft_strndup.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strndup.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strndup.c.i
 .PHONY : srcs/str/ft_strndup.c.i
 
 srcs/str/ft_strndup.s: srcs/str/ft_strndup.c.s
@@ -2012,7 +2012,7 @@ srcs/str/ft_strndup.s: srcs/str/ft_strndup.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_strndup.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strndup.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strndup.c.s
 .PHONY : srcs/str/ft_strndup.c.s
 
 srcs/str/ft_strnequ.o: srcs/str/ft_strnequ.c.o
@@ -2021,7 +2021,7 @@ srcs/str/ft_strnequ.o: srcs/str/ft_strnequ.c.o
 
 # target to build an object file
 srcs/str/ft_strnequ.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strnequ.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strnequ.c.o
 .PHONY : srcs/str/ft_strnequ.c.o
 
 srcs/str/ft_strnequ.i: srcs/str/ft_strnequ.c.i
@@ -2030,7 +2030,7 @@ srcs/str/ft_strnequ.i: srcs/str/ft_strnequ.c.i
 
 # target to preprocess a source file
 srcs/str/ft_strnequ.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strnequ.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strnequ.c.i
 .PHONY : srcs/str/ft_strnequ.c.i
 
 srcs/str/ft_strnequ.s: srcs/str/ft_strnequ.c.s
@@ -2039,7 +2039,7 @@ srcs/str/ft_strnequ.s: srcs/str/ft_strnequ.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_strnequ.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strnequ.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strnequ.c.s
 .PHONY : srcs/str/ft_strnequ.c.s
 
 srcs/str/ft_strnew.o: srcs/str/ft_strnew.c.o
@@ -2048,7 +2048,7 @@ srcs/str/ft_strnew.o: srcs/str/ft_strnew.c.o
 
 # target to build an object file
 srcs/str/ft_strnew.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strnew.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strnew.c.o
 .PHONY : srcs/str/ft_strnew.c.o
 
 srcs/str/ft_strnew.i: srcs/str/ft_strnew.c.i
@@ -2057,7 +2057,7 @@ srcs/str/ft_strnew.i: srcs/str/ft_strnew.c.i
 
 # target to preprocess a source file
 srcs/str/ft_strnew.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strnew.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strnew.c.i
 .PHONY : srcs/str/ft_strnew.c.i
 
 srcs/str/ft_strnew.s: srcs/str/ft_strnew.c.s
@@ -2066,7 +2066,7 @@ srcs/str/ft_strnew.s: srcs/str/ft_strnew.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_strnew.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strnew.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strnew.c.s
 .PHONY : srcs/str/ft_strnew.c.s
 
 srcs/str/ft_strnstr.o: srcs/str/ft_strnstr.c.o
@@ -2075,7 +2075,7 @@ srcs/str/ft_strnstr.o: srcs/str/ft_strnstr.c.o
 
 # target to build an object file
 srcs/str/ft_strnstr.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strnstr.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strnstr.c.o
 .PHONY : srcs/str/ft_strnstr.c.o
 
 srcs/str/ft_strnstr.i: srcs/str/ft_strnstr.c.i
@@ -2084,7 +2084,7 @@ srcs/str/ft_strnstr.i: srcs/str/ft_strnstr.c.i
 
 # target to preprocess a source file
 srcs/str/ft_strnstr.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strnstr.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strnstr.c.i
 .PHONY : srcs/str/ft_strnstr.c.i
 
 srcs/str/ft_strnstr.s: srcs/str/ft_strnstr.c.s
@@ -2093,7 +2093,7 @@ srcs/str/ft_strnstr.s: srcs/str/ft_strnstr.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_strnstr.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strnstr.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strnstr.c.s
 .PHONY : srcs/str/ft_strnstr.c.s
 
 srcs/str/ft_strrchr.o: srcs/str/ft_strrchr.c.o
@@ -2102,7 +2102,7 @@ srcs/str/ft_strrchr.o: srcs/str/ft_strrchr.c.o
 
 # target to build an object file
 srcs/str/ft_strrchr.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strrchr.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strrchr.c.o
 .PHONY : srcs/str/ft_strrchr.c.o
 
 srcs/str/ft_strrchr.i: srcs/str/ft_strrchr.c.i
@@ -2111,7 +2111,7 @@ srcs/str/ft_strrchr.i: srcs/str/ft_strrchr.c.i
 
 # target to preprocess a source file
 srcs/str/ft_strrchr.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strrchr.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strrchr.c.i
 .PHONY : srcs/str/ft_strrchr.c.i
 
 srcs/str/ft_strrchr.s: srcs/str/ft_strrchr.c.s
@@ -2120,7 +2120,7 @@ srcs/str/ft_strrchr.s: srcs/str/ft_strrchr.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_strrchr.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strrchr.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strrchr.c.s
 .PHONY : srcs/str/ft_strrchr.c.s
 
 srcs/str/ft_strsplit.o: srcs/str/ft_strsplit.c.o
@@ -2129,7 +2129,7 @@ srcs/str/ft_strsplit.o: srcs/str/ft_strsplit.c.o
 
 # target to build an object file
 srcs/str/ft_strsplit.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strsplit.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strsplit.c.o
 .PHONY : srcs/str/ft_strsplit.c.o
 
 srcs/str/ft_strsplit.i: srcs/str/ft_strsplit.c.i
@@ -2138,7 +2138,7 @@ srcs/str/ft_strsplit.i: srcs/str/ft_strsplit.c.i
 
 # target to preprocess a source file
 srcs/str/ft_strsplit.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strsplit.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strsplit.c.i
 .PHONY : srcs/str/ft_strsplit.c.i
 
 srcs/str/ft_strsplit.s: srcs/str/ft_strsplit.c.s
@@ -2147,7 +2147,7 @@ srcs/str/ft_strsplit.s: srcs/str/ft_strsplit.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_strsplit.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strsplit.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strsplit.c.s
 .PHONY : srcs/str/ft_strsplit.c.s
 
 srcs/str/ft_strstr.o: srcs/str/ft_strstr.c.o
@@ -2156,7 +2156,7 @@ srcs/str/ft_strstr.o: srcs/str/ft_strstr.c.o
 
 # target to build an object file
 srcs/str/ft_strstr.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strstr.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strstr.c.o
 .PHONY : srcs/str/ft_strstr.c.o
 
 srcs/str/ft_strstr.i: srcs/str/ft_strstr.c.i
@@ -2165,7 +2165,7 @@ srcs/str/ft_strstr.i: srcs/str/ft_strstr.c.i
 
 # target to preprocess a source file
 srcs/str/ft_strstr.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strstr.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strstr.c.i
 .PHONY : srcs/str/ft_strstr.c.i
 
 srcs/str/ft_strstr.s: srcs/str/ft_strstr.c.s
@@ -2174,7 +2174,7 @@ srcs/str/ft_strstr.s: srcs/str/ft_strstr.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_strstr.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strstr.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strstr.c.s
 .PHONY : srcs/str/ft_strstr.c.s
 
 srcs/str/ft_strsub.o: srcs/str/ft_strsub.c.o
@@ -2183,7 +2183,7 @@ srcs/str/ft_strsub.o: srcs/str/ft_strsub.c.o
 
 # target to build an object file
 srcs/str/ft_strsub.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strsub.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strsub.c.o
 .PHONY : srcs/str/ft_strsub.c.o
 
 srcs/str/ft_strsub.i: srcs/str/ft_strsub.c.i
@@ -2192,7 +2192,7 @@ srcs/str/ft_strsub.i: srcs/str/ft_strsub.c.i
 
 # target to preprocess a source file
 srcs/str/ft_strsub.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strsub.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strsub.c.i
 .PHONY : srcs/str/ft_strsub.c.i
 
 srcs/str/ft_strsub.s: srcs/str/ft_strsub.c.s
@@ -2201,7 +2201,7 @@ srcs/str/ft_strsub.s: srcs/str/ft_strsub.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_strsub.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strsub.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strsub.c.s
 .PHONY : srcs/str/ft_strsub.c.s
 
 srcs/str/ft_strtrim.o: srcs/str/ft_strtrim.c.o
@@ -2210,7 +2210,7 @@ srcs/str/ft_strtrim.o: srcs/str/ft_strtrim.c.o
 
 # target to build an object file
 srcs/str/ft_strtrim.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strtrim.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strtrim.c.o
 .PHONY : srcs/str/ft_strtrim.c.o
 
 srcs/str/ft_strtrim.i: srcs/str/ft_strtrim.c.i
@@ -2219,7 +2219,7 @@ srcs/str/ft_strtrim.i: srcs/str/ft_strtrim.c.i
 
 # target to preprocess a source file
 srcs/str/ft_strtrim.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strtrim.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strtrim.c.i
 .PHONY : srcs/str/ft_strtrim.c.i
 
 srcs/str/ft_strtrim.s: srcs/str/ft_strtrim.c.s
@@ -2228,7 +2228,7 @@ srcs/str/ft_strtrim.s: srcs/str/ft_strtrim.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_strtrim.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strtrim.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_strtrim.c.s
 .PHONY : srcs/str/ft_strtrim.c.s
 
 srcs/str/ft_tolower.o: srcs/str/ft_tolower.c.o
@@ -2237,7 +2237,7 @@ srcs/str/ft_tolower.o: srcs/str/ft_tolower.c.o
 
 # target to build an object file
 srcs/str/ft_tolower.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_tolower.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_tolower.c.o
 .PHONY : srcs/str/ft_tolower.c.o
 
 srcs/str/ft_tolower.i: srcs/str/ft_tolower.c.i
@@ -2246,7 +2246,7 @@ srcs/str/ft_tolower.i: srcs/str/ft_tolower.c.i
 
 # target to preprocess a source file
 srcs/str/ft_tolower.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_tolower.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_tolower.c.i
 .PHONY : srcs/str/ft_tolower.c.i
 
 srcs/str/ft_tolower.s: srcs/str/ft_tolower.c.s
@@ -2255,7 +2255,7 @@ srcs/str/ft_tolower.s: srcs/str/ft_tolower.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_tolower.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_tolower.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_tolower.c.s
 .PHONY : srcs/str/ft_tolower.c.s
 
 srcs/str/ft_toupper.o: srcs/str/ft_toupper.c.o
@@ -2264,7 +2264,7 @@ srcs/str/ft_toupper.o: srcs/str/ft_toupper.c.o
 
 # target to build an object file
 srcs/str/ft_toupper.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_toupper.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_toupper.c.o
 .PHONY : srcs/str/ft_toupper.c.o
 
 srcs/str/ft_toupper.i: srcs/str/ft_toupper.c.i
@@ -2273,7 +2273,7 @@ srcs/str/ft_toupper.i: srcs/str/ft_toupper.c.i
 
 # target to preprocess a source file
 srcs/str/ft_toupper.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_toupper.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_toupper.c.i
 .PHONY : srcs/str/ft_toupper.c.i
 
 srcs/str/ft_toupper.s: srcs/str/ft_toupper.c.s
@@ -2282,7 +2282,7 @@ srcs/str/ft_toupper.s: srcs/str/ft_toupper.c.s
 
 # target to generate assembly for a file
 srcs/str/ft_toupper.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_toupper.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/str/ft_toupper.c.s
 .PHONY : srcs/str/ft_toupper.c.s
 
 srcs/tab/ft_free_tab.o: srcs/tab/ft_free_tab.c.o
@@ -2291,7 +2291,7 @@ srcs/tab/ft_free_tab.o: srcs/tab/ft_free_tab.c.o
 
 # target to build an object file
 srcs/tab/ft_free_tab.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tab/ft_free_tab.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tab/ft_free_tab.c.o
 .PHONY : srcs/tab/ft_free_tab.c.o
 
 srcs/tab/ft_free_tab.i: srcs/tab/ft_free_tab.c.i
@@ -2300,7 +2300,7 @@ srcs/tab/ft_free_tab.i: srcs/tab/ft_free_tab.c.i
 
 # target to preprocess a source file
 srcs/tab/ft_free_tab.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tab/ft_free_tab.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tab/ft_free_tab.c.i
 .PHONY : srcs/tab/ft_free_tab.c.i
 
 srcs/tab/ft_free_tab.s: srcs/tab/ft_free_tab.c.s
@@ -2309,7 +2309,7 @@ srcs/tab/ft_free_tab.s: srcs/tab/ft_free_tab.c.s
 
 # target to generate assembly for a file
 srcs/tab/ft_free_tab.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tab/ft_free_tab.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tab/ft_free_tab.c.s
 .PHONY : srcs/tab/ft_free_tab.c.s
 
 srcs/tab/ft_tabjoin.o: srcs/tab/ft_tabjoin.c.o
@@ -2318,7 +2318,7 @@ srcs/tab/ft_tabjoin.o: srcs/tab/ft_tabjoin.c.o
 
 # target to build an object file
 srcs/tab/ft_tabjoin.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tab/ft_tabjoin.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tab/ft_tabjoin.c.o
 .PHONY : srcs/tab/ft_tabjoin.c.o
 
 srcs/tab/ft_tabjoin.i: srcs/tab/ft_tabjoin.c.i
@@ -2327,7 +2327,7 @@ srcs/tab/ft_tabjoin.i: srcs/tab/ft_tabjoin.c.i
 
 # target to preprocess a source file
 srcs/tab/ft_tabjoin.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tab/ft_tabjoin.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tab/ft_tabjoin.c.i
 .PHONY : srcs/tab/ft_tabjoin.c.i
 
 srcs/tab/ft_tabjoin.s: srcs/tab/ft_tabjoin.c.s
@@ -2336,7 +2336,7 @@ srcs/tab/ft_tabjoin.s: srcs/tab/ft_tabjoin.c.s
 
 # target to generate assembly for a file
 srcs/tab/ft_tabjoin.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tab/ft_tabjoin.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tab/ft_tabjoin.c.s
 .PHONY : srcs/tab/ft_tabjoin.c.s
 
 srcs/tab/ft_tablen.o: srcs/tab/ft_tablen.c.o
@@ -2345,7 +2345,7 @@ srcs/tab/ft_tablen.o: srcs/tab/ft_tablen.c.o
 
 # target to build an object file
 srcs/tab/ft_tablen.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tab/ft_tablen.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tab/ft_tablen.c.o
 .PHONY : srcs/tab/ft_tablen.c.o
 
 srcs/tab/ft_tablen.i: srcs/tab/ft_tablen.c.i
@@ -2354,7 +2354,7 @@ srcs/tab/ft_tablen.i: srcs/tab/ft_tablen.c.i
 
 # target to preprocess a source file
 srcs/tab/ft_tablen.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tab/ft_tablen.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tab/ft_tablen.c.i
 .PHONY : srcs/tab/ft_tablen.c.i
 
 srcs/tab/ft_tablen.s: srcs/tab/ft_tablen.c.s
@@ -2363,7 +2363,7 @@ srcs/tab/ft_tablen.s: srcs/tab/ft_tablen.c.s
 
 # target to generate assembly for a file
 srcs/tab/ft_tablen.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tab/ft_tablen.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tab/ft_tablen.c.s
 .PHONY : srcs/tab/ft_tablen.c.s
 
 srcs/tree/ft_tree_add.o: srcs/tree/ft_tree_add.c.o
@@ -2372,7 +2372,7 @@ srcs/tree/ft_tree_add.o: srcs/tree/ft_tree_add.c.o
 
 # target to build an object file
 srcs/tree/ft_tree_add.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tree/ft_tree_add.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tree/ft_tree_add.c.o
 .PHONY : srcs/tree/ft_tree_add.c.o
 
 srcs/tree/ft_tree_add.i: srcs/tree/ft_tree_add.c.i
@@ -2381,7 +2381,7 @@ srcs/tree/ft_tree_add.i: srcs/tree/ft_tree_add.c.i
 
 # target to preprocess a source file
 srcs/tree/ft_tree_add.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tree/ft_tree_add.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tree/ft_tree_add.c.i
 .PHONY : srcs/tree/ft_tree_add.c.i
 
 srcs/tree/ft_tree_add.s: srcs/tree/ft_tree_add.c.s
@@ -2390,7 +2390,7 @@ srcs/tree/ft_tree_add.s: srcs/tree/ft_tree_add.c.s
 
 # target to generate assembly for a file
 srcs/tree/ft_tree_add.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tree/ft_tree_add.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tree/ft_tree_add.c.s
 .PHONY : srcs/tree/ft_tree_add.c.s
 
 srcs/tree/ft_tree_info_node.o: srcs/tree/ft_tree_info_node.c.o
@@ -2399,7 +2399,7 @@ srcs/tree/ft_tree_info_node.o: srcs/tree/ft_tree_info_node.c.o
 
 # target to build an object file
 srcs/tree/ft_tree_info_node.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tree/ft_tree_info_node.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tree/ft_tree_info_node.c.o
 .PHONY : srcs/tree/ft_tree_info_node.c.o
 
 srcs/tree/ft_tree_info_node.i: srcs/tree/ft_tree_info_node.c.i
@@ -2408,7 +2408,7 @@ srcs/tree/ft_tree_info_node.i: srcs/tree/ft_tree_info_node.c.i
 
 # target to preprocess a source file
 srcs/tree/ft_tree_info_node.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tree/ft_tree_info_node.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tree/ft_tree_info_node.c.i
 .PHONY : srcs/tree/ft_tree_info_node.c.i
 
 srcs/tree/ft_tree_info_node.s: srcs/tree/ft_tree_info_node.c.s
@@ -2417,7 +2417,7 @@ srcs/tree/ft_tree_info_node.s: srcs/tree/ft_tree_info_node.c.s
 
 # target to generate assembly for a file
 srcs/tree/ft_tree_info_node.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tree/ft_tree_info_node.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tree/ft_tree_info_node.c.s
 .PHONY : srcs/tree/ft_tree_info_node.c.s
 
 srcs/tree/ft_tree_inorder.o: srcs/tree/ft_tree_inorder.c.o
@@ -2426,7 +2426,7 @@ srcs/tree/ft_tree_inorder.o: srcs/tree/ft_tree_inorder.c.o
 
 # target to build an object file
 srcs/tree/ft_tree_inorder.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tree/ft_tree_inorder.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tree/ft_tree_inorder.c.o
 .PHONY : srcs/tree/ft_tree_inorder.c.o
 
 srcs/tree/ft_tree_inorder.i: srcs/tree/ft_tree_inorder.c.i
@@ -2435,7 +2435,7 @@ srcs/tree/ft_tree_inorder.i: srcs/tree/ft_tree_inorder.c.i
 
 # target to preprocess a source file
 srcs/tree/ft_tree_inorder.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tree/ft_tree_inorder.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tree/ft_tree_inorder.c.i
 .PHONY : srcs/tree/ft_tree_inorder.c.i
 
 srcs/tree/ft_tree_inorder.s: srcs/tree/ft_tree_inorder.c.s
@@ -2444,7 +2444,7 @@ srcs/tree/ft_tree_inorder.s: srcs/tree/ft_tree_inorder.c.s
 
 # target to generate assembly for a file
 srcs/tree/ft_tree_inorder.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tree/ft_tree_inorder.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tree/ft_tree_inorder.c.s
 .PHONY : srcs/tree/ft_tree_inorder.c.s
 
 srcs/tree/ft_tree_postorder.o: srcs/tree/ft_tree_postorder.c.o
@@ -2453,7 +2453,7 @@ srcs/tree/ft_tree_postorder.o: srcs/tree/ft_tree_postorder.c.o
 
 # target to build an object file
 srcs/tree/ft_tree_postorder.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tree/ft_tree_postorder.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tree/ft_tree_postorder.c.o
 .PHONY : srcs/tree/ft_tree_postorder.c.o
 
 srcs/tree/ft_tree_postorder.i: srcs/tree/ft_tree_postorder.c.i
@@ -2462,7 +2462,7 @@ srcs/tree/ft_tree_postorder.i: srcs/tree/ft_tree_postorder.c.i
 
 # target to preprocess a source file
 srcs/tree/ft_tree_postorder.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tree/ft_tree_postorder.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tree/ft_tree_postorder.c.i
 .PHONY : srcs/tree/ft_tree_postorder.c.i
 
 srcs/tree/ft_tree_postorder.s: srcs/tree/ft_tree_postorder.c.s
@@ -2471,7 +2471,7 @@ srcs/tree/ft_tree_postorder.s: srcs/tree/ft_tree_postorder.c.s
 
 # target to generate assembly for a file
 srcs/tree/ft_tree_postorder.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tree/ft_tree_postorder.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tree/ft_tree_postorder.c.s
 .PHONY : srcs/tree/ft_tree_postorder.c.s
 
 srcs/tree/ft_tree_preorder.o: srcs/tree/ft_tree_preorder.c.o
@@ -2480,7 +2480,7 @@ srcs/tree/ft_tree_preorder.o: srcs/tree/ft_tree_preorder.c.o
 
 # target to build an object file
 srcs/tree/ft_tree_preorder.c.o:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tree/ft_tree_preorder.c.o
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tree/ft_tree_preorder.c.o
 .PHONY : srcs/tree/ft_tree_preorder.c.o
 
 srcs/tree/ft_tree_preorder.i: srcs/tree/ft_tree_preorder.c.i
@@ -2489,7 +2489,7 @@ srcs/tree/ft_tree_preorder.i: srcs/tree/ft_tree_preorder.c.i
 
 # target to preprocess a source file
 srcs/tree/ft_tree_preorder.c.i:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tree/ft_tree_preorder.c.i
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tree/ft_tree_preorder.c.i
 .PHONY : srcs/tree/ft_tree_preorder.c.i
 
 srcs/tree/ft_tree_preorder.s: srcs/tree/ft_tree_preorder.c.s
@@ -2498,7 +2498,7 @@ srcs/tree/ft_tree_preorder.s: srcs/tree/ft_tree_preorder.c.s
 
 # target to generate assembly for a file
 srcs/tree/ft_tree_preorder.c.s:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tree/ft_tree_preorder.c.s
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/srcs/tree/ft_tree_preorder.c.s
 .PHONY : srcs/tree/ft_tree_preorder.c.s
 
 # Help Target
@@ -2785,6 +2785,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/nle-bret/projects/nm/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/nle-bret/project/nm/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

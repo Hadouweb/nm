@@ -1,4 +1,4 @@
-# Install script for directory: /Users/nle-bret/projects/nm/libft
+# Install script for directory: /Users/nle-bret/project/nm/libft
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

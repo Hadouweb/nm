@@ -57,7 +57,11 @@ void			handle_32(t_process *process)
 	struct load_command		*lc;
 
 	process->header_32 = (struct mach_header*)process->ptr;
-	ncmds = process->header_32->ncmds;
+    if (process->is_big_endian)
+        ncmds = convert_uint32(process->header_32->ncmds);
+    else
+	    ncmds = process->header_32->ncmds;
+    debug_header_32(process->header_32);
 	process->load_command = (void*)process->ptr + sizeof(*process->header_32);
 	lc = process->load_command;
 	i = 0;
@@ -71,7 +75,10 @@ void			handle_32(t_process *process)
 			process->nsects += process->segment_32->nsects;
 		}
 		i++;
-		lc = (void*)lc + lc->cmdsize;
+        if (process->is_big_endian)
+            lc = (void*)lc + convert_uint32(lc->cmdsize);
+        else
+            lc = (void*)lc + lc->cmdsize;
 	}
 	if (process->nsects > 0)
 		add_section_32(process);
