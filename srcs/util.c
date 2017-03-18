@@ -40,10 +40,13 @@ char		*ulltoa_base(unsigned long long value, int base)
 	return (str);
 }
 
-uint32_t	convert_uint32(uint32_t a)
+uint32_t	convert_uint32(t_process *process, uint32_t a)
 {
-	return ((a << 24) |
-		((a << 8) & 0x00ff0000) |
-		((a >> 8) & 0x0000ff00) |
-		((uint32_t)(a >> 24)));
+	if (!process->is_big_endian)
+		return a;
+	return (
+		a << 24 |
+		((a & 0xff00) << 8) |
+		((a & 0xff0000) >> 8) |
+		a >> 24);
 }

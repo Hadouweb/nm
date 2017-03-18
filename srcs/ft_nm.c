@@ -8,9 +8,9 @@ void		ft_nm(t_process *process)
 	if (magic_number == MH_MAGIC_64)
 		handle_64(process);
 	else if (magic_number == MH_MAGIC)
-		handle_32(process);
+		handle_32(process, 0);
     else if (magic_number == MH_CIGAM)
-        handle_32(process);
+        handle_32(process, 1);
 	else if (magic_number == FAT_CIGAM)
 		handle_fat_big_endian(process);
 	else if (ft_strncmp(process->ptr, ARMAG, SARMAG) == 0)
@@ -45,7 +45,6 @@ void	clear_process(t_process *process)
 	process->nsects = 0;
 	process->load_command = NULL;
 	process->sym = NULL;
-    process->is_big_endian = 0;
 }
 
 int		loop_arg(char *file_name, int nb_file)
@@ -60,7 +59,7 @@ int		loop_arg(char *file_name, int nb_file)
 	if (fstat(fd, &process.buff_stat) < 0)
 		return (error("fstat error\n"));
 	if ((process.ptr = mmap(0, process.buff_stat.st_size,
-							PROT_READ, MAP_PRIVATE, fd, 0)) == MAP_FAILED)
+							PROT_READ | PROT_WRITE, MAP_PRIVATE, fd, 0)) == MAP_FAILED)
 		return (error("mmap error\n"));
 	process.ptr_start = process.ptr;
 	process.file_name = file_name;

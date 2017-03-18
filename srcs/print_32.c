@@ -37,6 +37,7 @@ void				print_32(t_process *process)
 	while (node)
 	{
 		ns = PTR_NODE(node, t_node_symbol_32, link);
+		ns->nl->n_value = convert_uint32(process, ns->nl->n_value);
 		print_sym_value_32(ns->nl->n_value, ns->c);
 		ft_putchar(' ');
 		ft_putchar(ns->c);
@@ -108,15 +109,19 @@ void				sort_symbol_32(t_process *process)
 	i = 0;
 	while (i < process->sym->nsyms)
 	{
+		//debug_nlist_32(&array[i]);
+
 		if ((array[i].n_type & N_TYPE) == N_SECT && array[i].n_sect >= 1 &&
 			array[i].n_un.n_strx > 1)
 		{
+			array[i].n_un.n_strx = convert_uint32(process, array[i].n_un.n_strx);
 			output = (string_table + array[i].n_un.n_strx);
 			ns = make_node_symbol_32(process, output, &array[i]);
 			insertion_sort_symbol_32(process, ns);
 		}
 		else if ((array[i].n_type & N_STAB) == N_UNDF)
 		{
+			array[i].n_un.n_strx = convert_uint32(process, array[i].n_un.n_strx);
 			output = (string_table + array[i].n_un.n_strx);
 			ns = make_node_symbol_32(process, output, &array[i]);
 			insertion_sort_symbol_32(process, ns);

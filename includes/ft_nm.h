@@ -62,7 +62,7 @@ int 				error(char *str);
 
 void				ft_nm(t_process *process);
 
-void				handle_32(t_process *process);
+void				handle_32(t_process *process, char mode);
 void				add_section_32(t_process *process);
 char				get_type_32(t_process *process, struct nlist *nl);
 int 				compare_32(t_node_symbol_32 *ns1, t_node_symbol_32 *ns2);
@@ -91,7 +91,7 @@ void				handle_fat_big_endian(t_process *process);
 void				handle_ar(t_process *process);
 
 char				*ulltoa_base(unsigned long long value, int base);
-uint32_t			convert_uint32(uint32_t a);
+uint32_t			convert_uint32(t_process *process, uint32_t a);
 
 void				clear_process(t_process *process);
 
@@ -106,5 +106,6 @@ void				debug_segment_cmd_64(struct segment_command_64 *segment);
 void				debug_section_32(struct section *section);
 void				debug_section_64(struct section_64 *section);
 void				debug_ar_header(struct ar_hdr *header);
+void				debug_fat_arch(struct fat_arch *fa);
 
 #endif

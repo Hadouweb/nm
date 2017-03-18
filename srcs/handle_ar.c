@@ -24,7 +24,7 @@ void	test(t_process *process)
 	process->ptr += sizeof(*header) + get_arheader_size(header->ar_name);
 	magic_nb = *(uint32_t*)process->ptr;
 	if (magic_nb == MH_MAGIC)
-		handle_32(process);
+		handle_32(process, 0);
 	else if (magic_nb == MH_MAGIC_64)
 		handle_64(process);
 	process->ptr = tmp;

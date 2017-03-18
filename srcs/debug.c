@@ -271,3 +271,22 @@ void	debug_ar_header(struct ar_hdr *header)
 	printf("ar_size: [%.10s]\n", header->ar_size);
 	printf("ar_fmag: [%.2s]\n", header->ar_fmag);
 }
+
+/*
+ *  struct fat_arch {
+ *  	cpu_type_t	cputype;		// cpu specifier (int)
+ *  	cpu_subtype_t	cpusubtype;	// machine specifier (int)
+ *  	uint32_t	offset;			// file offset to this object file
+ *  	uint32_t	size;			// size of this object file
+ *  	uint32_t	align;			// alignment as a power of 2
+ *  };
+ */
+void	debug_fat_arch(struct fat_arch *fa)
+{
+	printf("***** FAT_ARCH ******\n");
+	printf("cputype: %d\n", fa->cputype);
+	printf("cpusubtype: %d\n", fa->cpusubtype);
+	printf("offset: %u\n", fa->offset);
+	printf("size: %u\n", fa->size);
+	printf("align: %u\n", fa->align);
+}
