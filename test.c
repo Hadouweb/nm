@@ -3,7 +3,6 @@
 
 int 	main(void)
 {
-	ft_putstr("Hello\n");
 	printf("World\n");
 	return (0);
 }

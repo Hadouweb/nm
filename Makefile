@@ -1,53 +1,28 @@
-CC = gcc
-FLAG = -Werror -Wextra -Wall -g
+NAME_NM = ft_nm
+NAME_OTOOL = ft_otool
 
-LIBFT_PATH = ./libft
-SRCS_PATH = ./srcs
-INC_PATH = ./includes
+DIR_NM = ./nm
+DIR_OTOOL = ./otool
 
-HEADER = -I $(LIBFT_PATH)/includes -I $(INC_PATH)
+all: $(NAME_NM) $(NAME_OTOOL)
 
-LIB = -L$(LIBFT_PATH) -lft
-LIBNAME = $(LIBFT_PATH)/libft.a
+$(NAME_NM):
+	@make -C $(DIR_NM)
+	@cp $(DIR_NM)/$(NAME_NM) .
 
-SRC =   $(SRCS_PATH)/ft_nm.c\
-        $(SRCS_PATH)/handle_64.c\
-        $(SRCS_PATH)/handle_32.c\
-        $(SRCS_PATH)/handle_fat.c\
-        $(SRCS_PATH)/handle_ar.c\
-        $(SRCS_PATH)/print_64.c\
-        $(SRCS_PATH)/print_32.c\
-        $(SRCS_PATH)/print_type.c\
-        $(SRCS_PATH)/debug.c\
-        $(SRCS_PATH)/util.c\
-        $(SRCS_PATH)/util2.c\
-        $(SRCS_PATH)/sort_64.c\
-        $(SRCS_PATH)/sort_32.c\
-
-OBJ = $(SRC:.c=.o)
-
-NAME = ft_nm
-
-all: $(NAME)
-
-$(NAME): $(LIBNAME) $(OBJ)
-	@$(CC) $(FLAG) $(LIB) -o $(NAME) $^
-	@echo "\n\033[39mCompilation done.\033[0m"
-
-$(LIBNAME):
-	@make -C $(LIBFT_PATH) -j8
-
-%.o: %.c
-	@$(CC) $(FLAG) -o $@ -c $< $(HEADER)
-	@echo "\033[34m█\033[0m\c"
+$(NAME_OTOOL):
+	@make -C $(DIR_OTOOL)
+	@cp $(DIR_OTOOL)/$(NAME_OTOOL) .
 
 clean:
-	@make -C $(LIBFT_PATH) clean
-	@rm -rf $(OBJ)
+	@make -C $(DIR_NM) clean
+	@make -C $(DIR_OTOOL) clean
 
 fclean: clean
-	@make -C $(LIBFT_PATH) fclean
-	@rm -rf $(NAME)
+	@make -C $(DIR_NM) fclean
+	@make -C $(DIR_OTOOL) fclean
+	@rm -rf $(NAME_NM)
+	@rm -rf $(NAME_OTOOL)
 
 re: fclean all
 

@@ -24,7 +24,8 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/nle-bret/project/nm/includes"/>
+					<Add directory="/Users/nle-bret/project/nm/otool/includes"/>
+					<Add directory="/Users/nle-bret/project/nm/nm/includes"/>
 					<Add directory="/Users/nle-bret/project/nm/libft/includes"/>
 					<Add directory="/Users/nle-bret/project/nm/libft/./includes"/>
 					<Add directory="/usr/local/include"/>
@@ -49,7 +50,8 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/nle-bret/project/nm/includes"/>
+					<Add directory="/Users/nle-bret/project/nm/otool/includes"/>
+					<Add directory="/Users/nle-bret/project/nm/nm/includes"/>
 					<Add directory="/Users/nle-bret/project/nm/libft/includes"/>
 					<Add directory="/Users/nle-bret/project/nm/libft/./includes"/>
 					<Add directory="/usr/local/include"/>

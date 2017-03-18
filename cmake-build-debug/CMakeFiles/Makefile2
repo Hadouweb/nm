@@ -60,39 +60,39 @@ CMAKE_SOURCE_DIR = /Users/nle-bret/project/nm
 CMAKE_BINARY_DIR = /Users/nle-bret/project/nm/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/nm.dir
+# Target rules for target CMakeFiles/ft_otool.dir
 
 # All Build rule for target.
-CMakeFiles/nm.dir/all: libft/CMakeFiles/ft.dir/all
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/depend
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target nm"
-.PHONY : CMakeFiles/nm.dir/all
+CMakeFiles/ft_otool.dir/all: libft/CMakeFiles/ft.dir/all
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/depend
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target ft_otool"
+.PHONY : CMakeFiles/ft_otool.dir/all
 
 # Include target in all.
-all: CMakeFiles/nm.dir/all
+all: CMakeFiles/ft_otool.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/nm.dir/rule: cmake_check_build_system
+CMakeFiles/ft_otool.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles 100
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/nm.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ft_otool.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/nm.dir/rule
+.PHONY : CMakeFiles/ft_otool.dir/rule
 
 # Convenience name for target.
-nm: CMakeFiles/nm.dir/rule
+ft_otool: CMakeFiles/ft_otool.dir/rule
 
-.PHONY : nm
-
-# clean rule for target.
-CMakeFiles/nm.dir/clean:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/clean
-.PHONY : CMakeFiles/nm.dir/clean
+.PHONY : ft_otool
 
 # clean rule for target.
-clean: CMakeFiles/nm.dir/clean
+CMakeFiles/ft_otool.dir/clean:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/clean
+.PHONY : CMakeFiles/ft_otool.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/ft_otool.dir/clean
 
 .PHONY : clean
 

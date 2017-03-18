@@ -44,7 +44,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/nle-bret/project/nm/includes"/>
+					<Add directory="/Users/nle-bret/project/nm/nm/includes"/>
 					<Add directory="/Users/nle-bret/project/nm/libft/includes"/>
 					<Add directory="/Users/nle-bret/project/nm/libft/./includes"/>
 					<Add directory="/usr/local/include"/>
@@ -69,7 +69,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/nle-bret/project/nm/includes"/>
+					<Add directory="/Users/nle-bret/project/nm/nm/includes"/>
 					<Add directory="/Users/nle-bret/project/nm/libft/includes"/>
 					<Add directory="/Users/nle-bret/project/nm/libft/./includes"/>
 					<Add directory="/usr/local/include"/>
@@ -94,7 +94,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/nle-bret/project/nm/includes"/>
+					<Add directory="/Users/nle-bret/project/nm/nm/includes"/>
 					<Add directory="/Users/nle-bret/project/nm/libft/includes"/>
 					<Add directory="/Users/nle-bret/project/nm/libft/./includes"/>
 					<Add directory="/usr/local/include"/>
@@ -119,7 +119,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/nle-bret/project/nm/includes"/>
+					<Add directory="/Users/nle-bret/project/nm/nm/includes"/>
 					<Add directory="/Users/nle-bret/project/nm/libft/includes"/>
 					<Add directory="/Users/nle-bret/project/nm/libft/./includes"/>
 					<Add directory="/usr/local/include"/>
@@ -138,9 +138,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/nle-bret/project/nm/includes/ft_nm.h">
-			<Option target="nm"/>
-		</Unit>
 		<Unit filename="/Users/nle-bret/project/nm/libft/includes/libft.h">
 			<Option target="ft"/>
 		</Unit>
@@ -408,43 +405,7 @@
 		<Unit filename="/Users/nle-bret/project/nm/libft/srcs/tree/ft_tree_preorder.c">
 			<Option target="ft"/>
 		</Unit>
-		<Unit filename="/Users/nle-bret/project/nm/srcs/debug.c">
-			<Option target="nm"/>
-		</Unit>
-		<Unit filename="/Users/nle-bret/project/nm/srcs/ft_nm.c">
-			<Option target="nm"/>
-		</Unit>
-		<Unit filename="/Users/nle-bret/project/nm/srcs/handle_32.c">
-			<Option target="nm"/>
-		</Unit>
-		<Unit filename="/Users/nle-bret/project/nm/srcs/handle_64.c">
-			<Option target="nm"/>
-		</Unit>
-		<Unit filename="/Users/nle-bret/project/nm/srcs/handle_ar.c">
-			<Option target="nm"/>
-		</Unit>
-		<Unit filename="/Users/nle-bret/project/nm/srcs/handle_fat.c">
-			<Option target="nm"/>
-		</Unit>
-		<Unit filename="/Users/nle-bret/project/nm/srcs/print_32.c">
-			<Option target="nm"/>
-		</Unit>
-		<Unit filename="/Users/nle-bret/project/nm/srcs/print_64.c">
-			<Option target="nm"/>
-		</Unit>
-		<Unit filename="/Users/nle-bret/project/nm/srcs/print_type.c">
-			<Option target="nm"/>
-		</Unit>
-		<Unit filename="/Users/nle-bret/project/nm/srcs/sort_32.c">
-			<Option target="nm"/>
-		</Unit>
-		<Unit filename="/Users/nle-bret/project/nm/srcs/sort_64.c">
-			<Option target="nm"/>
-		</Unit>
-		<Unit filename="/Users/nle-bret/project/nm/srcs/util.c">
-			<Option target="nm"/>
-		</Unit>
-		<Unit filename="/Users/nle-bret/project/nm/srcs/util2.c">
+		<Unit filename="/Users/nle-bret/project/nm/nm/includes/ft_nm.h">
 			<Option target="nm"/>
 		</Unit>
 		<Unit filename="/Users/nle-bret/project/nm/CMakeLists.txt">

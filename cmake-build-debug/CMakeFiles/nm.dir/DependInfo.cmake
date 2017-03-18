@@ -4,25 +4,25 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/nle-bret/project/nm/srcs/debug.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/nm.dir/srcs/debug.c.o"
-  "/Users/nle-bret/project/nm/srcs/ft_nm.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/nm.dir/srcs/ft_nm.c.o"
-  "/Users/nle-bret/project/nm/srcs/handle_32.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/nm.dir/srcs/handle_32.c.o"
-  "/Users/nle-bret/project/nm/srcs/handle_64.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/nm.dir/srcs/handle_64.c.o"
-  "/Users/nle-bret/project/nm/srcs/handle_ar.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/nm.dir/srcs/handle_ar.c.o"
-  "/Users/nle-bret/project/nm/srcs/handle_fat.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/nm.dir/srcs/handle_fat.c.o"
-  "/Users/nle-bret/project/nm/srcs/print_32.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/nm.dir/srcs/print_32.c.o"
-  "/Users/nle-bret/project/nm/srcs/print_64.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/nm.dir/srcs/print_64.c.o"
-  "/Users/nle-bret/project/nm/srcs/print_type.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/nm.dir/srcs/print_type.c.o"
-  "/Users/nle-bret/project/nm/srcs/sort_32.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/nm.dir/srcs/sort_32.c.o"
-  "/Users/nle-bret/project/nm/srcs/sort_64.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/nm.dir/srcs/sort_64.c.o"
-  "/Users/nle-bret/project/nm/srcs/util.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/nm.dir/srcs/util.c.o"
-  "/Users/nle-bret/project/nm/srcs/util2.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/nm.dir/srcs/util2.c.o"
+  "/Users/nle-bret/project/nm/nm/srcs/debug.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/nm.dir/nm/srcs/debug.c.o"
+  "/Users/nle-bret/project/nm/nm/srcs/ft_nm.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/nm.dir/nm/srcs/ft_nm.c.o"
+  "/Users/nle-bret/project/nm/nm/srcs/handle_32.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/nm.dir/nm/srcs/handle_32.c.o"
+  "/Users/nle-bret/project/nm/nm/srcs/handle_64.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/nm.dir/nm/srcs/handle_64.c.o"
+  "/Users/nle-bret/project/nm/nm/srcs/handle_ar.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/nm.dir/nm/srcs/handle_ar.c.o"
+  "/Users/nle-bret/project/nm/nm/srcs/handle_fat.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/nm.dir/nm/srcs/handle_fat.c.o"
+  "/Users/nle-bret/project/nm/nm/srcs/print_32.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/nm.dir/nm/srcs/print_32.c.o"
+  "/Users/nle-bret/project/nm/nm/srcs/print_64.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/nm.dir/nm/srcs/print_64.c.o"
+  "/Users/nle-bret/project/nm/nm/srcs/print_type.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/nm.dir/nm/srcs/print_type.c.o"
+  "/Users/nle-bret/project/nm/nm/srcs/sort_32.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/nm.dir/nm/srcs/sort_32.c.o"
+  "/Users/nle-bret/project/nm/nm/srcs/sort_64.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/nm.dir/nm/srcs/sort_64.c.o"
+  "/Users/nle-bret/project/nm/nm/srcs/util.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/nm.dir/nm/srcs/util.c.o"
+  "/Users/nle-bret/project/nm/nm/srcs/util2.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/nm.dir/nm/srcs/util2.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
-  "../includes"
+  "../nm/includes"
   "../libft/includes"
   "../libft/./includes"
   )

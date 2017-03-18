@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named nm
+# Target rules for targets named ft_otool
 
 # Build rule for target.
-nm: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nm
-.PHONY : nm
+ft_otool: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ft_otool
+.PHONY : ft_otool
 
 # fast build rule for target.
-nm/fast:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/build
-.PHONY : nm/fast
+ft_otool/fast:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/build
+.PHONY : ft_otool/fast
 
 #=============================================================================
 # Target rules for targets named ft
@@ -136,356 +136,356 @@ ft/fast:
 	$(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/build
 .PHONY : ft/fast
 
-srcs/debug.o: srcs/debug.c.o
+otool/srcs/debug.o: otool/srcs/debug.c.o
 
-.PHONY : srcs/debug.o
-
-# target to build an object file
-srcs/debug.c.o:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/debug.c.o
-.PHONY : srcs/debug.c.o
-
-srcs/debug.i: srcs/debug.c.i
-
-.PHONY : srcs/debug.i
-
-# target to preprocess a source file
-srcs/debug.c.i:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/debug.c.i
-.PHONY : srcs/debug.c.i
-
-srcs/debug.s: srcs/debug.c.s
-
-.PHONY : srcs/debug.s
-
-# target to generate assembly for a file
-srcs/debug.c.s:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/debug.c.s
-.PHONY : srcs/debug.c.s
-
-srcs/ft_nm.o: srcs/ft_nm.c.o
-
-.PHONY : srcs/ft_nm.o
+.PHONY : otool/srcs/debug.o
 
 # target to build an object file
-srcs/ft_nm.c.o:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/ft_nm.c.o
-.PHONY : srcs/ft_nm.c.o
+otool/srcs/debug.c.o:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/debug.c.o
+.PHONY : otool/srcs/debug.c.o
 
-srcs/ft_nm.i: srcs/ft_nm.c.i
+otool/srcs/debug.i: otool/srcs/debug.c.i
 
-.PHONY : srcs/ft_nm.i
+.PHONY : otool/srcs/debug.i
 
 # target to preprocess a source file
-srcs/ft_nm.c.i:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/ft_nm.c.i
-.PHONY : srcs/ft_nm.c.i
+otool/srcs/debug.c.i:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/debug.c.i
+.PHONY : otool/srcs/debug.c.i
 
-srcs/ft_nm.s: srcs/ft_nm.c.s
+otool/srcs/debug.s: otool/srcs/debug.c.s
 
-.PHONY : srcs/ft_nm.s
+.PHONY : otool/srcs/debug.s
 
 # target to generate assembly for a file
-srcs/ft_nm.c.s:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/ft_nm.c.s
-.PHONY : srcs/ft_nm.c.s
+otool/srcs/debug.c.s:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/debug.c.s
+.PHONY : otool/srcs/debug.c.s
 
-srcs/handle_32.o: srcs/handle_32.c.o
+otool/srcs/ft_otool.o: otool/srcs/ft_otool.c.o
 
-.PHONY : srcs/handle_32.o
+.PHONY : otool/srcs/ft_otool.o
 
 # target to build an object file
-srcs/handle_32.c.o:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/handle_32.c.o
-.PHONY : srcs/handle_32.c.o
+otool/srcs/ft_otool.c.o:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/ft_otool.c.o
+.PHONY : otool/srcs/ft_otool.c.o
 
-srcs/handle_32.i: srcs/handle_32.c.i
+otool/srcs/ft_otool.i: otool/srcs/ft_otool.c.i
 
-.PHONY : srcs/handle_32.i
+.PHONY : otool/srcs/ft_otool.i
 
 # target to preprocess a source file
-srcs/handle_32.c.i:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/handle_32.c.i
-.PHONY : srcs/handle_32.c.i
+otool/srcs/ft_otool.c.i:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/ft_otool.c.i
+.PHONY : otool/srcs/ft_otool.c.i
 
-srcs/handle_32.s: srcs/handle_32.c.s
+otool/srcs/ft_otool.s: otool/srcs/ft_otool.c.s
 
-.PHONY : srcs/handle_32.s
+.PHONY : otool/srcs/ft_otool.s
 
 # target to generate assembly for a file
-srcs/handle_32.c.s:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/handle_32.c.s
-.PHONY : srcs/handle_32.c.s
+otool/srcs/ft_otool.c.s:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/ft_otool.c.s
+.PHONY : otool/srcs/ft_otool.c.s
 
-srcs/handle_64.o: srcs/handle_64.c.o
+otool/srcs/handle_32.o: otool/srcs/handle_32.c.o
 
-.PHONY : srcs/handle_64.o
+.PHONY : otool/srcs/handle_32.o
 
 # target to build an object file
-srcs/handle_64.c.o:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/handle_64.c.o
-.PHONY : srcs/handle_64.c.o
+otool/srcs/handle_32.c.o:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/handle_32.c.o
+.PHONY : otool/srcs/handle_32.c.o
 
-srcs/handle_64.i: srcs/handle_64.c.i
+otool/srcs/handle_32.i: otool/srcs/handle_32.c.i
 
-.PHONY : srcs/handle_64.i
+.PHONY : otool/srcs/handle_32.i
 
 # target to preprocess a source file
-srcs/handle_64.c.i:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/handle_64.c.i
-.PHONY : srcs/handle_64.c.i
+otool/srcs/handle_32.c.i:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/handle_32.c.i
+.PHONY : otool/srcs/handle_32.c.i
 
-srcs/handle_64.s: srcs/handle_64.c.s
+otool/srcs/handle_32.s: otool/srcs/handle_32.c.s
 
-.PHONY : srcs/handle_64.s
+.PHONY : otool/srcs/handle_32.s
 
 # target to generate assembly for a file
-srcs/handle_64.c.s:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/handle_64.c.s
-.PHONY : srcs/handle_64.c.s
+otool/srcs/handle_32.c.s:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/handle_32.c.s
+.PHONY : otool/srcs/handle_32.c.s
 
-srcs/handle_ar.o: srcs/handle_ar.c.o
+otool/srcs/handle_64.o: otool/srcs/handle_64.c.o
 
-.PHONY : srcs/handle_ar.o
+.PHONY : otool/srcs/handle_64.o
 
 # target to build an object file
-srcs/handle_ar.c.o:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/handle_ar.c.o
-.PHONY : srcs/handle_ar.c.o
+otool/srcs/handle_64.c.o:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/handle_64.c.o
+.PHONY : otool/srcs/handle_64.c.o
 
-srcs/handle_ar.i: srcs/handle_ar.c.i
+otool/srcs/handle_64.i: otool/srcs/handle_64.c.i
 
-.PHONY : srcs/handle_ar.i
+.PHONY : otool/srcs/handle_64.i
 
 # target to preprocess a source file
-srcs/handle_ar.c.i:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/handle_ar.c.i
-.PHONY : srcs/handle_ar.c.i
+otool/srcs/handle_64.c.i:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/handle_64.c.i
+.PHONY : otool/srcs/handle_64.c.i
 
-srcs/handle_ar.s: srcs/handle_ar.c.s
+otool/srcs/handle_64.s: otool/srcs/handle_64.c.s
 
-.PHONY : srcs/handle_ar.s
+.PHONY : otool/srcs/handle_64.s
 
 # target to generate assembly for a file
-srcs/handle_ar.c.s:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/handle_ar.c.s
-.PHONY : srcs/handle_ar.c.s
+otool/srcs/handle_64.c.s:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/handle_64.c.s
+.PHONY : otool/srcs/handle_64.c.s
 
-srcs/handle_fat.o: srcs/handle_fat.c.o
+otool/srcs/handle_ar.o: otool/srcs/handle_ar.c.o
 
-.PHONY : srcs/handle_fat.o
+.PHONY : otool/srcs/handle_ar.o
 
 # target to build an object file
-srcs/handle_fat.c.o:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/handle_fat.c.o
-.PHONY : srcs/handle_fat.c.o
+otool/srcs/handle_ar.c.o:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/handle_ar.c.o
+.PHONY : otool/srcs/handle_ar.c.o
 
-srcs/handle_fat.i: srcs/handle_fat.c.i
+otool/srcs/handle_ar.i: otool/srcs/handle_ar.c.i
 
-.PHONY : srcs/handle_fat.i
+.PHONY : otool/srcs/handle_ar.i
 
 # target to preprocess a source file
-srcs/handle_fat.c.i:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/handle_fat.c.i
-.PHONY : srcs/handle_fat.c.i
+otool/srcs/handle_ar.c.i:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/handle_ar.c.i
+.PHONY : otool/srcs/handle_ar.c.i
 
-srcs/handle_fat.s: srcs/handle_fat.c.s
+otool/srcs/handle_ar.s: otool/srcs/handle_ar.c.s
 
-.PHONY : srcs/handle_fat.s
+.PHONY : otool/srcs/handle_ar.s
 
 # target to generate assembly for a file
-srcs/handle_fat.c.s:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/handle_fat.c.s
-.PHONY : srcs/handle_fat.c.s
+otool/srcs/handle_ar.c.s:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/handle_ar.c.s
+.PHONY : otool/srcs/handle_ar.c.s
 
-srcs/print_32.o: srcs/print_32.c.o
+otool/srcs/handle_fat.o: otool/srcs/handle_fat.c.o
 
-.PHONY : srcs/print_32.o
+.PHONY : otool/srcs/handle_fat.o
 
 # target to build an object file
-srcs/print_32.c.o:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/print_32.c.o
-.PHONY : srcs/print_32.c.o
+otool/srcs/handle_fat.c.o:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/handle_fat.c.o
+.PHONY : otool/srcs/handle_fat.c.o
 
-srcs/print_32.i: srcs/print_32.c.i
+otool/srcs/handle_fat.i: otool/srcs/handle_fat.c.i
 
-.PHONY : srcs/print_32.i
+.PHONY : otool/srcs/handle_fat.i
 
 # target to preprocess a source file
-srcs/print_32.c.i:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/print_32.c.i
-.PHONY : srcs/print_32.c.i
+otool/srcs/handle_fat.c.i:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/handle_fat.c.i
+.PHONY : otool/srcs/handle_fat.c.i
 
-srcs/print_32.s: srcs/print_32.c.s
+otool/srcs/handle_fat.s: otool/srcs/handle_fat.c.s
 
-.PHONY : srcs/print_32.s
+.PHONY : otool/srcs/handle_fat.s
 
 # target to generate assembly for a file
-srcs/print_32.c.s:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/print_32.c.s
-.PHONY : srcs/print_32.c.s
+otool/srcs/handle_fat.c.s:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/handle_fat.c.s
+.PHONY : otool/srcs/handle_fat.c.s
 
-srcs/print_64.o: srcs/print_64.c.o
+otool/srcs/print_32.o: otool/srcs/print_32.c.o
 
-.PHONY : srcs/print_64.o
+.PHONY : otool/srcs/print_32.o
 
 # target to build an object file
-srcs/print_64.c.o:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/print_64.c.o
-.PHONY : srcs/print_64.c.o
+otool/srcs/print_32.c.o:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/print_32.c.o
+.PHONY : otool/srcs/print_32.c.o
 
-srcs/print_64.i: srcs/print_64.c.i
+otool/srcs/print_32.i: otool/srcs/print_32.c.i
 
-.PHONY : srcs/print_64.i
+.PHONY : otool/srcs/print_32.i
 
 # target to preprocess a source file
-srcs/print_64.c.i:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/print_64.c.i
-.PHONY : srcs/print_64.c.i
+otool/srcs/print_32.c.i:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/print_32.c.i
+.PHONY : otool/srcs/print_32.c.i
 
-srcs/print_64.s: srcs/print_64.c.s
+otool/srcs/print_32.s: otool/srcs/print_32.c.s
 
-.PHONY : srcs/print_64.s
+.PHONY : otool/srcs/print_32.s
 
 # target to generate assembly for a file
-srcs/print_64.c.s:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/print_64.c.s
-.PHONY : srcs/print_64.c.s
+otool/srcs/print_32.c.s:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/print_32.c.s
+.PHONY : otool/srcs/print_32.c.s
 
-srcs/print_type.o: srcs/print_type.c.o
+otool/srcs/print_64.o: otool/srcs/print_64.c.o
 
-.PHONY : srcs/print_type.o
+.PHONY : otool/srcs/print_64.o
 
 # target to build an object file
-srcs/print_type.c.o:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/print_type.c.o
-.PHONY : srcs/print_type.c.o
+otool/srcs/print_64.c.o:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/print_64.c.o
+.PHONY : otool/srcs/print_64.c.o
 
-srcs/print_type.i: srcs/print_type.c.i
+otool/srcs/print_64.i: otool/srcs/print_64.c.i
 
-.PHONY : srcs/print_type.i
+.PHONY : otool/srcs/print_64.i
 
 # target to preprocess a source file
-srcs/print_type.c.i:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/print_type.c.i
-.PHONY : srcs/print_type.c.i
+otool/srcs/print_64.c.i:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/print_64.c.i
+.PHONY : otool/srcs/print_64.c.i
 
-srcs/print_type.s: srcs/print_type.c.s
+otool/srcs/print_64.s: otool/srcs/print_64.c.s
 
-.PHONY : srcs/print_type.s
+.PHONY : otool/srcs/print_64.s
 
 # target to generate assembly for a file
-srcs/print_type.c.s:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/print_type.c.s
-.PHONY : srcs/print_type.c.s
+otool/srcs/print_64.c.s:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/print_64.c.s
+.PHONY : otool/srcs/print_64.c.s
 
-srcs/sort_32.o: srcs/sort_32.c.o
+otool/srcs/print_type.o: otool/srcs/print_type.c.o
 
-.PHONY : srcs/sort_32.o
+.PHONY : otool/srcs/print_type.o
 
 # target to build an object file
-srcs/sort_32.c.o:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/sort_32.c.o
-.PHONY : srcs/sort_32.c.o
+otool/srcs/print_type.c.o:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/print_type.c.o
+.PHONY : otool/srcs/print_type.c.o
 
-srcs/sort_32.i: srcs/sort_32.c.i
+otool/srcs/print_type.i: otool/srcs/print_type.c.i
 
-.PHONY : srcs/sort_32.i
+.PHONY : otool/srcs/print_type.i
 
 # target to preprocess a source file
-srcs/sort_32.c.i:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/sort_32.c.i
-.PHONY : srcs/sort_32.c.i
+otool/srcs/print_type.c.i:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/print_type.c.i
+.PHONY : otool/srcs/print_type.c.i
 
-srcs/sort_32.s: srcs/sort_32.c.s
+otool/srcs/print_type.s: otool/srcs/print_type.c.s
 
-.PHONY : srcs/sort_32.s
+.PHONY : otool/srcs/print_type.s
 
 # target to generate assembly for a file
-srcs/sort_32.c.s:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/sort_32.c.s
-.PHONY : srcs/sort_32.c.s
+otool/srcs/print_type.c.s:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/print_type.c.s
+.PHONY : otool/srcs/print_type.c.s
 
-srcs/sort_64.o: srcs/sort_64.c.o
+otool/srcs/sort_32.o: otool/srcs/sort_32.c.o
 
-.PHONY : srcs/sort_64.o
+.PHONY : otool/srcs/sort_32.o
 
 # target to build an object file
-srcs/sort_64.c.o:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/sort_64.c.o
-.PHONY : srcs/sort_64.c.o
+otool/srcs/sort_32.c.o:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/sort_32.c.o
+.PHONY : otool/srcs/sort_32.c.o
 
-srcs/sort_64.i: srcs/sort_64.c.i
+otool/srcs/sort_32.i: otool/srcs/sort_32.c.i
 
-.PHONY : srcs/sort_64.i
+.PHONY : otool/srcs/sort_32.i
 
 # target to preprocess a source file
-srcs/sort_64.c.i:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/sort_64.c.i
-.PHONY : srcs/sort_64.c.i
+otool/srcs/sort_32.c.i:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/sort_32.c.i
+.PHONY : otool/srcs/sort_32.c.i
 
-srcs/sort_64.s: srcs/sort_64.c.s
+otool/srcs/sort_32.s: otool/srcs/sort_32.c.s
 
-.PHONY : srcs/sort_64.s
+.PHONY : otool/srcs/sort_32.s
 
 # target to generate assembly for a file
-srcs/sort_64.c.s:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/sort_64.c.s
-.PHONY : srcs/sort_64.c.s
+otool/srcs/sort_32.c.s:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/sort_32.c.s
+.PHONY : otool/srcs/sort_32.c.s
 
-srcs/util.o: srcs/util.c.o
+otool/srcs/sort_64.o: otool/srcs/sort_64.c.o
 
-.PHONY : srcs/util.o
+.PHONY : otool/srcs/sort_64.o
 
 # target to build an object file
-srcs/util.c.o:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/util.c.o
-.PHONY : srcs/util.c.o
+otool/srcs/sort_64.c.o:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/sort_64.c.o
+.PHONY : otool/srcs/sort_64.c.o
 
-srcs/util.i: srcs/util.c.i
+otool/srcs/sort_64.i: otool/srcs/sort_64.c.i
 
-.PHONY : srcs/util.i
+.PHONY : otool/srcs/sort_64.i
 
 # target to preprocess a source file
-srcs/util.c.i:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/util.c.i
-.PHONY : srcs/util.c.i
+otool/srcs/sort_64.c.i:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/sort_64.c.i
+.PHONY : otool/srcs/sort_64.c.i
 
-srcs/util.s: srcs/util.c.s
+otool/srcs/sort_64.s: otool/srcs/sort_64.c.s
 
-.PHONY : srcs/util.s
+.PHONY : otool/srcs/sort_64.s
 
 # target to generate assembly for a file
-srcs/util.c.s:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/util.c.s
-.PHONY : srcs/util.c.s
+otool/srcs/sort_64.c.s:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/sort_64.c.s
+.PHONY : otool/srcs/sort_64.c.s
 
-srcs/util2.o: srcs/util2.c.o
+otool/srcs/util.o: otool/srcs/util.c.o
 
-.PHONY : srcs/util2.o
+.PHONY : otool/srcs/util.o
 
 # target to build an object file
-srcs/util2.c.o:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/util2.c.o
-.PHONY : srcs/util2.c.o
+otool/srcs/util.c.o:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/util.c.o
+.PHONY : otool/srcs/util.c.o
 
-srcs/util2.i: srcs/util2.c.i
+otool/srcs/util.i: otool/srcs/util.c.i
 
-.PHONY : srcs/util2.i
+.PHONY : otool/srcs/util.i
 
 # target to preprocess a source file
-srcs/util2.c.i:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/util2.c.i
-.PHONY : srcs/util2.c.i
+otool/srcs/util.c.i:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/util.c.i
+.PHONY : otool/srcs/util.c.i
 
-srcs/util2.s: srcs/util2.c.s
+otool/srcs/util.s: otool/srcs/util.c.s
 
-.PHONY : srcs/util2.s
+.PHONY : otool/srcs/util.s
 
 # target to generate assembly for a file
-srcs/util2.c.s:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/util2.c.s
-.PHONY : srcs/util2.c.s
+otool/srcs/util.c.s:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/util.c.s
+.PHONY : otool/srcs/util.c.s
+
+otool/srcs/util2.o: otool/srcs/util2.c.o
+
+.PHONY : otool/srcs/util2.o
+
+# target to build an object file
+otool/srcs/util2.c.o:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/util2.c.o
+.PHONY : otool/srcs/util2.c.o
+
+otool/srcs/util2.i: otool/srcs/util2.c.i
+
+.PHONY : otool/srcs/util2.i
+
+# target to preprocess a source file
+otool/srcs/util2.c.i:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/util2.c.i
+.PHONY : otool/srcs/util2.c.i
+
+otool/srcs/util2.s: otool/srcs/util2.c.s
+
+.PHONY : otool/srcs/util2.s
+
+# target to generate assembly for a file
+otool/srcs/util2.c.s:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/util2.c.s
+.PHONY : otool/srcs/util2.c.s
 
 # Help Target
 help:
@@ -495,47 +495,47 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... nm"
+	@echo "... ft_otool"
 	@echo "... ft"
-	@echo "... srcs/debug.o"
-	@echo "... srcs/debug.i"
-	@echo "... srcs/debug.s"
-	@echo "... srcs/ft_nm.o"
-	@echo "... srcs/ft_nm.i"
-	@echo "... srcs/ft_nm.s"
-	@echo "... srcs/handle_32.o"
-	@echo "... srcs/handle_32.i"
-	@echo "... srcs/handle_32.s"
-	@echo "... srcs/handle_64.o"
-	@echo "... srcs/handle_64.i"
-	@echo "... srcs/handle_64.s"
-	@echo "... srcs/handle_ar.o"
-	@echo "... srcs/handle_ar.i"
-	@echo "... srcs/handle_ar.s"
-	@echo "... srcs/handle_fat.o"
-	@echo "... srcs/handle_fat.i"
-	@echo "... srcs/handle_fat.s"
-	@echo "... srcs/print_32.o"
-	@echo "... srcs/print_32.i"
-	@echo "... srcs/print_32.s"
-	@echo "... srcs/print_64.o"
-	@echo "... srcs/print_64.i"
-	@echo "... srcs/print_64.s"
-	@echo "... srcs/print_type.o"
-	@echo "... srcs/print_type.i"
-	@echo "... srcs/print_type.s"
-	@echo "... srcs/sort_32.o"
-	@echo "... srcs/sort_32.i"
-	@echo "... srcs/sort_32.s"
-	@echo "... srcs/sort_64.o"
-	@echo "... srcs/sort_64.i"
-	@echo "... srcs/sort_64.s"
-	@echo "... srcs/util.o"
-	@echo "... srcs/util.i"
-	@echo "... srcs/util.s"
-	@echo "... srcs/util2.o"
-	@echo "... srcs/util2.i"
-	@echo "... srcs/util2.s"
+	@echo "... otool/srcs/debug.o"
+	@echo "... otool/srcs/debug.i"
+	@echo "... otool/srcs/debug.s"
+	@echo "... otool/srcs/ft_otool.o"
+	@echo "... otool/srcs/ft_otool.i"
+	@echo "... otool/srcs/ft_otool.s"
+	@echo "... otool/srcs/handle_32.o"
+	@echo "... otool/srcs/handle_32.i"
+	@echo "... otool/srcs/handle_32.s"
+	@echo "... otool/srcs/handle_64.o"
+	@echo "... otool/srcs/handle_64.i"
+	@echo "... otool/srcs/handle_64.s"
+	@echo "... otool/srcs/handle_ar.o"
+	@echo "... otool/srcs/handle_ar.i"
+	@echo "... otool/srcs/handle_ar.s"
+	@echo "... otool/srcs/handle_fat.o"
+	@echo "... otool/srcs/handle_fat.i"
+	@echo "... otool/srcs/handle_fat.s"
+	@echo "... otool/srcs/print_32.o"
+	@echo "... otool/srcs/print_32.i"
+	@echo "... otool/srcs/print_32.s"
+	@echo "... otool/srcs/print_64.o"
+	@echo "... otool/srcs/print_64.i"
+	@echo "... otool/srcs/print_64.s"
+	@echo "... otool/srcs/print_type.o"
+	@echo "... otool/srcs/print_type.i"
+	@echo "... otool/srcs/print_type.s"
+	@echo "... otool/srcs/sort_32.o"
+	@echo "... otool/srcs/sort_32.i"
+	@echo "... otool/srcs/sort_32.s"
+	@echo "... otool/srcs/sort_64.o"
+	@echo "... otool/srcs/sort_64.i"
+	@echo "... otool/srcs/sort_64.s"
+	@echo "... otool/srcs/util.o"
+	@echo "... otool/srcs/util.i"
+	@echo "... otool/srcs/util.s"
+	@echo "... otool/srcs/util2.o"
+	@echo "... otool/srcs/util2.i"
+	@echo "... otool/srcs/util2.s"
 .PHONY : help
 
 
