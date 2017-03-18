@@ -11,7 +11,6 @@ LIB = -L$(LIBFT_PATH) -lft
 LIBNAME = $(LIBFT_PATH)/libft.a
 
 SRC =   $(SRCS_PATH)/ft_nm.c\
-        $(SRCS_PATH)/error.c\
         $(SRCS_PATH)/handle_64.c\
         $(SRCS_PATH)/handle_32.c\
         $(SRCS_PATH)/handle_fat.c\
@@ -21,6 +20,9 @@ SRC =   $(SRCS_PATH)/ft_nm.c\
         $(SRCS_PATH)/print_type.c\
         $(SRCS_PATH)/debug.c\
         $(SRCS_PATH)/util.c\
+        $(SRCS_PATH)/util2.c\
+        $(SRCS_PATH)/sort_64.c\
+        $(SRCS_PATH)/sort_32.c\
 
 OBJ = $(SRC:.c=.o)
 

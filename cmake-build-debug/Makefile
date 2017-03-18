@@ -163,33 +163,6 @@ srcs/debug.c.s:
 	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/debug.c.s
 .PHONY : srcs/debug.c.s
 
-srcs/error.o: srcs/error.c.o
-
-.PHONY : srcs/error.o
-
-# target to build an object file
-srcs/error.c.o:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/error.c.o
-.PHONY : srcs/error.c.o
-
-srcs/error.i: srcs/error.c.i
-
-.PHONY : srcs/error.i
-
-# target to preprocess a source file
-srcs/error.c.i:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/error.c.i
-.PHONY : srcs/error.c.i
-
-srcs/error.s: srcs/error.c.s
-
-.PHONY : srcs/error.s
-
-# target to generate assembly for a file
-srcs/error.c.s:
-	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/error.c.s
-.PHONY : srcs/error.c.s
-
 srcs/ft_nm.o: srcs/ft_nm.c.o
 
 .PHONY : srcs/ft_nm.o
@@ -406,6 +379,60 @@ srcs/print_type.c.s:
 	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/print_type.c.s
 .PHONY : srcs/print_type.c.s
 
+srcs/sort_32.o: srcs/sort_32.c.o
+
+.PHONY : srcs/sort_32.o
+
+# target to build an object file
+srcs/sort_32.c.o:
+	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/sort_32.c.o
+.PHONY : srcs/sort_32.c.o
+
+srcs/sort_32.i: srcs/sort_32.c.i
+
+.PHONY : srcs/sort_32.i
+
+# target to preprocess a source file
+srcs/sort_32.c.i:
+	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/sort_32.c.i
+.PHONY : srcs/sort_32.c.i
+
+srcs/sort_32.s: srcs/sort_32.c.s
+
+.PHONY : srcs/sort_32.s
+
+# target to generate assembly for a file
+srcs/sort_32.c.s:
+	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/sort_32.c.s
+.PHONY : srcs/sort_32.c.s
+
+srcs/sort_64.o: srcs/sort_64.c.o
+
+.PHONY : srcs/sort_64.o
+
+# target to build an object file
+srcs/sort_64.c.o:
+	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/sort_64.c.o
+.PHONY : srcs/sort_64.c.o
+
+srcs/sort_64.i: srcs/sort_64.c.i
+
+.PHONY : srcs/sort_64.i
+
+# target to preprocess a source file
+srcs/sort_64.c.i:
+	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/sort_64.c.i
+.PHONY : srcs/sort_64.c.i
+
+srcs/sort_64.s: srcs/sort_64.c.s
+
+.PHONY : srcs/sort_64.s
+
+# target to generate assembly for a file
+srcs/sort_64.c.s:
+	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/sort_64.c.s
+.PHONY : srcs/sort_64.c.s
+
 srcs/util.o: srcs/util.c.o
 
 .PHONY : srcs/util.o
@@ -433,6 +460,33 @@ srcs/util.c.s:
 	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/util.c.s
 .PHONY : srcs/util.c.s
 
+srcs/util2.o: srcs/util2.c.o
+
+.PHONY : srcs/util2.o
+
+# target to build an object file
+srcs/util2.c.o:
+	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/util2.c.o
+.PHONY : srcs/util2.c.o
+
+srcs/util2.i: srcs/util2.c.i
+
+.PHONY : srcs/util2.i
+
+# target to preprocess a source file
+srcs/util2.c.i:
+	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/util2.c.i
+.PHONY : srcs/util2.c.i
+
+srcs/util2.s: srcs/util2.c.s
+
+.PHONY : srcs/util2.s
+
+# target to generate assembly for a file
+srcs/util2.c.s:
+	$(MAKE) -f CMakeFiles/nm.dir/build.make CMakeFiles/nm.dir/srcs/util2.c.s
+.PHONY : srcs/util2.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -446,9 +500,6 @@ help:
 	@echo "... srcs/debug.o"
 	@echo "... srcs/debug.i"
 	@echo "... srcs/debug.s"
-	@echo "... srcs/error.o"
-	@echo "... srcs/error.i"
-	@echo "... srcs/error.s"
 	@echo "... srcs/ft_nm.o"
 	@echo "... srcs/ft_nm.i"
 	@echo "... srcs/ft_nm.s"
@@ -473,9 +524,18 @@ help:
 	@echo "... srcs/print_type.o"
 	@echo "... srcs/print_type.i"
 	@echo "... srcs/print_type.s"
+	@echo "... srcs/sort_32.o"
+	@echo "... srcs/sort_32.i"
+	@echo "... srcs/sort_32.s"
+	@echo "... srcs/sort_64.o"
+	@echo "... srcs/sort_64.i"
+	@echo "... srcs/sort_64.s"
 	@echo "... srcs/util.o"
 	@echo "... srcs/util.i"
 	@echo "... srcs/util.s"
+	@echo "... srcs/util2.o"
+	@echo "... srcs/util2.i"
+	@echo "... srcs/util2.s"
 .PHONY : help
 
 

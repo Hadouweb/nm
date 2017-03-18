@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   util.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nle-bret <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/03/18 17:04:42 by nle-bret          #+#    #+#             */
+/*   Updated: 2017/03/18 17:04:43 by nle-bret         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_nm.h"
 
-static int	ull_len(unsigned long long value, int base)
+static int				ull_len(unsigned long long value, int base)
 {
 	int		i;
 
@@ -15,7 +27,7 @@ static int	ull_len(unsigned long long value, int base)
 	return (i);
 }
 
-char		*ulltoa_base(unsigned long long value, int base)
+char					*ulltoa_base(unsigned long long value, int base)
 {
 	char	*str;
 	int		size;
@@ -40,10 +52,10 @@ char		*ulltoa_base(unsigned long long value, int base)
 	return (str);
 }
 
-uint32_t	convert_uint32(t_process *process, uint32_t a)
+uint32_t				convert_uint32(t_process *process, uint32_t a)
 {
 	if (!process->is_big_endian)
-		return a;
+		return (a);
 	return (
 		a << 24 |
 		((a & 0xff00) << 8) |
@@ -51,18 +63,20 @@ uint32_t	convert_uint32(t_process *process, uint32_t a)
 		a >> 24);
 }
 
-struct load_command 	*convert_load_cmd(t_process *process, struct load_command *lc)
+struct load_command		*convert_load_cmd(t_process *process,
+	struct load_command *lc)
 {
 	lc->cmd = convert_uint32(process, lc->cmd);
 	lc->cmdsize = convert_uint32(process, lc->cmdsize);
-	return lc;
+	return (lc);
 }
 
-struct symtab_command 	*convert_symtab(t_process *process, struct symtab_command *sym)
+struct symtab_command	*convert_symtab(t_process *process,
+	struct symtab_command *sym)
 {
 	sym->symoff = convert_uint32(process, sym->symoff);
 	sym->nsyms = convert_uint32(process, sym->nsyms);
 	sym->stroff = convert_uint32(process, sym->stroff);
 	sym->strsize = convert_uint32(process, sym->strsize);
-	return sym;
+	return (sym);
 }

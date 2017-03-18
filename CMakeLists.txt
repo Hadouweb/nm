@@ -13,16 +13,18 @@ set(SRCS_TEST
 
 set(SRCS
     srcs/ft_nm.c
-    srcs/error.c
-    srcs/handle_64.c
+        srcs/handle_64.c
     srcs/handle_32.c
     srcs/print_64.c
     srcs/print_32.c
     srcs/print_type.c
     srcs/debug.c
     srcs/util.c
+    srcs/util2.c
     srcs/handle_fat.c
     srcs/handle_ar.c
+    srcs/sort_64.c
+    srcs/sort_32.c
     )
 
 set(HEADERS includes/ft_nm.h)

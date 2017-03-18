@@ -411,9 +411,6 @@
 		<Unit filename="/Users/nle-bret/project/nm/srcs/debug.c">
 			<Option target="nm"/>
 		</Unit>
-		<Unit filename="/Users/nle-bret/project/nm/srcs/error.c">
-			<Option target="nm"/>
-		</Unit>
 		<Unit filename="/Users/nle-bret/project/nm/srcs/ft_nm.c">
 			<Option target="nm"/>
 		</Unit>
@@ -438,7 +435,16 @@
 		<Unit filename="/Users/nle-bret/project/nm/srcs/print_type.c">
 			<Option target="nm"/>
 		</Unit>
+		<Unit filename="/Users/nle-bret/project/nm/srcs/sort_32.c">
+			<Option target="nm"/>
+		</Unit>
+		<Unit filename="/Users/nle-bret/project/nm/srcs/sort_64.c">
+			<Option target="nm"/>
+		</Unit>
 		<Unit filename="/Users/nle-bret/project/nm/srcs/util.c">
+			<Option target="nm"/>
+		</Unit>
+		<Unit filename="/Users/nle-bret/project/nm/srcs/util2.c">
 			<Option target="nm"/>
 		</Unit>
 		<Unit filename="/Users/nle-bret/project/nm/CMakeLists.txt">

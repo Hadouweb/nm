@@ -1,23 +1,24 @@
-#include "ft_nm.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   handle_32.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nle-bret <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/03/18 17:04:06 by nle-bret          #+#    #+#             */
+/*   Updated: 2017/03/18 17:04:07 by nle-bret         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-static void		add_memory_type_32(t_process *process, struct section *section,
-	int k)
-{
-	if(ft_strcmp(section->sectname, SECT_TEXT) == 0)
-		process->text_nsect = k + 1;
-	else if(ft_strcmp(section->sectname, SECT_DATA) == 0)
-		process->data_nsect = k + 1;
-	else if(ft_strcmp(section->sectname, SECT_BSS) == 0)
-		process->bss_nsect = k + 1;
-}
+#include "ft_nm.h"
 
 static void		add_section_32_subfunc(t_process *process,
 	int *k, struct load_command *lc)
 {
-	uint32_t 					j;
-	uint32_t 					nsects;
-	struct segment_command 		*sg;
-	struct section 				*s;
+	uint32_t					j;
+	uint32_t					nsects;
+	struct segment_command		*sg;
+	struct section				*s;
 
 	j = 0;
 	sg = (struct segment_command *)lc;
@@ -26,7 +27,7 @@ static void		add_section_32_subfunc(t_process *process,
 	while (j < nsects)
 	{
 		process->section_32[*k] = s + j;
-		add_memory_type_32(process, process->section_32[*k], *k);
+		add_memory_type(process, process->section_32[*k]->sectname, *k);
 		(*k)++;
 		j++;
 	}
@@ -35,7 +36,7 @@ static void		add_section_32_subfunc(t_process *process,
 void			add_section_32(t_process *process)
 {
 	uint32_t					i;
-	int 						k;
+	int							k;
 	struct load_command			*lc;
 
 	i = 0;
@@ -54,15 +55,14 @@ void			add_section_32(t_process *process)
 
 void			handle_32(t_process *process, char mode)
 {
-	int 					ncmds;
-	int 					i;
+	int						ncmds;
+	int						i;
 	struct load_command		*lc;
 
-    //printf("handle_32\n");
 	process->is_big_endian = mode;
 	process->header_32 = (struct mach_header*)process->ptr;
 	ncmds = convert_uint32(process, process->header_32->ncmds);
-	process->load_command = (void*)process->ptr + sizeof (*process->header_32);
+	process->load_command = (void*)process->ptr + sizeof(*process->header_32);
 	lc = convert_load_cmd(process, process->load_command);
 	i = 0;
 	while (i < ncmds)
@@ -70,10 +70,8 @@ void			handle_32(t_process *process, char mode)
 		if (lc->cmd == LC_SYMTAB)
 			process->sym = convert_symtab(process, (struct symtab_command*)lc);
 		else if (lc->cmd == LC_SEGMENT)
-		{
-			process->segment_32 = (struct segment_command *)lc;
-			process->nsects += convert_uint32(process, process->segment_32->nsects);
-		}
+			process->nsects += convert_uint32(process,
+			((struct segment_command *)lc)->nsects);
 		i++;
 		lc = convert_load_cmd(process, (void*)lc + lc->cmdsize);
 	}
