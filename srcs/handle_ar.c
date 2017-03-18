@@ -35,6 +35,7 @@ void	handle_ar(t_process *process)
 	struct ar_hdr		*header;
 	char				*end_file;
 
+	//printf("handle_ar\n");
 	process->is_lib = 1;
 	process->ptr += SARMAG;
 	header = (struct ar_hdr*)process->ptr;

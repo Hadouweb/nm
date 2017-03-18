@@ -56,6 +56,7 @@ void	handle_64(t_process *process)
 	int 					i;
 	struct load_command		*lc;
 
+    //printf("handle_64\n");
 	process->header_64 = (struct mach_header_64*)process->ptr;
 	ncmds = process->header_64->ncmds;
 	process->load_command = (void*)process->ptr + sizeof(*process->header_64);

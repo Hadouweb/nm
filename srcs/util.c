@@ -50,3 +50,19 @@ uint32_t	convert_uint32(t_process *process, uint32_t a)
 		((a & 0xff0000) >> 8) |
 		a >> 24);
 }
+
+struct load_command 	*convert_load_cmd(t_process *process, struct load_command *lc)
+{
+	lc->cmd = convert_uint32(process, lc->cmd);
+	lc->cmdsize = convert_uint32(process, lc->cmdsize);
+	return lc;
+}
+
+struct symtab_command 	*convert_symtab(t_process *process, struct symtab_command *sym)
+{
+	sym->symoff = convert_uint32(process, sym->symoff);
+	sym->nsyms = convert_uint32(process, sym->nsyms);
+	sym->stroff = convert_uint32(process, sym->stroff);
+	sym->strsize = convert_uint32(process, sym->strsize);
+	return sym;
+}

@@ -47,6 +47,7 @@ if [ $TESTNM != 0 ]; then
 		fi
 	done
 	[ $? == 1 ] && exit 0;
+
 	#without fat files
 	echo "Test NM 64bits binary on /bin:"
 	find "/bin" -type f -print0 | \
@@ -64,6 +65,7 @@ if [ $TESTNM != 0 ]; then
 			fi
 		fi
 	done
+
 	[ $? == 1 ] && exit 0;
 	echo "Test NM fat files on /bin:"
 	nm /bin/bash > their ; ../ft_nm /bin/bash > mine
