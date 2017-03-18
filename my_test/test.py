@@ -8,7 +8,7 @@ import os
 import sys
 import shlex
 
-test_dir = ["/usr/bin", "/sbin", "/bin", "/usr/sbin", "/usr/lib", "."]
+test_dir = ["/usr/share", "/usr/bin", "/sbin", "/bin", "/usr/sbin", "/usr/lib", "."]
 
 #############################################################
 # functions
