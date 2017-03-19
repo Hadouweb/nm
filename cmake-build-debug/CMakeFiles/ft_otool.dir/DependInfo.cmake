@@ -4,17 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/nle-bret/project/nm/otool/srcs/debug.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/ft_otool.dir/otool/srcs/debug.c.o"
   "/Users/nle-bret/project/nm/otool/srcs/ft_otool.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/ft_otool.dir/otool/srcs/ft_otool.c.o"
   "/Users/nle-bret/project/nm/otool/srcs/handle_32.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/ft_otool.dir/otool/srcs/handle_32.c.o"
   "/Users/nle-bret/project/nm/otool/srcs/handle_64.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/ft_otool.dir/otool/srcs/handle_64.c.o"
   "/Users/nle-bret/project/nm/otool/srcs/handle_ar.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/ft_otool.dir/otool/srcs/handle_ar.c.o"
   "/Users/nle-bret/project/nm/otool/srcs/handle_fat.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/ft_otool.dir/otool/srcs/handle_fat.c.o"
-  "/Users/nle-bret/project/nm/otool/srcs/print_32.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/ft_otool.dir/otool/srcs/print_32.c.o"
-  "/Users/nle-bret/project/nm/otool/srcs/print_64.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/ft_otool.dir/otool/srcs/print_64.c.o"
-  "/Users/nle-bret/project/nm/otool/srcs/print_type.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/ft_otool.dir/otool/srcs/print_type.c.o"
-  "/Users/nle-bret/project/nm/otool/srcs/sort_32.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/ft_otool.dir/otool/srcs/sort_32.c.o"
-  "/Users/nle-bret/project/nm/otool/srcs/sort_64.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/ft_otool.dir/otool/srcs/sort_64.c.o"
   "/Users/nle-bret/project/nm/otool/srcs/util.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/ft_otool.dir/otool/srcs/util.c.o"
   "/Users/nle-bret/project/nm/otool/srcs/util2.c" "/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles/ft_otool.dir/otool/srcs/util2.c.o"
   )

@@ -129,105 +129,9 @@ CMakeFiles/ft_otool.dir/otool/srcs/handle_32.c.o.provides: CMakeFiles/ft_otool.d
 CMakeFiles/ft_otool.dir/otool/srcs/handle_32.c.o.provides.build: CMakeFiles/ft_otool.dir/otool/srcs/handle_32.c.o
 
 
-CMakeFiles/ft_otool.dir/otool/srcs/print_64.c.o: CMakeFiles/ft_otool.dir/flags.make
-CMakeFiles/ft_otool.dir/otool/srcs/print_64.c.o: ../otool/srcs/print_64.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ft_otool.dir/otool/srcs/print_64.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/otool/srcs/print_64.c.o   -c /Users/nle-bret/project/nm/otool/srcs/print_64.c
-
-CMakeFiles/ft_otool.dir/otool/srcs/print_64.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_otool.dir/otool/srcs/print_64.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nle-bret/project/nm/otool/srcs/print_64.c > CMakeFiles/ft_otool.dir/otool/srcs/print_64.c.i
-
-CMakeFiles/ft_otool.dir/otool/srcs/print_64.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_otool.dir/otool/srcs/print_64.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nle-bret/project/nm/otool/srcs/print_64.c -o CMakeFiles/ft_otool.dir/otool/srcs/print_64.c.s
-
-CMakeFiles/ft_otool.dir/otool/srcs/print_64.c.o.requires:
-
-.PHONY : CMakeFiles/ft_otool.dir/otool/srcs/print_64.c.o.requires
-
-CMakeFiles/ft_otool.dir/otool/srcs/print_64.c.o.provides: CMakeFiles/ft_otool.dir/otool/srcs/print_64.c.o.requires
-	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/print_64.c.o.provides.build
-.PHONY : CMakeFiles/ft_otool.dir/otool/srcs/print_64.c.o.provides
-
-CMakeFiles/ft_otool.dir/otool/srcs/print_64.c.o.provides.build: CMakeFiles/ft_otool.dir/otool/srcs/print_64.c.o
-
-
-CMakeFiles/ft_otool.dir/otool/srcs/print_32.c.o: CMakeFiles/ft_otool.dir/flags.make
-CMakeFiles/ft_otool.dir/otool/srcs/print_32.c.o: ../otool/srcs/print_32.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/ft_otool.dir/otool/srcs/print_32.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/otool/srcs/print_32.c.o   -c /Users/nle-bret/project/nm/otool/srcs/print_32.c
-
-CMakeFiles/ft_otool.dir/otool/srcs/print_32.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_otool.dir/otool/srcs/print_32.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nle-bret/project/nm/otool/srcs/print_32.c > CMakeFiles/ft_otool.dir/otool/srcs/print_32.c.i
-
-CMakeFiles/ft_otool.dir/otool/srcs/print_32.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_otool.dir/otool/srcs/print_32.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nle-bret/project/nm/otool/srcs/print_32.c -o CMakeFiles/ft_otool.dir/otool/srcs/print_32.c.s
-
-CMakeFiles/ft_otool.dir/otool/srcs/print_32.c.o.requires:
-
-.PHONY : CMakeFiles/ft_otool.dir/otool/srcs/print_32.c.o.requires
-
-CMakeFiles/ft_otool.dir/otool/srcs/print_32.c.o.provides: CMakeFiles/ft_otool.dir/otool/srcs/print_32.c.o.requires
-	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/print_32.c.o.provides.build
-.PHONY : CMakeFiles/ft_otool.dir/otool/srcs/print_32.c.o.provides
-
-CMakeFiles/ft_otool.dir/otool/srcs/print_32.c.o.provides.build: CMakeFiles/ft_otool.dir/otool/srcs/print_32.c.o
-
-
-CMakeFiles/ft_otool.dir/otool/srcs/print_type.c.o: CMakeFiles/ft_otool.dir/flags.make
-CMakeFiles/ft_otool.dir/otool/srcs/print_type.c.o: ../otool/srcs/print_type.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/ft_otool.dir/otool/srcs/print_type.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/otool/srcs/print_type.c.o   -c /Users/nle-bret/project/nm/otool/srcs/print_type.c
-
-CMakeFiles/ft_otool.dir/otool/srcs/print_type.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_otool.dir/otool/srcs/print_type.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nle-bret/project/nm/otool/srcs/print_type.c > CMakeFiles/ft_otool.dir/otool/srcs/print_type.c.i
-
-CMakeFiles/ft_otool.dir/otool/srcs/print_type.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_otool.dir/otool/srcs/print_type.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nle-bret/project/nm/otool/srcs/print_type.c -o CMakeFiles/ft_otool.dir/otool/srcs/print_type.c.s
-
-CMakeFiles/ft_otool.dir/otool/srcs/print_type.c.o.requires:
-
-.PHONY : CMakeFiles/ft_otool.dir/otool/srcs/print_type.c.o.requires
-
-CMakeFiles/ft_otool.dir/otool/srcs/print_type.c.o.provides: CMakeFiles/ft_otool.dir/otool/srcs/print_type.c.o.requires
-	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/print_type.c.o.provides.build
-.PHONY : CMakeFiles/ft_otool.dir/otool/srcs/print_type.c.o.provides
-
-CMakeFiles/ft_otool.dir/otool/srcs/print_type.c.o.provides.build: CMakeFiles/ft_otool.dir/otool/srcs/print_type.c.o
-
-
-CMakeFiles/ft_otool.dir/otool/srcs/debug.c.o: CMakeFiles/ft_otool.dir/flags.make
-CMakeFiles/ft_otool.dir/otool/srcs/debug.c.o: ../otool/srcs/debug.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/ft_otool.dir/otool/srcs/debug.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/otool/srcs/debug.c.o   -c /Users/nle-bret/project/nm/otool/srcs/debug.c
-
-CMakeFiles/ft_otool.dir/otool/srcs/debug.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_otool.dir/otool/srcs/debug.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nle-bret/project/nm/otool/srcs/debug.c > CMakeFiles/ft_otool.dir/otool/srcs/debug.c.i
-
-CMakeFiles/ft_otool.dir/otool/srcs/debug.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_otool.dir/otool/srcs/debug.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nle-bret/project/nm/otool/srcs/debug.c -o CMakeFiles/ft_otool.dir/otool/srcs/debug.c.s
-
-CMakeFiles/ft_otool.dir/otool/srcs/debug.c.o.requires:
-
-.PHONY : CMakeFiles/ft_otool.dir/otool/srcs/debug.c.o.requires
-
-CMakeFiles/ft_otool.dir/otool/srcs/debug.c.o.provides: CMakeFiles/ft_otool.dir/otool/srcs/debug.c.o.requires
-	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/debug.c.o.provides.build
-.PHONY : CMakeFiles/ft_otool.dir/otool/srcs/debug.c.o.provides
-
-CMakeFiles/ft_otool.dir/otool/srcs/debug.c.o.provides.build: CMakeFiles/ft_otool.dir/otool/srcs/debug.c.o
-
-
 CMakeFiles/ft_otool.dir/otool/srcs/util.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/otool/srcs/util.c.o: ../otool/srcs/util.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/ft_otool.dir/otool/srcs/util.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ft_otool.dir/otool/srcs/util.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/otool/srcs/util.c.o   -c /Users/nle-bret/project/nm/otool/srcs/util.c
 
 CMakeFiles/ft_otool.dir/otool/srcs/util.c.i: cmake_force
@@ -251,7 +155,7 @@ CMakeFiles/ft_otool.dir/otool/srcs/util.c.o.provides.build: CMakeFiles/ft_otool.
 
 CMakeFiles/ft_otool.dir/otool/srcs/util2.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/otool/srcs/util2.c.o: ../otool/srcs/util2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/ft_otool.dir/otool/srcs/util2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/ft_otool.dir/otool/srcs/util2.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/otool/srcs/util2.c.o   -c /Users/nle-bret/project/nm/otool/srcs/util2.c
 
 CMakeFiles/ft_otool.dir/otool/srcs/util2.c.i: cmake_force
@@ -275,7 +179,7 @@ CMakeFiles/ft_otool.dir/otool/srcs/util2.c.o.provides.build: CMakeFiles/ft_otool
 
 CMakeFiles/ft_otool.dir/otool/srcs/handle_fat.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/otool/srcs/handle_fat.c.o: ../otool/srcs/handle_fat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/ft_otool.dir/otool/srcs/handle_fat.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/ft_otool.dir/otool/srcs/handle_fat.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/otool/srcs/handle_fat.c.o   -c /Users/nle-bret/project/nm/otool/srcs/handle_fat.c
 
 CMakeFiles/ft_otool.dir/otool/srcs/handle_fat.c.i: cmake_force
@@ -299,7 +203,7 @@ CMakeFiles/ft_otool.dir/otool/srcs/handle_fat.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_otool.dir/otool/srcs/handle_ar.c.o: CMakeFiles/ft_otool.dir/flags.make
 CMakeFiles/ft_otool.dir/otool/srcs/handle_ar.c.o: ../otool/srcs/handle_ar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/ft_otool.dir/otool/srcs/handle_ar.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/ft_otool.dir/otool/srcs/handle_ar.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/otool/srcs/handle_ar.c.o   -c /Users/nle-bret/project/nm/otool/srcs/handle_ar.c
 
 CMakeFiles/ft_otool.dir/otool/srcs/handle_ar.c.i: cmake_force
@@ -321,69 +225,15 @@ CMakeFiles/ft_otool.dir/otool/srcs/handle_ar.c.o.provides: CMakeFiles/ft_otool.d
 CMakeFiles/ft_otool.dir/otool/srcs/handle_ar.c.o.provides.build: CMakeFiles/ft_otool.dir/otool/srcs/handle_ar.c.o
 
 
-CMakeFiles/ft_otool.dir/otool/srcs/sort_64.c.o: CMakeFiles/ft_otool.dir/flags.make
-CMakeFiles/ft_otool.dir/otool/srcs/sort_64.c.o: ../otool/srcs/sort_64.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/ft_otool.dir/otool/srcs/sort_64.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/otool/srcs/sort_64.c.o   -c /Users/nle-bret/project/nm/otool/srcs/sort_64.c
-
-CMakeFiles/ft_otool.dir/otool/srcs/sort_64.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_otool.dir/otool/srcs/sort_64.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nle-bret/project/nm/otool/srcs/sort_64.c > CMakeFiles/ft_otool.dir/otool/srcs/sort_64.c.i
-
-CMakeFiles/ft_otool.dir/otool/srcs/sort_64.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_otool.dir/otool/srcs/sort_64.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nle-bret/project/nm/otool/srcs/sort_64.c -o CMakeFiles/ft_otool.dir/otool/srcs/sort_64.c.s
-
-CMakeFiles/ft_otool.dir/otool/srcs/sort_64.c.o.requires:
-
-.PHONY : CMakeFiles/ft_otool.dir/otool/srcs/sort_64.c.o.requires
-
-CMakeFiles/ft_otool.dir/otool/srcs/sort_64.c.o.provides: CMakeFiles/ft_otool.dir/otool/srcs/sort_64.c.o.requires
-	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/sort_64.c.o.provides.build
-.PHONY : CMakeFiles/ft_otool.dir/otool/srcs/sort_64.c.o.provides
-
-CMakeFiles/ft_otool.dir/otool/srcs/sort_64.c.o.provides.build: CMakeFiles/ft_otool.dir/otool/srcs/sort_64.c.o
-
-
-CMakeFiles/ft_otool.dir/otool/srcs/sort_32.c.o: CMakeFiles/ft_otool.dir/flags.make
-CMakeFiles/ft_otool.dir/otool/srcs/sort_32.c.o: ../otool/srcs/sort_32.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/ft_otool.dir/otool/srcs/sort_32.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_otool.dir/otool/srcs/sort_32.c.o   -c /Users/nle-bret/project/nm/otool/srcs/sort_32.c
-
-CMakeFiles/ft_otool.dir/otool/srcs/sort_32.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_otool.dir/otool/srcs/sort_32.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nle-bret/project/nm/otool/srcs/sort_32.c > CMakeFiles/ft_otool.dir/otool/srcs/sort_32.c.i
-
-CMakeFiles/ft_otool.dir/otool/srcs/sort_32.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_otool.dir/otool/srcs/sort_32.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nle-bret/project/nm/otool/srcs/sort_32.c -o CMakeFiles/ft_otool.dir/otool/srcs/sort_32.c.s
-
-CMakeFiles/ft_otool.dir/otool/srcs/sort_32.c.o.requires:
-
-.PHONY : CMakeFiles/ft_otool.dir/otool/srcs/sort_32.c.o.requires
-
-CMakeFiles/ft_otool.dir/otool/srcs/sort_32.c.o.provides: CMakeFiles/ft_otool.dir/otool/srcs/sort_32.c.o.requires
-	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/sort_32.c.o.provides.build
-.PHONY : CMakeFiles/ft_otool.dir/otool/srcs/sort_32.c.o.provides
-
-CMakeFiles/ft_otool.dir/otool/srcs/sort_32.c.o.provides.build: CMakeFiles/ft_otool.dir/otool/srcs/sort_32.c.o
-
-
 # Object files for target ft_otool
 ft_otool_OBJECTS = \
 "CMakeFiles/ft_otool.dir/otool/srcs/ft_otool.c.o" \
 "CMakeFiles/ft_otool.dir/otool/srcs/handle_64.c.o" \
 "CMakeFiles/ft_otool.dir/otool/srcs/handle_32.c.o" \
-"CMakeFiles/ft_otool.dir/otool/srcs/print_64.c.o" \
-"CMakeFiles/ft_otool.dir/otool/srcs/print_32.c.o" \
-"CMakeFiles/ft_otool.dir/otool/srcs/print_type.c.o" \
-"CMakeFiles/ft_otool.dir/otool/srcs/debug.c.o" \
 "CMakeFiles/ft_otool.dir/otool/srcs/util.c.o" \
 "CMakeFiles/ft_otool.dir/otool/srcs/util2.c.o" \
 "CMakeFiles/ft_otool.dir/otool/srcs/handle_fat.c.o" \
-"CMakeFiles/ft_otool.dir/otool/srcs/handle_ar.c.o" \
-"CMakeFiles/ft_otool.dir/otool/srcs/sort_64.c.o" \
-"CMakeFiles/ft_otool.dir/otool/srcs/sort_32.c.o"
+"CMakeFiles/ft_otool.dir/otool/srcs/handle_ar.c.o"
 
 # External object files for target ft_otool
 ft_otool_EXTERNAL_OBJECTS =
@@ -391,20 +241,14 @@ ft_otool_EXTERNAL_OBJECTS =
 ft_otool: CMakeFiles/ft_otool.dir/otool/srcs/ft_otool.c.o
 ft_otool: CMakeFiles/ft_otool.dir/otool/srcs/handle_64.c.o
 ft_otool: CMakeFiles/ft_otool.dir/otool/srcs/handle_32.c.o
-ft_otool: CMakeFiles/ft_otool.dir/otool/srcs/print_64.c.o
-ft_otool: CMakeFiles/ft_otool.dir/otool/srcs/print_32.c.o
-ft_otool: CMakeFiles/ft_otool.dir/otool/srcs/print_type.c.o
-ft_otool: CMakeFiles/ft_otool.dir/otool/srcs/debug.c.o
 ft_otool: CMakeFiles/ft_otool.dir/otool/srcs/util.c.o
 ft_otool: CMakeFiles/ft_otool.dir/otool/srcs/util2.c.o
 ft_otool: CMakeFiles/ft_otool.dir/otool/srcs/handle_fat.c.o
 ft_otool: CMakeFiles/ft_otool.dir/otool/srcs/handle_ar.c.o
-ft_otool: CMakeFiles/ft_otool.dir/otool/srcs/sort_64.c.o
-ft_otool: CMakeFiles/ft_otool.dir/otool/srcs/sort_32.c.o
 ft_otool: CMakeFiles/ft_otool.dir/build.make
 ft_otool: libft/libft.a
 ft_otool: CMakeFiles/ft_otool.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking C executable ft_otool"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable ft_otool"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ft_otool.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -415,16 +259,10 @@ CMakeFiles/ft_otool.dir/build: ft_otool
 CMakeFiles/ft_otool.dir/requires: CMakeFiles/ft_otool.dir/otool/srcs/ft_otool.c.o.requires
 CMakeFiles/ft_otool.dir/requires: CMakeFiles/ft_otool.dir/otool/srcs/handle_64.c.o.requires
 CMakeFiles/ft_otool.dir/requires: CMakeFiles/ft_otool.dir/otool/srcs/handle_32.c.o.requires
-CMakeFiles/ft_otool.dir/requires: CMakeFiles/ft_otool.dir/otool/srcs/print_64.c.o.requires
-CMakeFiles/ft_otool.dir/requires: CMakeFiles/ft_otool.dir/otool/srcs/print_32.c.o.requires
-CMakeFiles/ft_otool.dir/requires: CMakeFiles/ft_otool.dir/otool/srcs/print_type.c.o.requires
-CMakeFiles/ft_otool.dir/requires: CMakeFiles/ft_otool.dir/otool/srcs/debug.c.o.requires
 CMakeFiles/ft_otool.dir/requires: CMakeFiles/ft_otool.dir/otool/srcs/util.c.o.requires
 CMakeFiles/ft_otool.dir/requires: CMakeFiles/ft_otool.dir/otool/srcs/util2.c.o.requires
 CMakeFiles/ft_otool.dir/requires: CMakeFiles/ft_otool.dir/otool/srcs/handle_fat.c.o.requires
 CMakeFiles/ft_otool.dir/requires: CMakeFiles/ft_otool.dir/otool/srcs/handle_ar.c.o.requires
-CMakeFiles/ft_otool.dir/requires: CMakeFiles/ft_otool.dir/otool/srcs/sort_64.c.o.requires
-CMakeFiles/ft_otool.dir/requires: CMakeFiles/ft_otool.dir/otool/srcs/sort_32.c.o.requires
 
 .PHONY : CMakeFiles/ft_otool.dir/requires
 

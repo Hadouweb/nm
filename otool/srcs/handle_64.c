@@ -16,13 +16,11 @@ void			print_section_64(t_process *process, struct section_64 *section)
 {
 	void	*ptr;
 	void	*ptr_end;
-	int 	i;
+	int		i;
 
-	//debug_section_64(section);
 	if (ft_strcmp(section->sectname, SECT_TEXT) == 0)
 	{
 		ptr = process->ptr + section->offset;
-		//printf("---------------------> %ld (%lx)\n",  (char*)ptr - process->ptr_start, (char*)ptr - process->ptr_start);
 		ptr_end = ptr + section->size;
 		i = 0;
 		ft_putstr("Contents of (__TEXT,__text) section");
@@ -35,9 +33,8 @@ void			print_section_64(t_process *process, struct section_64 *section)
 				ft_putchar('\t');
 				section->addr += 16;
 			}
-			print_byte(*(unsigned char *)ptr);
+			print_byte(*(unsigned char *)ptr++);
 			ft_putchar(' ');
-			ptr++;
 			i++;
 		}
 		ft_putstr("\n");
@@ -88,7 +85,6 @@ void			handle_64(t_process *process)
 	struct load_command		*lc;
 
 	//printf("handle_64 %s\n", process->file_name);
-
 	process->header_64 = (struct mach_header_64*)process->ptr;
 	ncmds = process->header_64->ncmds;
 	process->load_command = (void*)process->ptr + sizeof(*process->header_64);
@@ -96,8 +92,6 @@ void			handle_64(t_process *process)
 	i = 0;
 	while (i < ncmds)
 	{
-		//if (lc->cmd == LC_SYMTAB)
-		//	process->sym = (struct symtab_command*)lc;
 		if (lc->cmd == LC_SEGMENT_64)
 			process->nsects += ((struct segment_command_64 *)lc)->nsects;
 		i++;
@@ -105,6 +99,5 @@ void			handle_64(t_process *process)
 	}
 	if (process->nsects > 0)
 		find_segment_64(process);
-	//ft_hex_dump(process->ptr_start, process->buff_stat.st_size);
 	clear_process(process);
 }

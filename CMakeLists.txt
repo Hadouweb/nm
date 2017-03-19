@@ -32,16 +32,10 @@ set(SRCS_OTOOL
         otool/srcs/ft_otool.c
         otool/srcs/handle_64.c
         otool/srcs/handle_32.c
-        otool/srcs/print_64.c
-        otool/srcs/print_32.c
-        otool/srcs/print_type.c
-        otool/srcs/debug.c
         otool/srcs/util.c
         otool/srcs/util2.c
         otool/srcs/handle_fat.c
         otool/srcs/handle_ar.c
-        otool/srcs/sort_64.c
-        otool/srcs/sort_32.c
         )
 
 set(HEADERS_NM otool/includes/ft_otool.h)

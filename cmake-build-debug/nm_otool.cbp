@@ -412,9 +412,6 @@
 		<Unit filename="/Users/nle-bret/project/nm/otool/includes/ft_otool.h">
 			<Option target="ft_otool"/>
 		</Unit>
-		<Unit filename="/Users/nle-bret/project/nm/otool/srcs/debug.c">
-			<Option target="ft_otool"/>
-		</Unit>
 		<Unit filename="/Users/nle-bret/project/nm/otool/srcs/ft_otool.c">
 			<Option target="ft_otool"/>
 		</Unit>
@@ -428,21 +425,6 @@
 			<Option target="ft_otool"/>
 		</Unit>
 		<Unit filename="/Users/nle-bret/project/nm/otool/srcs/handle_fat.c">
-			<Option target="ft_otool"/>
-		</Unit>
-		<Unit filename="/Users/nle-bret/project/nm/otool/srcs/print_32.c">
-			<Option target="ft_otool"/>
-		</Unit>
-		<Unit filename="/Users/nle-bret/project/nm/otool/srcs/print_64.c">
-			<Option target="ft_otool"/>
-		</Unit>
-		<Unit filename="/Users/nle-bret/project/nm/otool/srcs/print_type.c">
-			<Option target="ft_otool"/>
-		</Unit>
-		<Unit filename="/Users/nle-bret/project/nm/otool/srcs/sort_32.c">
-			<Option target="ft_otool"/>
-		</Unit>
-		<Unit filename="/Users/nle-bret/project/nm/otool/srcs/sort_64.c">
 			<Option target="ft_otool"/>
 		</Unit>
 		<Unit filename="/Users/nle-bret/project/nm/otool/srcs/util.c">

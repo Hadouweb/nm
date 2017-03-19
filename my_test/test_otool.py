@@ -8,7 +8,9 @@ import os
 import sys
 import shlex
 
-test_dir = ["/usr/share", "/usr/bin", "/sbin", "/bin", "/usr/sbin", "/usr/lib", "."]
+#"/usr/share", "/usr/bin", "/sbin", "/bin", "/usr/sbin", "/usr/lib",
+
+test_dir = ["."]
 
 #############################################################
 # functions
@@ -37,20 +39,20 @@ def ft_test_file(file):
         count = int(count)
         g_total += 1
         if (count != 0):
-            print("tests NM: \033[91mFAILED! \033[0m : " + file)
+            print("tests OTOOL: \033[91mFAILED! \033[0m : " + file)
             #sys.exit(0)
         else:
-            print("tests NM: \033[92mSUCCESS! \033[0m: " + file)
+            print("tests OTOOL: \033[92mSUCCESS! \033[0m: " + file)
             g_score += 1
     #print("\n\033[96mSCORE: " + str(g_score) + " / " + str(g_total) + "\033[0m")
 
 def ft_test_dir(dir):
-    print("\033[93mTest NM \033[0m\033[94m" + os.path.abspath(dir) + "\033[0m")
+    print("\033[93mTest OTOOL \033[0m\033[94m" + os.path.abspath(dir) + "\033[0m")
     for file in os.listdir(dir):
         ft_test_file(dir + "/" + file)
 
 def ft_test_dir_recur(dir):
-    print("\033[93mTest NM \033[0m\033[94m" + os.path.abspath(dir) + "\033[0m")
+    print("\033[93mTest OTOOL \033[0m\033[94m" + os.path.abspath(dir) + "\033[0m")
     for root, directories, filenames in os.walk(dir):
         for filename in filenames:
             ft_test_file(filename)

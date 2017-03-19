@@ -136,33 +136,6 @@ ft/fast:
 	$(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/build
 .PHONY : ft/fast
 
-otool/srcs/debug.o: otool/srcs/debug.c.o
-
-.PHONY : otool/srcs/debug.o
-
-# target to build an object file
-otool/srcs/debug.c.o:
-	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/debug.c.o
-.PHONY : otool/srcs/debug.c.o
-
-otool/srcs/debug.i: otool/srcs/debug.c.i
-
-.PHONY : otool/srcs/debug.i
-
-# target to preprocess a source file
-otool/srcs/debug.c.i:
-	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/debug.c.i
-.PHONY : otool/srcs/debug.c.i
-
-otool/srcs/debug.s: otool/srcs/debug.c.s
-
-.PHONY : otool/srcs/debug.s
-
-# target to generate assembly for a file
-otool/srcs/debug.c.s:
-	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/debug.c.s
-.PHONY : otool/srcs/debug.c.s
-
 otool/srcs/ft_otool.o: otool/srcs/ft_otool.c.o
 
 .PHONY : otool/srcs/ft_otool.o
@@ -298,141 +271,6 @@ otool/srcs/handle_fat.c.s:
 	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/handle_fat.c.s
 .PHONY : otool/srcs/handle_fat.c.s
 
-otool/srcs/print_32.o: otool/srcs/print_32.c.o
-
-.PHONY : otool/srcs/print_32.o
-
-# target to build an object file
-otool/srcs/print_32.c.o:
-	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/print_32.c.o
-.PHONY : otool/srcs/print_32.c.o
-
-otool/srcs/print_32.i: otool/srcs/print_32.c.i
-
-.PHONY : otool/srcs/print_32.i
-
-# target to preprocess a source file
-otool/srcs/print_32.c.i:
-	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/print_32.c.i
-.PHONY : otool/srcs/print_32.c.i
-
-otool/srcs/print_32.s: otool/srcs/print_32.c.s
-
-.PHONY : otool/srcs/print_32.s
-
-# target to generate assembly for a file
-otool/srcs/print_32.c.s:
-	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/print_32.c.s
-.PHONY : otool/srcs/print_32.c.s
-
-otool/srcs/print_64.o: otool/srcs/print_64.c.o
-
-.PHONY : otool/srcs/print_64.o
-
-# target to build an object file
-otool/srcs/print_64.c.o:
-	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/print_64.c.o
-.PHONY : otool/srcs/print_64.c.o
-
-otool/srcs/print_64.i: otool/srcs/print_64.c.i
-
-.PHONY : otool/srcs/print_64.i
-
-# target to preprocess a source file
-otool/srcs/print_64.c.i:
-	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/print_64.c.i
-.PHONY : otool/srcs/print_64.c.i
-
-otool/srcs/print_64.s: otool/srcs/print_64.c.s
-
-.PHONY : otool/srcs/print_64.s
-
-# target to generate assembly for a file
-otool/srcs/print_64.c.s:
-	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/print_64.c.s
-.PHONY : otool/srcs/print_64.c.s
-
-otool/srcs/print_type.o: otool/srcs/print_type.c.o
-
-.PHONY : otool/srcs/print_type.o
-
-# target to build an object file
-otool/srcs/print_type.c.o:
-	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/print_type.c.o
-.PHONY : otool/srcs/print_type.c.o
-
-otool/srcs/print_type.i: otool/srcs/print_type.c.i
-
-.PHONY : otool/srcs/print_type.i
-
-# target to preprocess a source file
-otool/srcs/print_type.c.i:
-	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/print_type.c.i
-.PHONY : otool/srcs/print_type.c.i
-
-otool/srcs/print_type.s: otool/srcs/print_type.c.s
-
-.PHONY : otool/srcs/print_type.s
-
-# target to generate assembly for a file
-otool/srcs/print_type.c.s:
-	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/print_type.c.s
-.PHONY : otool/srcs/print_type.c.s
-
-otool/srcs/sort_32.o: otool/srcs/sort_32.c.o
-
-.PHONY : otool/srcs/sort_32.o
-
-# target to build an object file
-otool/srcs/sort_32.c.o:
-	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/sort_32.c.o
-.PHONY : otool/srcs/sort_32.c.o
-
-otool/srcs/sort_32.i: otool/srcs/sort_32.c.i
-
-.PHONY : otool/srcs/sort_32.i
-
-# target to preprocess a source file
-otool/srcs/sort_32.c.i:
-	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/sort_32.c.i
-.PHONY : otool/srcs/sort_32.c.i
-
-otool/srcs/sort_32.s: otool/srcs/sort_32.c.s
-
-.PHONY : otool/srcs/sort_32.s
-
-# target to generate assembly for a file
-otool/srcs/sort_32.c.s:
-	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/sort_32.c.s
-.PHONY : otool/srcs/sort_32.c.s
-
-otool/srcs/sort_64.o: otool/srcs/sort_64.c.o
-
-.PHONY : otool/srcs/sort_64.o
-
-# target to build an object file
-otool/srcs/sort_64.c.o:
-	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/sort_64.c.o
-.PHONY : otool/srcs/sort_64.c.o
-
-otool/srcs/sort_64.i: otool/srcs/sort_64.c.i
-
-.PHONY : otool/srcs/sort_64.i
-
-# target to preprocess a source file
-otool/srcs/sort_64.c.i:
-	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/sort_64.c.i
-.PHONY : otool/srcs/sort_64.c.i
-
-otool/srcs/sort_64.s: otool/srcs/sort_64.c.s
-
-.PHONY : otool/srcs/sort_64.s
-
-# target to generate assembly for a file
-otool/srcs/sort_64.c.s:
-	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/sort_64.c.s
-.PHONY : otool/srcs/sort_64.c.s
-
 otool/srcs/util.o: otool/srcs/util.c.o
 
 .PHONY : otool/srcs/util.o
@@ -497,9 +335,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... ft_otool"
 	@echo "... ft"
-	@echo "... otool/srcs/debug.o"
-	@echo "... otool/srcs/debug.i"
-	@echo "... otool/srcs/debug.s"
 	@echo "... otool/srcs/ft_otool.o"
 	@echo "... otool/srcs/ft_otool.i"
 	@echo "... otool/srcs/ft_otool.s"
@@ -515,21 +350,6 @@ help:
 	@echo "... otool/srcs/handle_fat.o"
 	@echo "... otool/srcs/handle_fat.i"
 	@echo "... otool/srcs/handle_fat.s"
-	@echo "... otool/srcs/print_32.o"
-	@echo "... otool/srcs/print_32.i"
-	@echo "... otool/srcs/print_32.s"
-	@echo "... otool/srcs/print_64.o"
-	@echo "... otool/srcs/print_64.i"
-	@echo "... otool/srcs/print_64.s"
-	@echo "... otool/srcs/print_type.o"
-	@echo "... otool/srcs/print_type.i"
-	@echo "... otool/srcs/print_type.s"
-	@echo "... otool/srcs/sort_32.o"
-	@echo "... otool/srcs/sort_32.i"
-	@echo "... otool/srcs/sort_32.s"
-	@echo "... otool/srcs/sort_64.o"
-	@echo "... otool/srcs/sort_64.i"
-	@echo "... otool/srcs/sort_64.s"
 	@echo "... otool/srcs/util.o"
 	@echo "... otool/srcs/util.i"
 	@echo "... otool/srcs/util.s"

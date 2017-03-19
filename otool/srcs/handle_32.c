@@ -5,12 +5,32 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nle-bret <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/03/18 17:04:06 by nle-bret          #+#    #+#             */
-/*   Updated: 2017/03/18 17:04:07 by nle-bret         ###   ########.fr       */
+/*   Created: 2017/03/19 18:35:28 by nle-bret          #+#    #+#             */
+/*   Updated: 2017/03/19 18:35:30 by nle-bret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_otool.h"
+
+void			print_section_section_32_sub_func(t_process *process,
+	struct section *section, int i)
+{
+	if (i % 16 == 0)
+	{
+		if (i > 0)
+		{
+			ft_putchar(' ');
+			ft_putchar('\n');
+		}
+		print_addr_32(section->addr);
+		ft_putchar('\t');
+		section->addr += 16;
+	}
+	else if (i % 4 == 0 && process->is_big_endian == 1)
+		ft_putchar(' ');
+	else if (process->is_big_endian == 0)
+		ft_putchar(' ');
+}
 
 void			print_section_32(t_process *process, struct section *section)
 {
@@ -29,21 +49,7 @@ void			print_section_32(t_process *process, struct section *section)
 		section->addr = convert_uint32(process, section->addr);
 		while (ptr < ptr_end && i < section->size)
 		{
-			if (i % 16 == 0)
-			{
-				if (i > 0)
-				{
-					ft_putchar(' ');
-					ft_putchar('\n');
-				}
-				print_addr_32(section->addr);
-				ft_putchar('\t');
-				section->addr += 16;
-			}
-			else if (i % 4 == 0 && process->is_big_endian == 1)
-				ft_putchar(' ');
-			else if (process->is_big_endian == 0)
-				ft_putchar(' ');
+			print_section_section_32_sub_func(process, section, i);
 			print_byte(*(unsigned char *)ptr);
 			ptr++;
 			i++;
@@ -57,7 +63,7 @@ static void		loop_section_32(t_process *process, struct load_command *lc)
 	uint32_t					j;
 	struct segment_command		*sg;
 	struct section				*s;
-	uint32_t 					nsects;
+	uint32_t					nsects;
 
 	j = 0;
 	sg = (struct segment_command *)lc;
@@ -99,7 +105,6 @@ void			handle_32(t_process *process, char mode)
 
 	//printf("handle_32 %s\n", process->file_name);
 	process->is_big_endian = mode;
-	//printf("---------> mode: %d\n", mode);
 	process->header_32 = (struct mach_header*)process->ptr;
 	ncmds = convert_uint32(process, process->header_32->ncmds);
 	process->load_command = (void*)process->ptr + sizeof(*process->header_32);
@@ -107,9 +112,7 @@ void			handle_32(t_process *process, char mode)
 	i = 0;
 	while (i < ncmds)
 	{
-		if (lc->cmd == LC_SYMTAB)
-			process->sym = convert_symtab(process, (struct symtab_command*)lc);
-		else if (lc->cmd == LC_SEGMENT)
+		if (lc->cmd == LC_SEGMENT)
 			process->nsects += convert_uint32(process,
 			((struct segment_command *)lc)->nsects);
 		i++;
