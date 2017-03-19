@@ -37,8 +37,8 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/nle-bret/project/nm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ft_otool">
-				<Option output="/Users/nle-bret/project/nm/cmake-build-debug/ft_otool" prefix_auto="0" extension_auto="0"/>
+			<Target title="ft_nm">
+				<Option output="/Users/nle-bret/project/nm/cmake-build-debug/ft_nm" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/nle-bret/project/nm/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -57,14 +57,14 @@
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/nle-bret/project/nm/cmake-build-debug/Makefile&quot;  VERBOSE=1 ft_otool"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/nle-bret/project/nm/cmake-build-debug/Makefile&quot;  VERBOSE=1 ft_nm"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/nle-bret/project/nm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/nle-bret/project/nm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/nle-bret/project/nm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ft_otool/fast">
-				<Option output="/Users/nle-bret/project/nm/cmake-build-debug/ft_otool" prefix_auto="0" extension_auto="0"/>
+			<Target title="ft_nm/fast">
+				<Option output="/Users/nle-bret/project/nm/cmake-build-debug/ft_nm" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/nle-bret/project/nm/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -83,7 +83,7 @@
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/nle-bret/project/nm/cmake-build-debug/Makefile&quot;  VERBOSE=1 ft_otool/fast"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/nle-bret/project/nm/cmake-build-debug/Makefile&quot;  VERBOSE=1 ft_nm/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/nle-bret/project/nm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/nle-bret/project/nm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/nle-bret/project/nm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -409,29 +409,47 @@
 		<Unit filename="/Users/nle-bret/project/nm/libft/srcs/tree/ft_tree_preorder.c">
 			<Option target="ft"/>
 		</Unit>
+		<Unit filename="/Users/nle-bret/project/nm/nm/srcs/debug.c">
+			<Option target="ft_nm"/>
+		</Unit>
+		<Unit filename="/Users/nle-bret/project/nm/nm/srcs/ft_nm.c">
+			<Option target="ft_nm"/>
+		</Unit>
+		<Unit filename="/Users/nle-bret/project/nm/nm/srcs/handle_32.c">
+			<Option target="ft_nm"/>
+		</Unit>
+		<Unit filename="/Users/nle-bret/project/nm/nm/srcs/handle_64.c">
+			<Option target="ft_nm"/>
+		</Unit>
+		<Unit filename="/Users/nle-bret/project/nm/nm/srcs/handle_ar.c">
+			<Option target="ft_nm"/>
+		</Unit>
+		<Unit filename="/Users/nle-bret/project/nm/nm/srcs/handle_fat.c">
+			<Option target="ft_nm"/>
+		</Unit>
+		<Unit filename="/Users/nle-bret/project/nm/nm/srcs/print_32.c">
+			<Option target="ft_nm"/>
+		</Unit>
+		<Unit filename="/Users/nle-bret/project/nm/nm/srcs/print_64.c">
+			<Option target="ft_nm"/>
+		</Unit>
+		<Unit filename="/Users/nle-bret/project/nm/nm/srcs/print_type.c">
+			<Option target="ft_nm"/>
+		</Unit>
+		<Unit filename="/Users/nle-bret/project/nm/nm/srcs/sort_32.c">
+			<Option target="ft_nm"/>
+		</Unit>
+		<Unit filename="/Users/nle-bret/project/nm/nm/srcs/sort_64.c">
+			<Option target="ft_nm"/>
+		</Unit>
+		<Unit filename="/Users/nle-bret/project/nm/nm/srcs/util.c">
+			<Option target="ft_nm"/>
+		</Unit>
+		<Unit filename="/Users/nle-bret/project/nm/nm/srcs/util2.c">
+			<Option target="ft_nm"/>
+		</Unit>
 		<Unit filename="/Users/nle-bret/project/nm/otool/includes/ft_otool.h">
-			<Option target="ft_otool"/>
-		</Unit>
-		<Unit filename="/Users/nle-bret/project/nm/otool/srcs/ft_otool.c">
-			<Option target="ft_otool"/>
-		</Unit>
-		<Unit filename="/Users/nle-bret/project/nm/otool/srcs/handle_32.c">
-			<Option target="ft_otool"/>
-		</Unit>
-		<Unit filename="/Users/nle-bret/project/nm/otool/srcs/handle_64.c">
-			<Option target="ft_otool"/>
-		</Unit>
-		<Unit filename="/Users/nle-bret/project/nm/otool/srcs/handle_ar.c">
-			<Option target="ft_otool"/>
-		</Unit>
-		<Unit filename="/Users/nle-bret/project/nm/otool/srcs/handle_fat.c">
-			<Option target="ft_otool"/>
-		</Unit>
-		<Unit filename="/Users/nle-bret/project/nm/otool/srcs/util.c">
-			<Option target="ft_otool"/>
-		</Unit>
-		<Unit filename="/Users/nle-bret/project/nm/otool/srcs/util2.c">
-			<Option target="ft_otool"/>
+			<Option target="ft_nm"/>
 		</Unit>
 		<Unit filename="/Users/nle-bret/project/nm/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

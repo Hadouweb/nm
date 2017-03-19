@@ -57,7 +57,374 @@ include CMakeFiles/ft_nm.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ft_nm.dir/flags.make
 
-CMakeFiles/ft_nm.dir/requires:
+CMakeFiles/ft_nm.dir/nm/srcs/ft_nm.c.o: CMakeFiles/ft_nm.dir/flags.make
+CMakeFiles/ft_nm.dir/nm/srcs/ft_nm.c.o: ../nm/srcs/ft_nm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ft_nm.dir/nm/srcs/ft_nm.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_nm.dir/nm/srcs/ft_nm.c.o   -c /Users/nle-bret/project/nm/nm/srcs/ft_nm.c
+
+CMakeFiles/ft_nm.dir/nm/srcs/ft_nm.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_nm.dir/nm/srcs/ft_nm.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nle-bret/project/nm/nm/srcs/ft_nm.c > CMakeFiles/ft_nm.dir/nm/srcs/ft_nm.c.i
+
+CMakeFiles/ft_nm.dir/nm/srcs/ft_nm.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_nm.dir/nm/srcs/ft_nm.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nle-bret/project/nm/nm/srcs/ft_nm.c -o CMakeFiles/ft_nm.dir/nm/srcs/ft_nm.c.s
+
+CMakeFiles/ft_nm.dir/nm/srcs/ft_nm.c.o.requires:
+
+.PHONY : CMakeFiles/ft_nm.dir/nm/srcs/ft_nm.c.o.requires
+
+CMakeFiles/ft_nm.dir/nm/srcs/ft_nm.c.o.provides: CMakeFiles/ft_nm.dir/nm/srcs/ft_nm.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/nm/srcs/ft_nm.c.o.provides.build
+.PHONY : CMakeFiles/ft_nm.dir/nm/srcs/ft_nm.c.o.provides
+
+CMakeFiles/ft_nm.dir/nm/srcs/ft_nm.c.o.provides.build: CMakeFiles/ft_nm.dir/nm/srcs/ft_nm.c.o
+
+
+CMakeFiles/ft_nm.dir/nm/srcs/handle_64.c.o: CMakeFiles/ft_nm.dir/flags.make
+CMakeFiles/ft_nm.dir/nm/srcs/handle_64.c.o: ../nm/srcs/handle_64.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ft_nm.dir/nm/srcs/handle_64.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_nm.dir/nm/srcs/handle_64.c.o   -c /Users/nle-bret/project/nm/nm/srcs/handle_64.c
+
+CMakeFiles/ft_nm.dir/nm/srcs/handle_64.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_nm.dir/nm/srcs/handle_64.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nle-bret/project/nm/nm/srcs/handle_64.c > CMakeFiles/ft_nm.dir/nm/srcs/handle_64.c.i
+
+CMakeFiles/ft_nm.dir/nm/srcs/handle_64.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_nm.dir/nm/srcs/handle_64.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nle-bret/project/nm/nm/srcs/handle_64.c -o CMakeFiles/ft_nm.dir/nm/srcs/handle_64.c.s
+
+CMakeFiles/ft_nm.dir/nm/srcs/handle_64.c.o.requires:
+
+.PHONY : CMakeFiles/ft_nm.dir/nm/srcs/handle_64.c.o.requires
+
+CMakeFiles/ft_nm.dir/nm/srcs/handle_64.c.o.provides: CMakeFiles/ft_nm.dir/nm/srcs/handle_64.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/nm/srcs/handle_64.c.o.provides.build
+.PHONY : CMakeFiles/ft_nm.dir/nm/srcs/handle_64.c.o.provides
+
+CMakeFiles/ft_nm.dir/nm/srcs/handle_64.c.o.provides.build: CMakeFiles/ft_nm.dir/nm/srcs/handle_64.c.o
+
+
+CMakeFiles/ft_nm.dir/nm/srcs/handle_32.c.o: CMakeFiles/ft_nm.dir/flags.make
+CMakeFiles/ft_nm.dir/nm/srcs/handle_32.c.o: ../nm/srcs/handle_32.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ft_nm.dir/nm/srcs/handle_32.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_nm.dir/nm/srcs/handle_32.c.o   -c /Users/nle-bret/project/nm/nm/srcs/handle_32.c
+
+CMakeFiles/ft_nm.dir/nm/srcs/handle_32.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_nm.dir/nm/srcs/handle_32.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nle-bret/project/nm/nm/srcs/handle_32.c > CMakeFiles/ft_nm.dir/nm/srcs/handle_32.c.i
+
+CMakeFiles/ft_nm.dir/nm/srcs/handle_32.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_nm.dir/nm/srcs/handle_32.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nle-bret/project/nm/nm/srcs/handle_32.c -o CMakeFiles/ft_nm.dir/nm/srcs/handle_32.c.s
+
+CMakeFiles/ft_nm.dir/nm/srcs/handle_32.c.o.requires:
+
+.PHONY : CMakeFiles/ft_nm.dir/nm/srcs/handle_32.c.o.requires
+
+CMakeFiles/ft_nm.dir/nm/srcs/handle_32.c.o.provides: CMakeFiles/ft_nm.dir/nm/srcs/handle_32.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/nm/srcs/handle_32.c.o.provides.build
+.PHONY : CMakeFiles/ft_nm.dir/nm/srcs/handle_32.c.o.provides
+
+CMakeFiles/ft_nm.dir/nm/srcs/handle_32.c.o.provides.build: CMakeFiles/ft_nm.dir/nm/srcs/handle_32.c.o
+
+
+CMakeFiles/ft_nm.dir/nm/srcs/print_64.c.o: CMakeFiles/ft_nm.dir/flags.make
+CMakeFiles/ft_nm.dir/nm/srcs/print_64.c.o: ../nm/srcs/print_64.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ft_nm.dir/nm/srcs/print_64.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_nm.dir/nm/srcs/print_64.c.o   -c /Users/nle-bret/project/nm/nm/srcs/print_64.c
+
+CMakeFiles/ft_nm.dir/nm/srcs/print_64.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_nm.dir/nm/srcs/print_64.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nle-bret/project/nm/nm/srcs/print_64.c > CMakeFiles/ft_nm.dir/nm/srcs/print_64.c.i
+
+CMakeFiles/ft_nm.dir/nm/srcs/print_64.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_nm.dir/nm/srcs/print_64.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nle-bret/project/nm/nm/srcs/print_64.c -o CMakeFiles/ft_nm.dir/nm/srcs/print_64.c.s
+
+CMakeFiles/ft_nm.dir/nm/srcs/print_64.c.o.requires:
+
+.PHONY : CMakeFiles/ft_nm.dir/nm/srcs/print_64.c.o.requires
+
+CMakeFiles/ft_nm.dir/nm/srcs/print_64.c.o.provides: CMakeFiles/ft_nm.dir/nm/srcs/print_64.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/nm/srcs/print_64.c.o.provides.build
+.PHONY : CMakeFiles/ft_nm.dir/nm/srcs/print_64.c.o.provides
+
+CMakeFiles/ft_nm.dir/nm/srcs/print_64.c.o.provides.build: CMakeFiles/ft_nm.dir/nm/srcs/print_64.c.o
+
+
+CMakeFiles/ft_nm.dir/nm/srcs/print_32.c.o: CMakeFiles/ft_nm.dir/flags.make
+CMakeFiles/ft_nm.dir/nm/srcs/print_32.c.o: ../nm/srcs/print_32.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/ft_nm.dir/nm/srcs/print_32.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_nm.dir/nm/srcs/print_32.c.o   -c /Users/nle-bret/project/nm/nm/srcs/print_32.c
+
+CMakeFiles/ft_nm.dir/nm/srcs/print_32.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_nm.dir/nm/srcs/print_32.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nle-bret/project/nm/nm/srcs/print_32.c > CMakeFiles/ft_nm.dir/nm/srcs/print_32.c.i
+
+CMakeFiles/ft_nm.dir/nm/srcs/print_32.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_nm.dir/nm/srcs/print_32.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nle-bret/project/nm/nm/srcs/print_32.c -o CMakeFiles/ft_nm.dir/nm/srcs/print_32.c.s
+
+CMakeFiles/ft_nm.dir/nm/srcs/print_32.c.o.requires:
+
+.PHONY : CMakeFiles/ft_nm.dir/nm/srcs/print_32.c.o.requires
+
+CMakeFiles/ft_nm.dir/nm/srcs/print_32.c.o.provides: CMakeFiles/ft_nm.dir/nm/srcs/print_32.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/nm/srcs/print_32.c.o.provides.build
+.PHONY : CMakeFiles/ft_nm.dir/nm/srcs/print_32.c.o.provides
+
+CMakeFiles/ft_nm.dir/nm/srcs/print_32.c.o.provides.build: CMakeFiles/ft_nm.dir/nm/srcs/print_32.c.o
+
+
+CMakeFiles/ft_nm.dir/nm/srcs/print_type.c.o: CMakeFiles/ft_nm.dir/flags.make
+CMakeFiles/ft_nm.dir/nm/srcs/print_type.c.o: ../nm/srcs/print_type.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/ft_nm.dir/nm/srcs/print_type.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_nm.dir/nm/srcs/print_type.c.o   -c /Users/nle-bret/project/nm/nm/srcs/print_type.c
+
+CMakeFiles/ft_nm.dir/nm/srcs/print_type.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_nm.dir/nm/srcs/print_type.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nle-bret/project/nm/nm/srcs/print_type.c > CMakeFiles/ft_nm.dir/nm/srcs/print_type.c.i
+
+CMakeFiles/ft_nm.dir/nm/srcs/print_type.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_nm.dir/nm/srcs/print_type.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nle-bret/project/nm/nm/srcs/print_type.c -o CMakeFiles/ft_nm.dir/nm/srcs/print_type.c.s
+
+CMakeFiles/ft_nm.dir/nm/srcs/print_type.c.o.requires:
+
+.PHONY : CMakeFiles/ft_nm.dir/nm/srcs/print_type.c.o.requires
+
+CMakeFiles/ft_nm.dir/nm/srcs/print_type.c.o.provides: CMakeFiles/ft_nm.dir/nm/srcs/print_type.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/nm/srcs/print_type.c.o.provides.build
+.PHONY : CMakeFiles/ft_nm.dir/nm/srcs/print_type.c.o.provides
+
+CMakeFiles/ft_nm.dir/nm/srcs/print_type.c.o.provides.build: CMakeFiles/ft_nm.dir/nm/srcs/print_type.c.o
+
+
+CMakeFiles/ft_nm.dir/nm/srcs/debug.c.o: CMakeFiles/ft_nm.dir/flags.make
+CMakeFiles/ft_nm.dir/nm/srcs/debug.c.o: ../nm/srcs/debug.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/ft_nm.dir/nm/srcs/debug.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_nm.dir/nm/srcs/debug.c.o   -c /Users/nle-bret/project/nm/nm/srcs/debug.c
+
+CMakeFiles/ft_nm.dir/nm/srcs/debug.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_nm.dir/nm/srcs/debug.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nle-bret/project/nm/nm/srcs/debug.c > CMakeFiles/ft_nm.dir/nm/srcs/debug.c.i
+
+CMakeFiles/ft_nm.dir/nm/srcs/debug.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_nm.dir/nm/srcs/debug.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nle-bret/project/nm/nm/srcs/debug.c -o CMakeFiles/ft_nm.dir/nm/srcs/debug.c.s
+
+CMakeFiles/ft_nm.dir/nm/srcs/debug.c.o.requires:
+
+.PHONY : CMakeFiles/ft_nm.dir/nm/srcs/debug.c.o.requires
+
+CMakeFiles/ft_nm.dir/nm/srcs/debug.c.o.provides: CMakeFiles/ft_nm.dir/nm/srcs/debug.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/nm/srcs/debug.c.o.provides.build
+.PHONY : CMakeFiles/ft_nm.dir/nm/srcs/debug.c.o.provides
+
+CMakeFiles/ft_nm.dir/nm/srcs/debug.c.o.provides.build: CMakeFiles/ft_nm.dir/nm/srcs/debug.c.o
+
+
+CMakeFiles/ft_nm.dir/nm/srcs/util.c.o: CMakeFiles/ft_nm.dir/flags.make
+CMakeFiles/ft_nm.dir/nm/srcs/util.c.o: ../nm/srcs/util.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/ft_nm.dir/nm/srcs/util.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_nm.dir/nm/srcs/util.c.o   -c /Users/nle-bret/project/nm/nm/srcs/util.c
+
+CMakeFiles/ft_nm.dir/nm/srcs/util.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_nm.dir/nm/srcs/util.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nle-bret/project/nm/nm/srcs/util.c > CMakeFiles/ft_nm.dir/nm/srcs/util.c.i
+
+CMakeFiles/ft_nm.dir/nm/srcs/util.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_nm.dir/nm/srcs/util.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nle-bret/project/nm/nm/srcs/util.c -o CMakeFiles/ft_nm.dir/nm/srcs/util.c.s
+
+CMakeFiles/ft_nm.dir/nm/srcs/util.c.o.requires:
+
+.PHONY : CMakeFiles/ft_nm.dir/nm/srcs/util.c.o.requires
+
+CMakeFiles/ft_nm.dir/nm/srcs/util.c.o.provides: CMakeFiles/ft_nm.dir/nm/srcs/util.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/nm/srcs/util.c.o.provides.build
+.PHONY : CMakeFiles/ft_nm.dir/nm/srcs/util.c.o.provides
+
+CMakeFiles/ft_nm.dir/nm/srcs/util.c.o.provides.build: CMakeFiles/ft_nm.dir/nm/srcs/util.c.o
+
+
+CMakeFiles/ft_nm.dir/nm/srcs/util2.c.o: CMakeFiles/ft_nm.dir/flags.make
+CMakeFiles/ft_nm.dir/nm/srcs/util2.c.o: ../nm/srcs/util2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/ft_nm.dir/nm/srcs/util2.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_nm.dir/nm/srcs/util2.c.o   -c /Users/nle-bret/project/nm/nm/srcs/util2.c
+
+CMakeFiles/ft_nm.dir/nm/srcs/util2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_nm.dir/nm/srcs/util2.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nle-bret/project/nm/nm/srcs/util2.c > CMakeFiles/ft_nm.dir/nm/srcs/util2.c.i
+
+CMakeFiles/ft_nm.dir/nm/srcs/util2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_nm.dir/nm/srcs/util2.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nle-bret/project/nm/nm/srcs/util2.c -o CMakeFiles/ft_nm.dir/nm/srcs/util2.c.s
+
+CMakeFiles/ft_nm.dir/nm/srcs/util2.c.o.requires:
+
+.PHONY : CMakeFiles/ft_nm.dir/nm/srcs/util2.c.o.requires
+
+CMakeFiles/ft_nm.dir/nm/srcs/util2.c.o.provides: CMakeFiles/ft_nm.dir/nm/srcs/util2.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/nm/srcs/util2.c.o.provides.build
+.PHONY : CMakeFiles/ft_nm.dir/nm/srcs/util2.c.o.provides
+
+CMakeFiles/ft_nm.dir/nm/srcs/util2.c.o.provides.build: CMakeFiles/ft_nm.dir/nm/srcs/util2.c.o
+
+
+CMakeFiles/ft_nm.dir/nm/srcs/handle_fat.c.o: CMakeFiles/ft_nm.dir/flags.make
+CMakeFiles/ft_nm.dir/nm/srcs/handle_fat.c.o: ../nm/srcs/handle_fat.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/ft_nm.dir/nm/srcs/handle_fat.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_nm.dir/nm/srcs/handle_fat.c.o   -c /Users/nle-bret/project/nm/nm/srcs/handle_fat.c
+
+CMakeFiles/ft_nm.dir/nm/srcs/handle_fat.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_nm.dir/nm/srcs/handle_fat.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nle-bret/project/nm/nm/srcs/handle_fat.c > CMakeFiles/ft_nm.dir/nm/srcs/handle_fat.c.i
+
+CMakeFiles/ft_nm.dir/nm/srcs/handle_fat.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_nm.dir/nm/srcs/handle_fat.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nle-bret/project/nm/nm/srcs/handle_fat.c -o CMakeFiles/ft_nm.dir/nm/srcs/handle_fat.c.s
+
+CMakeFiles/ft_nm.dir/nm/srcs/handle_fat.c.o.requires:
+
+.PHONY : CMakeFiles/ft_nm.dir/nm/srcs/handle_fat.c.o.requires
+
+CMakeFiles/ft_nm.dir/nm/srcs/handle_fat.c.o.provides: CMakeFiles/ft_nm.dir/nm/srcs/handle_fat.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/nm/srcs/handle_fat.c.o.provides.build
+.PHONY : CMakeFiles/ft_nm.dir/nm/srcs/handle_fat.c.o.provides
+
+CMakeFiles/ft_nm.dir/nm/srcs/handle_fat.c.o.provides.build: CMakeFiles/ft_nm.dir/nm/srcs/handle_fat.c.o
+
+
+CMakeFiles/ft_nm.dir/nm/srcs/handle_ar.c.o: CMakeFiles/ft_nm.dir/flags.make
+CMakeFiles/ft_nm.dir/nm/srcs/handle_ar.c.o: ../nm/srcs/handle_ar.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/ft_nm.dir/nm/srcs/handle_ar.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_nm.dir/nm/srcs/handle_ar.c.o   -c /Users/nle-bret/project/nm/nm/srcs/handle_ar.c
+
+CMakeFiles/ft_nm.dir/nm/srcs/handle_ar.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_nm.dir/nm/srcs/handle_ar.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nle-bret/project/nm/nm/srcs/handle_ar.c > CMakeFiles/ft_nm.dir/nm/srcs/handle_ar.c.i
+
+CMakeFiles/ft_nm.dir/nm/srcs/handle_ar.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_nm.dir/nm/srcs/handle_ar.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nle-bret/project/nm/nm/srcs/handle_ar.c -o CMakeFiles/ft_nm.dir/nm/srcs/handle_ar.c.s
+
+CMakeFiles/ft_nm.dir/nm/srcs/handle_ar.c.o.requires:
+
+.PHONY : CMakeFiles/ft_nm.dir/nm/srcs/handle_ar.c.o.requires
+
+CMakeFiles/ft_nm.dir/nm/srcs/handle_ar.c.o.provides: CMakeFiles/ft_nm.dir/nm/srcs/handle_ar.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/nm/srcs/handle_ar.c.o.provides.build
+.PHONY : CMakeFiles/ft_nm.dir/nm/srcs/handle_ar.c.o.provides
+
+CMakeFiles/ft_nm.dir/nm/srcs/handle_ar.c.o.provides.build: CMakeFiles/ft_nm.dir/nm/srcs/handle_ar.c.o
+
+
+CMakeFiles/ft_nm.dir/nm/srcs/sort_64.c.o: CMakeFiles/ft_nm.dir/flags.make
+CMakeFiles/ft_nm.dir/nm/srcs/sort_64.c.o: ../nm/srcs/sort_64.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/ft_nm.dir/nm/srcs/sort_64.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_nm.dir/nm/srcs/sort_64.c.o   -c /Users/nle-bret/project/nm/nm/srcs/sort_64.c
+
+CMakeFiles/ft_nm.dir/nm/srcs/sort_64.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_nm.dir/nm/srcs/sort_64.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nle-bret/project/nm/nm/srcs/sort_64.c > CMakeFiles/ft_nm.dir/nm/srcs/sort_64.c.i
+
+CMakeFiles/ft_nm.dir/nm/srcs/sort_64.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_nm.dir/nm/srcs/sort_64.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nle-bret/project/nm/nm/srcs/sort_64.c -o CMakeFiles/ft_nm.dir/nm/srcs/sort_64.c.s
+
+CMakeFiles/ft_nm.dir/nm/srcs/sort_64.c.o.requires:
+
+.PHONY : CMakeFiles/ft_nm.dir/nm/srcs/sort_64.c.o.requires
+
+CMakeFiles/ft_nm.dir/nm/srcs/sort_64.c.o.provides: CMakeFiles/ft_nm.dir/nm/srcs/sort_64.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/nm/srcs/sort_64.c.o.provides.build
+.PHONY : CMakeFiles/ft_nm.dir/nm/srcs/sort_64.c.o.provides
+
+CMakeFiles/ft_nm.dir/nm/srcs/sort_64.c.o.provides.build: CMakeFiles/ft_nm.dir/nm/srcs/sort_64.c.o
+
+
+CMakeFiles/ft_nm.dir/nm/srcs/sort_32.c.o: CMakeFiles/ft_nm.dir/flags.make
+CMakeFiles/ft_nm.dir/nm/srcs/sort_32.c.o: ../nm/srcs/sort_32.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/ft_nm.dir/nm/srcs/sort_32.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_nm.dir/nm/srcs/sort_32.c.o   -c /Users/nle-bret/project/nm/nm/srcs/sort_32.c
+
+CMakeFiles/ft_nm.dir/nm/srcs/sort_32.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_nm.dir/nm/srcs/sort_32.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nle-bret/project/nm/nm/srcs/sort_32.c > CMakeFiles/ft_nm.dir/nm/srcs/sort_32.c.i
+
+CMakeFiles/ft_nm.dir/nm/srcs/sort_32.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_nm.dir/nm/srcs/sort_32.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nle-bret/project/nm/nm/srcs/sort_32.c -o CMakeFiles/ft_nm.dir/nm/srcs/sort_32.c.s
+
+CMakeFiles/ft_nm.dir/nm/srcs/sort_32.c.o.requires:
+
+.PHONY : CMakeFiles/ft_nm.dir/nm/srcs/sort_32.c.o.requires
+
+CMakeFiles/ft_nm.dir/nm/srcs/sort_32.c.o.provides: CMakeFiles/ft_nm.dir/nm/srcs/sort_32.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/nm/srcs/sort_32.c.o.provides.build
+.PHONY : CMakeFiles/ft_nm.dir/nm/srcs/sort_32.c.o.provides
+
+CMakeFiles/ft_nm.dir/nm/srcs/sort_32.c.o.provides.build: CMakeFiles/ft_nm.dir/nm/srcs/sort_32.c.o
+
+
+# Object files for target ft_nm
+ft_nm_OBJECTS = \
+"CMakeFiles/ft_nm.dir/nm/srcs/ft_nm.c.o" \
+"CMakeFiles/ft_nm.dir/nm/srcs/handle_64.c.o" \
+"CMakeFiles/ft_nm.dir/nm/srcs/handle_32.c.o" \
+"CMakeFiles/ft_nm.dir/nm/srcs/print_64.c.o" \
+"CMakeFiles/ft_nm.dir/nm/srcs/print_32.c.o" \
+"CMakeFiles/ft_nm.dir/nm/srcs/print_type.c.o" \
+"CMakeFiles/ft_nm.dir/nm/srcs/debug.c.o" \
+"CMakeFiles/ft_nm.dir/nm/srcs/util.c.o" \
+"CMakeFiles/ft_nm.dir/nm/srcs/util2.c.o" \
+"CMakeFiles/ft_nm.dir/nm/srcs/handle_fat.c.o" \
+"CMakeFiles/ft_nm.dir/nm/srcs/handle_ar.c.o" \
+"CMakeFiles/ft_nm.dir/nm/srcs/sort_64.c.o" \
+"CMakeFiles/ft_nm.dir/nm/srcs/sort_32.c.o"
+
+# External object files for target ft_nm
+ft_nm_EXTERNAL_OBJECTS =
+
+ft_nm: CMakeFiles/ft_nm.dir/nm/srcs/ft_nm.c.o
+ft_nm: CMakeFiles/ft_nm.dir/nm/srcs/handle_64.c.o
+ft_nm: CMakeFiles/ft_nm.dir/nm/srcs/handle_32.c.o
+ft_nm: CMakeFiles/ft_nm.dir/nm/srcs/print_64.c.o
+ft_nm: CMakeFiles/ft_nm.dir/nm/srcs/print_32.c.o
+ft_nm: CMakeFiles/ft_nm.dir/nm/srcs/print_type.c.o
+ft_nm: CMakeFiles/ft_nm.dir/nm/srcs/debug.c.o
+ft_nm: CMakeFiles/ft_nm.dir/nm/srcs/util.c.o
+ft_nm: CMakeFiles/ft_nm.dir/nm/srcs/util2.c.o
+ft_nm: CMakeFiles/ft_nm.dir/nm/srcs/handle_fat.c.o
+ft_nm: CMakeFiles/ft_nm.dir/nm/srcs/handle_ar.c.o
+ft_nm: CMakeFiles/ft_nm.dir/nm/srcs/sort_64.c.o
+ft_nm: CMakeFiles/ft_nm.dir/nm/srcs/sort_32.c.o
+ft_nm: CMakeFiles/ft_nm.dir/build.make
+ft_nm: libft/libft.a
+ft_nm: CMakeFiles/ft_nm.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/nle-bret/project/nm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking C executable ft_nm"
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ft_nm.dir/link.txt --verbose=$(VERBOSE)
+
+# Rule to build all files generated by this target.
+CMakeFiles/ft_nm.dir/build: ft_nm
+
+.PHONY : CMakeFiles/ft_nm.dir/build
+
+CMakeFiles/ft_nm.dir/requires: CMakeFiles/ft_nm.dir/nm/srcs/ft_nm.c.o.requires
+CMakeFiles/ft_nm.dir/requires: CMakeFiles/ft_nm.dir/nm/srcs/handle_64.c.o.requires
+CMakeFiles/ft_nm.dir/requires: CMakeFiles/ft_nm.dir/nm/srcs/handle_32.c.o.requires
+CMakeFiles/ft_nm.dir/requires: CMakeFiles/ft_nm.dir/nm/srcs/print_64.c.o.requires
+CMakeFiles/ft_nm.dir/requires: CMakeFiles/ft_nm.dir/nm/srcs/print_32.c.o.requires
+CMakeFiles/ft_nm.dir/requires: CMakeFiles/ft_nm.dir/nm/srcs/print_type.c.o.requires
+CMakeFiles/ft_nm.dir/requires: CMakeFiles/ft_nm.dir/nm/srcs/debug.c.o.requires
+CMakeFiles/ft_nm.dir/requires: CMakeFiles/ft_nm.dir/nm/srcs/util.c.o.requires
+CMakeFiles/ft_nm.dir/requires: CMakeFiles/ft_nm.dir/nm/srcs/util2.c.o.requires
+CMakeFiles/ft_nm.dir/requires: CMakeFiles/ft_nm.dir/nm/srcs/handle_fat.c.o.requires
+CMakeFiles/ft_nm.dir/requires: CMakeFiles/ft_nm.dir/nm/srcs/handle_ar.c.o.requires
+CMakeFiles/ft_nm.dir/requires: CMakeFiles/ft_nm.dir/nm/srcs/sort_64.c.o.requires
+CMakeFiles/ft_nm.dir/requires: CMakeFiles/ft_nm.dir/nm/srcs/sort_32.c.o.requires
 
 .PHONY : CMakeFiles/ft_nm.dir/requires
 

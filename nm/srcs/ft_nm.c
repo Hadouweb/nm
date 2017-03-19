@@ -64,12 +64,13 @@ void	clear_process(t_process *process)
 	process->sym = NULL;
 }
 
-int		loop_arg(char *file_name, int nb_file)
+int		loop_arg(char *file_name, int nb_file, uint8_t flag)
 {
 	int			fd;
 	t_process	process;
 
 	ft_bzero(&process, sizeof(process));
+	process.flag = flag;
 	process.nb_file = nb_file;
 	if ((fd = open(file_name, O_RDONLY)) < 0)
 		return (error("open error\n"));
@@ -86,20 +87,68 @@ int		loop_arg(char *file_name, int nb_file)
 	return (0);
 }
 
+int		check_av_flag(char *arg, uint8_t *flag)
+{
+	int 	find;
+	int 	i;
+
+	i = 0;
+	find = 0;
+	if (arg[0] != '-')
+		return 0;
+	while(arg[i])
+	{
+		if (arg[i] != '-')
+		{
+			if (arg[i] && arg[i] == 'p' && ++find)
+				*flag |= FLAG_P;
+			if (arg[i] && arg[i] == 'v' && ++find)
+				*flag |= FLAG_V;
+			if (arg[i] && arg[i] == 'r' && ++find)
+				*flag |= FLAG_R;
+			if (arg[i] && arg[i] == 'u' && ++find)
+				*flag |= FLAG_U_MIN;
+			if (arg[i] && arg[i] == 'U' && ++find)
+				*flag |= FLAG_U_MAX;
+		}
+		i++;
+	}
+	return find;
+}
+
+int		count_nb_arg_without_flag(int ac, char **av)
+{
+	int			i;
+	int 		nb_file;
+	uint8_t 	flag;
+
+	i = 1;
+	nb_file = 0;
+	while (i < ac)
+	{
+		if (check_av_flag(av[i], &flag) == 0)
+			nb_file++;
+		i++;
+	}
+	return (nb_file);
+}
+
 int		main(int ac, char **av)
 {
-	int		i;
+	int			i;
+	int 		nb_file;
+	uint8_t 	flag;
 
+	nb_file = count_nb_arg_without_flag(ac, av);
 	if (ac == 1)
-		loop_arg("a.out", 0);
-	else if (ac == 2)
-		loop_arg(av[1], 1);
-	else if (ac > 2)
+		loop_arg("a.out", 0, 0);
+	else if (ac >= 2)
 	{
 		i = 1;
 		while (i < ac)
 		{
-			loop_arg(av[i], ac - 1);
+			if (check_av_flag(av[i], &flag) == 0)
+				loop_arg(av[i], nb_file, flag);
 			i++;
 		}
 	}

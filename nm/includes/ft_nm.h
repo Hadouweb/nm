@@ -30,6 +30,12 @@
 
 # define MASK_T (nl->n_type & N_TYPE)
 
+# define FLAG_P 0x01
+# define FLAG_V 0x02
+# define FLAG_R 0x04
+# define FLAG_U_MIN 0x08
+# define FLAG_U_MAX 0x10
+
 typedef struct			s_node_symbol_32
 {
 	t_link						link;
@@ -73,6 +79,7 @@ typedef struct			s_process
 	int							is_big_endian;
 	unsigned char				is_lib;
 	t_arch_node					arch[3];
+	uint8_t 					flag;
 }						t_process;
 
 int						error(char *str);
@@ -82,8 +89,8 @@ void					ft_nm(t_process *process);
 void					handle_32(t_process *process, char mode);
 void					add_section_32(t_process *process);
 char					get_type_32(t_process *process, struct nlist *nl);
-int						compare_32(t_node_symbol_32 *ns1,
-							t_node_symbol_32 *ns2);
+int						compare_32(t_process *process,
+					  		t_node_symbol_32 *ns1, t_node_symbol_32 *ns2);
 t_node_symbol_32		*make_node_symbol_32(t_process *process,
 							char *output, struct nlist *nl);
 void					insertion_sort_symbol_32(t_process *process,
@@ -95,8 +102,8 @@ void					print_sym_value_32(uint32_t sym_value, char type);
 void					handle_64(t_process *process);
 void					add_section_64(t_process *process);
 char					get_type_64(t_process *process, struct nlist_64 *nl);
-int						compare_64(t_node_symbol_64 *ns1,
-							t_node_symbol_64 *ns2);
+int						compare_64(t_process *process,
+							t_node_symbol_64 *ns1, t_node_symbol_64 *ns2);
 t_node_symbol_64		*make_node_symbol_64(t_process *process,
 							char *output, struct nlist_64 *nl);
 void					insertion_sort_symbol_64(t_process *process,

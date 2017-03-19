@@ -12,10 +12,17 @@
 
 #include "ft_nm.h"
 
-int		compare_32(t_node_symbol_32 *ns1, t_node_symbol_32 *ns2)
+int		compare_32(t_process *process,
+			t_node_symbol_32 *ns1, t_node_symbol_32 *ns2)
 {
 	int		cmp;
 
+	if (process->flag & FLAG_V)
+	{
+		if (ns1->nl->n_value == 0 && ns2->nl->n_value > 0)
+			return -1;
+		return ns1->nl->n_value - ns2->nl->n_value;
+	}
 	cmp = ft_strcmp(ns1->output, ns2->output);
 	if (cmp == 0)
 		cmp = ns1->nl->n_value - ns2->nl->n_value;
@@ -28,12 +35,12 @@ void	insertion_sort_symbol_32(t_process *process, t_node_symbol_32 *ns)
 	t_node_symbol_32	*ns2;
 
 	node = process->list_symbol.head;
-	if (node != NULL)
+	if (node != NULL && !(process->flag & FLAG_P))
 	{
 		while (node)
 		{
 			ns2 = PTR_NODE(node, t_node_symbol_32, link);
-			if (compare_32(ns, ns2) < 0)
+			if (compare_32(process, ns, ns2) < 0)
 			{
 				ft_list_push_before_node(&process->list_symbol,
 				&ns2->link, &ns->link);
