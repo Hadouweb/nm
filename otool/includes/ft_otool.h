@@ -116,7 +116,9 @@ struct load_command		*convert_load_cmd(t_process *process,
 struct symtab_command	*convert_symtab(t_process *process,
 							struct symtab_command *sym);
 void					add_memory_type(t_process *process, char *name, int k);
-
+void			print_byte(unsigned char byte);
+void				print_addr_64(uint64_t addr);
+void				print_addr_32(uint32_t addr);
 void					clear_process(t_process *process);
 
 void					debug_header_64(struct mach_header_64 *header);

@@ -12,36 +12,17 @@
 
 #include "ft_otool.h"
 
-void			print_byte(unsigned char byte)
-{
-	static char	hexa[16] = "0123456789abcdef";
-
-	write(1, &hexa[byte >> 4], 1);
-	write(1, &hexa[byte & 15], 1);
-}
-
-void				print_addr(uint64_t addr)
-{
-	char	*str;
-	int		align;
-
-	str = ulltoa_base(addr, 16);
-	align = 16 - ft_strlen(str);
-	while (align--)
-		write(1, "0", 1);
-	ft_putstr(str);
-	free(str);
-}
-
-void			print_section(t_process *process, struct section_64 *section)
+void			print_section_64(t_process *process, struct section_64 *section)
 {
 	void	*ptr;
 	void	*ptr_end;
 	int 	i;
 
+	//debug_section_64(section);
 	if (ft_strcmp(section->sectname, SECT_TEXT) == 0)
 	{
-		ptr = process->ptr_start + section->offset;
+		ptr = process->ptr + section->offset;
+		//printf("---------------------> %ld (%lx)\n",  (char*)ptr - process->ptr_start, (char*)ptr - process->ptr_start);
 		ptr_end = ptr + section->size;
 		i = 0;
 		ft_putstr("Contents of (__TEXT,__text) section");
@@ -50,7 +31,7 @@ void			print_section(t_process *process, struct section_64 *section)
 			if (i % 16 == 0)
 			{
 				ft_putchar('\n');
-				print_addr(section->addr);
+				print_addr_64(section->addr);
 				ft_putchar('\t');
 				section->addr += 16;
 			}
@@ -59,10 +40,11 @@ void			print_section(t_process *process, struct section_64 *section)
 			ptr++;
 			i++;
 		}
+		ft_putstr("\n");
 	}
 }
 
-static void		loop_section(t_process *process, struct load_command *lc)
+void			loop_section_64(t_process *process, struct load_command *lc)
 {
 	uint32_t					j;
 	struct segment_command_64	*sg;
@@ -71,10 +53,9 @@ static void		loop_section(t_process *process, struct load_command *lc)
 	j = 0;
 	sg = (struct segment_command_64 *)lc;
 	s = (struct section_64 *)((char *)sg + sizeof(struct segment_command_64));
-
 	while (j < sg->nsects)
 	{
-		print_section(process, s + j);
+		print_section_64(process, s + j);
 		j++;
 	}
 }
@@ -86,16 +67,18 @@ void			find_segment_64(t_process *process)
 
 	i = 0;
 	lc = process->load_command;
-	ft_putstr(process->file_name);
-	ft_putstr(":\n");
+	if (process->arch[2].arch == NULL && process->is_lib == 0)
+	{
+		ft_putstr(process->file_name);
+		ft_putstr(":\n");
+	}
 	while (i < process->header_64->ncmds)
 	{
 		if (lc->cmd == LC_SEGMENT_64)
-			loop_section(process, lc);
+			loop_section_64(process, lc);
 		i++;
 		lc = (void*)lc + lc->cmdsize;
 	}
-	ft_putchar('\n');
 }
 
 void			handle_64(t_process *process)
@@ -104,6 +87,8 @@ void			handle_64(t_process *process)
 	int						i;
 	struct load_command		*lc;
 
+	//printf("handle_64 %s\n", process->file_name);
+
 	process->header_64 = (struct mach_header_64*)process->ptr;
 	ncmds = process->header_64->ncmds;
 	process->load_command = (void*)process->ptr + sizeof(*process->header_64);
@@ -111,13 +96,15 @@ void			handle_64(t_process *process)
 	i = 0;
 	while (i < ncmds)
 	{
-		if (lc->cmd == LC_SYMTAB)
-			process->sym = (struct symtab_command*)lc;
-		else if (lc->cmd == LC_SEGMENT_64)
+		//if (lc->cmd == LC_SYMTAB)
+		//	process->sym = (struct symtab_command*)lc;
+		if (lc->cmd == LC_SEGMENT_64)
 			process->nsects += ((struct segment_command_64 *)lc)->nsects;
 		i++;
 		lc = (void*)lc + lc->cmdsize;
 	}
 	if (process->nsects > 0)
 		find_segment_64(process);
+	//ft_hex_dump(process->ptr_start, process->buff_stat.st_size);
+	clear_process(process);
 }

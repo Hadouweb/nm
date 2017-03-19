@@ -28,7 +28,6 @@ void		sub_call_nm_object(t_process *process)
 
 	header = (void*)process->ptr;
 	tmp = process->ptr;
-	ft_putchar('\n');
 	ft_putstr(process->file_name);
 	ft_putchar('(');
 	ft_putstr(header->ar_name + sizeof(*header));
@@ -47,6 +46,10 @@ void		handle_ar(t_process *process)
 	struct ar_hdr		*header;
 	char				*end_file;
 
+	//printf("handle_ar %s\n", process->file_name);
+	ft_putstr("Archive : ");
+	ft_putstr(process->file_name);
+	ft_putchar('\n');
 	process->is_lib = 1;
 	process->ptr += SARMAG;
 	header = (struct ar_hdr*)process->ptr;

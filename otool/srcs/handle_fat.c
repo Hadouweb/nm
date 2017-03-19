@@ -18,11 +18,13 @@ void	add_arch(t_process *process, struct fat_arch *arch)
 	{
 		process->arch[0].arch = arch;
 		process->arch[0].ptr_arch = process->ptr_start + arch->offset;
+		//printf("---------------------> %u (%x)\n", arch->offset, arch->offset);
 	}
 	if (arch->cputype == CPU_TYPE_X86)
 	{
 		process->arch[1].arch = arch;
 		process->arch[1].ptr_arch = process->ptr_start + arch->offset;
+		//printf("---------------------> %u (%x)\n", arch->offset, arch->offset);
 	}
 	if (arch->cputype == CPU_TYPE_POWERPC)
 	{
@@ -43,6 +45,7 @@ void	add_all_arch(t_process *process)
 	arch = (void *)(process->ptr) + sizeof(*header);
 	nfat_arch = convert_uint32(process, header->nfat_arch);
 	i = 0;
+	//ft_hex_dump(arch, sizeof(*arch));
 	while (i < nfat_arch)
 	{
 		arch->cputype = convert_uint32(process, arch->cputype);
@@ -57,18 +60,23 @@ void	print_arch(t_process *process, char *arch)
 {
 	if (process->arch[2].arch != NULL)
 	{
-		ft_putchar('\n');
+		if (process->arch[2].arch == NULL)
+			ft_putchar('\n');
 		ft_putstr(process->file_name);
 		ft_putstr(arch);
 	}
 }
 
+//c3c0
+//b000
+
 void	handle_fat_big_endian(t_process *process)
 {
+	//printf("handle_fat_big_endian %s\n", process->file_name);
 	add_all_arch(process);
 	if (process->arch[2].arch != NULL)
 	{
-		print_arch(process, " (for architecture ppc):\n");
+		print_arch(process, " (architecture ppc):\n");
 		process->ptr = process->arch[2].ptr_arch;
 		ft_nm(process);
 	}
@@ -79,7 +87,7 @@ void	handle_fat_big_endian(t_process *process)
 	}
 	if (process->arch[1].arch != NULL && process->arch[0].arch == NULL)
 	{
-		print_arch(process, " (for architecture i386):\n");
+		print_arch(process, " (architecture i386):\n");
 		process->ptr = process->arch[1].ptr_arch;
 		ft_nm(process);
 	}

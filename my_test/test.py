@@ -39,7 +39,6 @@ def ft_test_file(file):
         if (count != 0):
             print("tests NM: \033[91mFAILED! \033[0m : " + file)
             #sys.exit(0)
-            g_score -= 1
         else:
             print("tests NM: \033[92mSUCCESS! \033[0m: " + file)
             g_score += 1
