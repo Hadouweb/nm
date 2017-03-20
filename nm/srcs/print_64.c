@@ -52,7 +52,7 @@ void				print_64_sub_func(t_process *process, t_node_symbol_64 *ns)
 	}
 	else if (process->flag & FLAG_U_MAX && ns->c != 'U')
 		print_64_regular(ns);
-	else if (!(process->flag & FLAG_U_MAX))
+	else if (!(process->flag & FLAG_U_MAX) && !(process->flag & FLAG_U_MIN))
 		print_64_regular(ns);
 }
 

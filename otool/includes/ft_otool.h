@@ -26,8 +26,6 @@
 # include <stdlib.h>
 # include "libft.h"
 
-# include <stdio.h>
-
 typedef struct			s_arch_node
 {
 	struct fat_arch				*arch;

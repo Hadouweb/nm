@@ -26,8 +26,6 @@
 # include <stdlib.h>
 # include "libft.h"
 
-# include <stdio.h>
-
 # define MASK_T (nl->n_type & N_TYPE)
 
 # define FLAG_P 0x01
