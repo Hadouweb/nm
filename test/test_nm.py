@@ -58,8 +58,12 @@ def ft_test_file(file, option):
 
 def ft_test_dir(dir, option):
     print("\033[93mTest NM \033[0m\033[94m" + os.path.abspath(dir) + "\033[0m")
+    all_file = ""
     for file in os.listdir(dir):
         ft_test_file(dir + "/" + file, option)
+        all_file += dir + "/" + file
+    print("\033[93mTest NM \033[0m\033[94m" + os.path.abspath(dir) + "/*\033[0m")
+    ft_test_file(all_file, option)
 
 def ft_test_dir_recur(dir, option):
     print("\033[93mTest NM \033[0m\033[94m" + os.path.abspath(dir) + "\033[0m")
@@ -68,19 +72,19 @@ def ft_test_dir_recur(dir, option):
             ft_test_file(filename, option)
 
 for dir in test_dir:
-    ft_test_dir(dir, "-U")
+    ft_test_dir(dir, "")
 
 
-print("\033[93mTest NM with option -r \033[0m\033[94m" + os.path.abspath("./binary") + "\033[0m")
-ft_test_dir(".", "-r")
-print("\033[93mTest NM with option -v \033[0m\033[94m" + os.path.abspath("./binary") + "\033[0m")
-ft_test_dir(".", "-v")
-print("\033[93mTest NM with option -p \033[0m\033[94m" + os.path.abspath("./binary") + "\033[0m")
-ft_test_dir(".", "-p")
-print("\033[93mTest NM with option -u \033[0m\033[94m" + os.path.abspath("./binary") + "\033[0m")
-ft_test_dir(".", "-u")
-print("\033[93mTest NM with option -U \033[0m\033[94m" + os.path.abspath("./binary") + "\033[0m")
-ft_test_dir(".", "-U")
+#print("\033[93mTest NM with option -r \033[0m\033[94m" + os.path.abspath("./binary") + "\033[0m")
+#ft_test_dir(".", "-r")
+#print("\033[93mTest NM with option -v \033[0m\033[94m" + os.path.abspath("./binary") + "\033[0m")
+#ft_test_dir(".", "-v")
+#print("\033[93mTest NM with option -p \033[0m\033[94m" + os.path.abspath("./binary") + "\033[0m")
+#ft_test_dir(".", "-p")
+#print("\033[93mTest NM with option -u \033[0m\033[94m" + os.path.abspath("./binary") + "\033[0m")
+#ft_test_dir(".", "-u")
+#print("\033[93mTest NM with option -U \033[0m\033[94m" + os.path.abspath("./binary") + "\033[0m")
+#ft_test_dir(".", "-U")
 
 print("\n\033[96mSCORE: " + str(g_score) + " / " + str(g_total) + "\033[0m")
 

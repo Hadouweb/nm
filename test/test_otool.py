@@ -10,8 +10,19 @@ import shlex
 
 #"/usr/share", "/usr/bin", "/sbin", "/bin", "/usr/sbin", "/usr/lib",
 
-test_dir = ["/usr/share", "/usr/bin", "/sbin", "/bin", "/usr/sbin", "/usr/lib", "."]
-
+test_dir = [
+    "/System/Library/CoreServices/Encodings/",
+    "/usr",
+    "/usr/libexec",
+    "/usr/local",
+    "/Library/Frameworks/",
+    "/usr/share",
+    "/usr/bin",
+    "/sbin",
+    "/bin",
+    "/usr/sbin",
+    "/usr/lib",
+    "./binary"]
 #############################################################
 # functions
 os.system("rm -f their their_err mine mine_err")
@@ -48,8 +59,12 @@ def ft_test_file(file):
 
 def ft_test_dir(dir):
     print("\033[93mTest OTOOL \033[0m\033[94m" + os.path.abspath(dir) + "\033[0m")
+    all_file = ""
     for file in os.listdir(dir):
         ft_test_file(dir + "/" + file)
+        all_file += dir + "/" + file
+    print("\033[93mTest OTOOL \033[0m\033[94m" + os.path.abspath(dir) + "/*\033[0m")
+    ft_test_file(all_file)
 
 def ft_test_dir_recur(dir):
     print("\033[93mTest OTOOL \033[0m\033[94m" + os.path.abspath(dir) + "\033[0m")
