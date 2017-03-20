@@ -89,5 +89,6 @@ void				handle_64(t_process *process)
 		add_section_64(process);
 	if (process->sym)
 		sort_symbol_64(process);
+	print_64(process);
 	clear_process(process);
 }

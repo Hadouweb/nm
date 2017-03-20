@@ -65,6 +65,7 @@ void	print_arch(t_process *process, char *arch)
 
 void	handle_fat_big_endian(t_process *process)
 {
+	process->is_lib = 1;
 	add_all_arch(process);
 	if (process->arch[2].arch != NULL)
 	{

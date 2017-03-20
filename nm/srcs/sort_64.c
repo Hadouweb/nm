@@ -75,5 +75,4 @@ void	sort_symbol_64(t_process *process)
 		}
 		i++;
 	}
-	print_64(process);
 }

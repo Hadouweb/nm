@@ -77,5 +77,4 @@ void	sort_symbol_32(t_process *process)
 		}
 		i++;
 	}
-	print_32(process);
 }

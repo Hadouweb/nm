@@ -93,5 +93,6 @@ void				handle_32(t_process *process, char mode)
 		add_section_32(process);
 	if (process->sym)
 		sort_symbol_32(process);
+	print_32(process);
 	clear_process(process);
 }

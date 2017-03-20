@@ -27,13 +27,6 @@ void	ft_nm(t_process *process)
 		handle_fat_big_endian(process);
 	else if (ft_strncmp(process->ptr, ARMAG, SARMAG) == 0)
 		handle_ar(process);
-	else
-	{
-		dprintf(2, "MAGIC_NUMBER %x\n", magic_number);
-		dprintf(2, "MH_MAGIC_64 %x\n", MH_MAGIC_64);
-		dprintf(2, "MH_MAGIC %x\n", MH_MAGIC);
-		dprintf(2, "FAT_CIGAM %x\n", FAT_CIGAM);
-	}
 }
 
 void	clear_symbol_list(t_list *list)
