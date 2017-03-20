@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_NM_H
-# define FT_NM_H
+#ifndef FT_OTOOL_H
+# define FT_OTOOL_H
 
 # include <mach-o/nlist.h>
 # include <mach-o/loader.h>
@@ -69,6 +69,5 @@ void					print_byte(unsigned char byte);
 void					print_addr_64(uint64_t addr);
 void					print_addr_32(uint32_t addr);
 void					clear_process(t_process *process);
-
 
 #endif

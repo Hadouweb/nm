@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named ft_otool
+
+# Build rule for target.
+ft_otool: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ft_otool
+.PHONY : ft_otool
+
+# fast build rule for target.
+ft_otool/fast:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/build
+.PHONY : ft_otool/fast
+
+#=============================================================================
 # Target rules for targets named ft_nm
 
 # Build rule for target.
@@ -135,33 +148,6 @@ ft: cmake_check_build_system
 ft/fast:
 	$(MAKE) -f libft/CMakeFiles/ft.dir/build.make libft/CMakeFiles/ft.dir/build
 .PHONY : ft/fast
-
-nm/srcs/debug.o: nm/srcs/debug.c.o
-
-.PHONY : nm/srcs/debug.o
-
-# target to build an object file
-nm/srcs/debug.c.o:
-	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/nm/srcs/debug.c.o
-.PHONY : nm/srcs/debug.c.o
-
-nm/srcs/debug.i: nm/srcs/debug.c.i
-
-.PHONY : nm/srcs/debug.i
-
-# target to preprocess a source file
-nm/srcs/debug.c.i:
-	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/nm/srcs/debug.c.i
-.PHONY : nm/srcs/debug.c.i
-
-nm/srcs/debug.s: nm/srcs/debug.c.s
-
-.PHONY : nm/srcs/debug.s
-
-# target to generate assembly for a file
-nm/srcs/debug.c.s:
-	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/nm/srcs/debug.c.s
-.PHONY : nm/srcs/debug.c.s
 
 nm/srcs/ft_nm.o: nm/srcs/ft_nm.c.o
 
@@ -487,6 +473,195 @@ nm/srcs/util2.c.s:
 	$(MAKE) -f CMakeFiles/ft_nm.dir/build.make CMakeFiles/ft_nm.dir/nm/srcs/util2.c.s
 .PHONY : nm/srcs/util2.c.s
 
+otool/srcs/ft_otool.o: otool/srcs/ft_otool.c.o
+
+.PHONY : otool/srcs/ft_otool.o
+
+# target to build an object file
+otool/srcs/ft_otool.c.o:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/ft_otool.c.o
+.PHONY : otool/srcs/ft_otool.c.o
+
+otool/srcs/ft_otool.i: otool/srcs/ft_otool.c.i
+
+.PHONY : otool/srcs/ft_otool.i
+
+# target to preprocess a source file
+otool/srcs/ft_otool.c.i:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/ft_otool.c.i
+.PHONY : otool/srcs/ft_otool.c.i
+
+otool/srcs/ft_otool.s: otool/srcs/ft_otool.c.s
+
+.PHONY : otool/srcs/ft_otool.s
+
+# target to generate assembly for a file
+otool/srcs/ft_otool.c.s:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/ft_otool.c.s
+.PHONY : otool/srcs/ft_otool.c.s
+
+otool/srcs/handle_32.o: otool/srcs/handle_32.c.o
+
+.PHONY : otool/srcs/handle_32.o
+
+# target to build an object file
+otool/srcs/handle_32.c.o:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/handle_32.c.o
+.PHONY : otool/srcs/handle_32.c.o
+
+otool/srcs/handle_32.i: otool/srcs/handle_32.c.i
+
+.PHONY : otool/srcs/handle_32.i
+
+# target to preprocess a source file
+otool/srcs/handle_32.c.i:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/handle_32.c.i
+.PHONY : otool/srcs/handle_32.c.i
+
+otool/srcs/handle_32.s: otool/srcs/handle_32.c.s
+
+.PHONY : otool/srcs/handle_32.s
+
+# target to generate assembly for a file
+otool/srcs/handle_32.c.s:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/handle_32.c.s
+.PHONY : otool/srcs/handle_32.c.s
+
+otool/srcs/handle_64.o: otool/srcs/handle_64.c.o
+
+.PHONY : otool/srcs/handle_64.o
+
+# target to build an object file
+otool/srcs/handle_64.c.o:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/handle_64.c.o
+.PHONY : otool/srcs/handle_64.c.o
+
+otool/srcs/handle_64.i: otool/srcs/handle_64.c.i
+
+.PHONY : otool/srcs/handle_64.i
+
+# target to preprocess a source file
+otool/srcs/handle_64.c.i:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/handle_64.c.i
+.PHONY : otool/srcs/handle_64.c.i
+
+otool/srcs/handle_64.s: otool/srcs/handle_64.c.s
+
+.PHONY : otool/srcs/handle_64.s
+
+# target to generate assembly for a file
+otool/srcs/handle_64.c.s:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/handle_64.c.s
+.PHONY : otool/srcs/handle_64.c.s
+
+otool/srcs/handle_ar.o: otool/srcs/handle_ar.c.o
+
+.PHONY : otool/srcs/handle_ar.o
+
+# target to build an object file
+otool/srcs/handle_ar.c.o:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/handle_ar.c.o
+.PHONY : otool/srcs/handle_ar.c.o
+
+otool/srcs/handle_ar.i: otool/srcs/handle_ar.c.i
+
+.PHONY : otool/srcs/handle_ar.i
+
+# target to preprocess a source file
+otool/srcs/handle_ar.c.i:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/handle_ar.c.i
+.PHONY : otool/srcs/handle_ar.c.i
+
+otool/srcs/handle_ar.s: otool/srcs/handle_ar.c.s
+
+.PHONY : otool/srcs/handle_ar.s
+
+# target to generate assembly for a file
+otool/srcs/handle_ar.c.s:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/handle_ar.c.s
+.PHONY : otool/srcs/handle_ar.c.s
+
+otool/srcs/handle_fat.o: otool/srcs/handle_fat.c.o
+
+.PHONY : otool/srcs/handle_fat.o
+
+# target to build an object file
+otool/srcs/handle_fat.c.o:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/handle_fat.c.o
+.PHONY : otool/srcs/handle_fat.c.o
+
+otool/srcs/handle_fat.i: otool/srcs/handle_fat.c.i
+
+.PHONY : otool/srcs/handle_fat.i
+
+# target to preprocess a source file
+otool/srcs/handle_fat.c.i:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/handle_fat.c.i
+.PHONY : otool/srcs/handle_fat.c.i
+
+otool/srcs/handle_fat.s: otool/srcs/handle_fat.c.s
+
+.PHONY : otool/srcs/handle_fat.s
+
+# target to generate assembly for a file
+otool/srcs/handle_fat.c.s:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/handle_fat.c.s
+.PHONY : otool/srcs/handle_fat.c.s
+
+otool/srcs/util.o: otool/srcs/util.c.o
+
+.PHONY : otool/srcs/util.o
+
+# target to build an object file
+otool/srcs/util.c.o:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/util.c.o
+.PHONY : otool/srcs/util.c.o
+
+otool/srcs/util.i: otool/srcs/util.c.i
+
+.PHONY : otool/srcs/util.i
+
+# target to preprocess a source file
+otool/srcs/util.c.i:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/util.c.i
+.PHONY : otool/srcs/util.c.i
+
+otool/srcs/util.s: otool/srcs/util.c.s
+
+.PHONY : otool/srcs/util.s
+
+# target to generate assembly for a file
+otool/srcs/util.c.s:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/util.c.s
+.PHONY : otool/srcs/util.c.s
+
+otool/srcs/util2.o: otool/srcs/util2.c.o
+
+.PHONY : otool/srcs/util2.o
+
+# target to build an object file
+otool/srcs/util2.c.o:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/util2.c.o
+.PHONY : otool/srcs/util2.c.o
+
+otool/srcs/util2.i: otool/srcs/util2.c.i
+
+.PHONY : otool/srcs/util2.i
+
+# target to preprocess a source file
+otool/srcs/util2.c.i:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/util2.c.i
+.PHONY : otool/srcs/util2.c.i
+
+otool/srcs/util2.s: otool/srcs/util2.c.s
+
+.PHONY : otool/srcs/util2.s
+
+# target to generate assembly for a file
+otool/srcs/util2.c.s:
+	$(MAKE) -f CMakeFiles/ft_otool.dir/build.make CMakeFiles/ft_otool.dir/otool/srcs/util2.c.s
+.PHONY : otool/srcs/util2.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -495,11 +670,9 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... ft_otool"
 	@echo "... ft_nm"
 	@echo "... ft"
-	@echo "... nm/srcs/debug.o"
-	@echo "... nm/srcs/debug.i"
-	@echo "... nm/srcs/debug.s"
 	@echo "... nm/srcs/ft_nm.o"
 	@echo "... nm/srcs/ft_nm.i"
 	@echo "... nm/srcs/ft_nm.s"
@@ -536,6 +709,27 @@ help:
 	@echo "... nm/srcs/util2.o"
 	@echo "... nm/srcs/util2.i"
 	@echo "... nm/srcs/util2.s"
+	@echo "... otool/srcs/ft_otool.o"
+	@echo "... otool/srcs/ft_otool.i"
+	@echo "... otool/srcs/ft_otool.s"
+	@echo "... otool/srcs/handle_32.o"
+	@echo "... otool/srcs/handle_32.i"
+	@echo "... otool/srcs/handle_32.s"
+	@echo "... otool/srcs/handle_64.o"
+	@echo "... otool/srcs/handle_64.i"
+	@echo "... otool/srcs/handle_64.s"
+	@echo "... otool/srcs/handle_ar.o"
+	@echo "... otool/srcs/handle_ar.i"
+	@echo "... otool/srcs/handle_ar.s"
+	@echo "... otool/srcs/handle_fat.o"
+	@echo "... otool/srcs/handle_fat.i"
+	@echo "... otool/srcs/handle_fat.s"
+	@echo "... otool/srcs/util.o"
+	@echo "... otool/srcs/util.i"
+	@echo "... otool/srcs/util.s"
+	@echo "... otool/srcs/util2.o"
+	@echo "... otool/srcs/util2.i"
+	@echo "... otool/srcs/util2.s"
 .PHONY : help
 
 

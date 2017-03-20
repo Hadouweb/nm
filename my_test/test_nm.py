@@ -55,11 +55,10 @@ def ft_test_dir_recur(dir, option):
         for filename in filenames:
             ft_test_file(filename, option)
 
-#for dir in test_dir:
-    #ft_test_dir(dir, "")
+for dir in test_dir:
+    ft_test_dir(dir, "")
 
-
-print("\033[93mTest NM with option -Uvr \033[0m\033[94m" + os.path.abspath(".") + "\033[0m")
-ft_test_dir(".", "-Uvr")
+#print("\033[93mTest NM with option -Uvr \033[0m\033[94m" + os.path.abspath(".") + "\033[0m")
+#ft_test_dir(".", "-Uvr")
 
 print("\n\033[96mSCORE: " + str(g_score) + " / " + str(g_total) + "\033[0m")

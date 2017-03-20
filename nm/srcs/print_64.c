@@ -43,13 +43,17 @@ void				print_64_regular(t_node_symbol_64 *ns)
 	ft_putchar('\n');
 }
 
-void				print_64_undefined_only(t_node_symbol_64 *ns)
+void				print_64_sub_func(t_process *process, t_node_symbol_64 *ns)
 {
-	if (ns->c == 'U')
+	if (process->flag & FLAG_U_MIN && ns->c == 'U')
 	{
 		ft_putstr(ns->output);
 		ft_putchar('\n');
 	}
+	else if (process->flag & FLAG_U_MAX && ns->c != 'U')
+		print_64_regular(ns);
+	else if (!(process->flag & FLAG_U_MAX))
+		print_64_regular(ns);
 }
 
 void				print_64_reverse(t_process *process)
@@ -67,12 +71,7 @@ void				print_64_reverse(t_process *process)
 	while (node)
 	{
 		ns = PTR_NODE(node, t_node_symbol_64, link);
-		if (process->flag & FLAG_U_MIN)
-			print_64_undefined_only(ns);
-		else if (process->flag & FLAG_U_MAX && ns->c != 'U')
-			print_64_regular(ns);
-		else if (!(process->flag & FLAG_U_MAX))
-			print_64_regular(ns);
+		print_64_sub_func(process, ns);
 		node = node->prev;
 	}
 }
@@ -97,26 +96,7 @@ void				print_64(t_process *process)
 	while (node)
 	{
 		ns = PTR_NODE(node, t_node_symbol_64, link);
-		if (process->flag & FLAG_U_MIN)
-			print_64_undefined_only(ns);
-		else if (process->flag & FLAG_U_MAX && ns->c != 'U')
-			print_64_regular(ns);
-		else if (!(process->flag & FLAG_U_MAX))
-			print_64_regular(ns);
+		print_64_sub_func(process, ns);
 		node = node->next;
 	}
-}
-
-t_node_symbol_64	*make_node_symbol_64(t_process *process,
-	char *output, struct nlist_64 *nl)
-{
-	t_node_symbol_64	*ns;
-
-	ns = (t_node_symbol_64*)malloc(sizeof(t_node_symbol_64));
-	ns->nl = nl;
-	ns->c = get_type_64(process, nl);
-	ns->output = output;
-	ns->link.next = NULL;
-	ns->link.prev = NULL;
-	return (ns);
 }

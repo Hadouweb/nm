@@ -79,42 +79,65 @@ typedef struct			s_process
 	int							is_big_endian;
 	unsigned char				is_lib;
 	t_arch_node					arch[3];
-	uint8_t 					flag;
+	uint8_t						flag;
 }						t_process;
 
-int						error(char *str);
-
 void					ft_nm(t_process *process);
+void					clear_symbol_list(t_list *list);
+int						loop_arg(char *file_name, int nb_file, uint8_t flag);
+int						check_av_flag(char *arg, uint8_t *flag);
 
-void					handle_32(t_process *process, char mode);
-void					add_section_32(t_process *process);
-char					get_type_32(t_process *process, struct nlist *nl);
-int						compare_32(t_process *process,
-					  		t_node_symbol_32 *ns1, t_node_symbol_32 *ns2);
 t_node_symbol_32		*make_node_symbol_32(t_process *process,
 							char *output, struct nlist *nl);
+void					add_section_32_subfunc(t_process *process,
+							int *k, struct load_command *lc);
+void					add_section_32(t_process *process);
+void					handle_32(t_process *process, char mode);
+
+t_node_symbol_64		*make_node_symbol_64(t_process *process,
+							char *output, struct nlist_64 *nl);
+void					add_section_64_subfunc(t_process *process,
+							int *k, struct load_command *lc);
+void					add_section_64(t_process *process);
+void					handle_64(t_process *process);
+
+int						get_ar_hdr_size(char *ar_name);
+void					sub_call_nm_object(t_process *process);
+void					handle_ar(t_process *process);
+
+void					add_arch(t_process *process, struct fat_arch *arch);
+void					add_all_arch(t_process *process);
+void					print_arch(t_process *process, char *arch);
+void					handle_fat_big_endian(t_process *process);
+
+void					print_sym_value_32(uint32_t sym_value, char type);
+void					print_32_regular(t_node_symbol_32 *ns);
+void					print_32_sub_func(t_process *process,
+							t_node_symbol_32 *ns);
+void					print_32_reverse(t_process *process);
+void					print_32(t_process *process);
+
+void					print_sym_value_64(uint64_t sym_value, char type);
+void					print_64_regular(t_node_symbol_64 *ns);
+void					print_64_sub_func(t_process *process,
+							t_node_symbol_64 *ns);
+void					print_64_reverse(t_process *process);
+void					print_64(t_process *process);
+
+char					get_type_32(t_process *process, struct nlist *nl);
+char					get_type_64(t_process *process, struct nlist_64 *nl);
+
+int						compare_32(t_process *process, t_node_symbol_32 *ns1,
+							t_node_symbol_32 *ns2);
 void					insertion_sort_symbol_32(t_process *process,
 							t_node_symbol_32 *ns);
 void					sort_symbol_32(t_process *process);
-void					print_32(t_process *process);
-void					print_sym_value_32(uint32_t sym_value, char type);
 
-void					handle_64(t_process *process);
-void					add_section_64(t_process *process);
-char					get_type_64(t_process *process, struct nlist_64 *nl);
-int						compare_64(t_process *process,
-							t_node_symbol_64 *ns1, t_node_symbol_64 *ns2);
-t_node_symbol_64		*make_node_symbol_64(t_process *process,
-							char *output, struct nlist_64 *nl);
+int						compare_64(t_process *process, t_node_symbol_64 *ns1,
+							t_node_symbol_64 *ns2);
 void					insertion_sort_symbol_64(t_process *process,
 							t_node_symbol_64 *ns);
 void					sort_symbol_64(t_process *process);
-void					print_64(t_process *process);
-void					print_sym_value_64(uint64_t sym_value, char type);
-
-void					handle_fat_big_endian(t_process *process);
-
-void					handle_ar(t_process *process);
 
 char					*ulltoa_base(unsigned long long value, int base);
 uint32_t				convert_uint32(t_process *process, uint32_t a);
@@ -122,22 +145,10 @@ struct load_command		*convert_load_cmd(t_process *process,
 							struct load_command *lc);
 struct symtab_command	*convert_symtab(t_process *process,
 							struct symtab_command *sym);
+
+int						error(char *str);
 void					add_memory_type(t_process *process, char *name, int k);
-
+int						count_nb_arg_without_flag(int ac, char **av);
 void					clear_process(t_process *process);
-
-void					debug_header_64(struct mach_header_64 *header);
-void					debug_header_32(struct mach_header *header);
-void					debug_load_command(struct load_command *lc);
-void					debug_symtab_command(struct symtab_command *sym);
-void					debug_nlist_64(struct nlist_64 *nlist);
-void					debug_nlist_32(struct nlist *nlist);
-void					debug_segment_cmd_32(struct segment_command *segment);
-void					debug_segment_cmd_64(
-							struct segment_command_64 *segment);
-void					debug_section_32(struct section *section);
-void					debug_section_64(struct section_64 *section);
-void					debug_ar_header(struct ar_hdr *header);
-void					debug_fat_arch(struct fat_arch *fa);
 
 #endif

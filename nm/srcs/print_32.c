@@ -43,13 +43,17 @@ void				print_32_regular(t_node_symbol_32 *ns)
 	ft_putchar('\n');
 }
 
-void				print_32_undefined_only(t_node_symbol_32 *ns)
+void				print_32_sub_func(t_process *process, t_node_symbol_32 *ns)
 {
-	if (ns->c == 'U')
+	if (process->flag & FLAG_U_MIN && ns->c == 'U')
 	{
 		ft_putstr(ns->output);
 		ft_putchar('\n');
 	}
+	else if (process->flag & FLAG_U_MAX && ns->c != 'U')
+		print_32_regular(ns);
+	else if (!(process->flag & FLAG_U_MAX))
+		print_32_regular(ns);
 }
 
 void				print_32_reverse(t_process *process)
@@ -68,12 +72,7 @@ void				print_32_reverse(t_process *process)
 	{
 		ns = PTR_NODE(node, t_node_symbol_32, link);
 		ns->nl->n_value = convert_uint32(process, ns->nl->n_value);
-		if (process->flag & FLAG_U_MIN)
-			print_32_undefined_only(ns);
-		else if (process->flag & FLAG_U_MAX && ns->c != 'U')
-			print_32_regular(ns);
-		else if (!(process->flag & FLAG_U_MAX))
-			print_32_regular(ns);
+		print_32_sub_func(process, ns);
 		node = node->prev;
 	}
 }
@@ -99,26 +98,7 @@ void				print_32(t_process *process)
 	{
 		ns = PTR_NODE(node, t_node_symbol_32, link);
 		ns->nl->n_value = convert_uint32(process, ns->nl->n_value);
-		if (process->flag & FLAG_U_MIN)
-			print_32_undefined_only(ns);
-		else if (process->flag & FLAG_U_MAX && ns->c != 'U')
-			print_32_regular(ns);
-		else if (!(process->flag & FLAG_U_MAX))
-			print_32_regular(ns);
+		print_32_sub_func(process, ns);
 		node = node->next;
 	}
-}
-
-t_node_symbol_32	*make_node_symbol_32(t_process *process,
-	char *output, struct nlist *nl)
-{
-	t_node_symbol_32	*ns;
-
-	ns = (t_node_symbol_32*)malloc(sizeof(t_node_symbol_32));
-	ns->nl = nl;
-	ns->c = get_type_32(process, nl);
-	ns->output = output;
-	ns->link.next = NULL;
-	ns->link.prev = NULL;
-	return (ns);
 }

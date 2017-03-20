@@ -20,8 +20,8 @@ int		compare_64(t_process *process,
 	if (process->flag & FLAG_V)
 	{
 		if (ns1->nl->n_value == 0 && ns2->nl->n_value > 0)
-			return -1;
-		return ns1->nl->n_value - ns2->nl->n_value;
+			return (-1);
+		return (ns1->nl->n_value - ns2->nl->n_value);
 	}
 	cmp = ft_strcmp(ns1->output, ns2->output);
 	if (cmp == 0)

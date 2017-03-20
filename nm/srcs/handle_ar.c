@@ -12,7 +12,7 @@
 
 #include "ft_nm.h"
 
-static int	get_ar_hdr_size(char *ar_name)
+int			get_ar_hdr_size(char *ar_name)
 {
 	char		*str_size;
 

@@ -18,7 +18,6 @@ SRC =   $(SRCS_PATH)/ft_nm.c\
         $(SRCS_PATH)/print_64.c\
         $(SRCS_PATH)/print_32.c\
         $(SRCS_PATH)/print_type.c\
-        $(SRCS_PATH)/debug.c\
         $(SRCS_PATH)/util.c\
         $(SRCS_PATH)/util2.c\
         $(SRCS_PATH)/sort_64.c\

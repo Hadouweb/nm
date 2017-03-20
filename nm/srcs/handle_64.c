@@ -12,7 +12,21 @@
 
 #include "ft_nm.h"
 
-static void		add_section_64_subfunc(t_process *process,
+t_node_symbol_64	*make_node_symbol_64(t_process *process,
+	char *output, struct nlist_64 *nl)
+{
+	t_node_symbol_64	*ns;
+
+	ns = (t_node_symbol_64*)malloc(sizeof(t_node_symbol_64));
+	ns->nl = nl;
+	ns->c = get_type_64(process, nl);
+	ns->output = output;
+	ns->link.next = NULL;
+	ns->link.prev = NULL;
+	return (ns);
+}
+
+void				add_section_64_subfunc(t_process *process,
 	int *k, struct load_command *lc)
 {
 	uint32_t					j;
@@ -31,7 +45,7 @@ static void		add_section_64_subfunc(t_process *process,
 	}
 }
 
-void			add_section_64(t_process *process)
+void				add_section_64(t_process *process)
 {
 	uint32_t					i;
 	int							k;
@@ -51,7 +65,7 @@ void			add_section_64(t_process *process)
 	}
 }
 
-void			handle_64(t_process *process)
+void				handle_64(t_process *process)
 {
 	int						ncmds;
 	int						i;

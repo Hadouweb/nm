@@ -51,19 +51,6 @@ void	clear_symbol_list(t_list *list)
 	ft_bzero(list, sizeof(t_list));
 }
 
-void	clear_process(t_process *process)
-{
-	clear_symbol_list(&process->list_symbol);
-	free(process->section_64);
-	free(process->section_32);
-	process->text_nsect = 0;
-	process->data_nsect = 0;
-	process->bss_nsect = 0;
-	process->nsects = 0;
-	process->load_command = NULL;
-	process->sym = NULL;
-}
-
 int		loop_arg(char *file_name, int nb_file, uint8_t flag)
 {
 	int			fd;
@@ -89,14 +76,14 @@ int		loop_arg(char *file_name, int nb_file, uint8_t flag)
 
 int		check_av_flag(char *arg, uint8_t *flag)
 {
-	int 	find;
-	int 	i;
+	int		find;
+	int		i;
 
 	i = 0;
 	find = 0;
 	if (arg[0] != '-')
-		return 0;
-	while(arg[i])
+		return (0);
+	while (arg[i])
 	{
 		if (arg[i] != '-')
 		{
@@ -113,31 +100,14 @@ int		check_av_flag(char *arg, uint8_t *flag)
 		}
 		i++;
 	}
-	return find;
-}
-
-int		count_nb_arg_without_flag(int ac, char **av)
-{
-	int			i;
-	int 		nb_file;
-	uint8_t 	flag;
-
-	i = 1;
-	nb_file = 0;
-	while (i < ac)
-	{
-		if (check_av_flag(av[i], &flag) == 0)
-			nb_file++;
-		i++;
-	}
-	return (nb_file);
+	return (find);
 }
 
 int		main(int ac, char **av)
 {
 	int			i;
-	int 		nb_file;
-	uint8_t 	flag;
+	int			nb_file;
+	uint8_t		flag;
 
 	nb_file = count_nb_arg_without_flag(ac, av);
 	if (ac == 1)

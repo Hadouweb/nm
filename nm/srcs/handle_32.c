@@ -12,7 +12,21 @@
 
 #include "ft_nm.h"
 
-static void		add_section_32_subfunc(t_process *process,
+t_node_symbol_32	*make_node_symbol_32(t_process *process,
+	char *output, struct nlist *nl)
+{
+	t_node_symbol_32	*ns;
+
+	ns = (t_node_symbol_32*)malloc(sizeof(t_node_symbol_32));
+	ns->nl = nl;
+	ns->c = get_type_32(process, nl);
+	ns->output = output;
+	ns->link.next = NULL;
+	ns->link.prev = NULL;
+	return (ns);
+}
+
+void				add_section_32_subfunc(t_process *process,
 	int *k, struct load_command *lc)
 {
 	uint32_t					j;
@@ -33,7 +47,7 @@ static void		add_section_32_subfunc(t_process *process,
 	}
 }
 
-void			add_section_32(t_process *process)
+void				add_section_32(t_process *process)
 {
 	uint32_t					i;
 	int							k;
@@ -53,7 +67,7 @@ void			add_section_32(t_process *process)
 	}
 }
 
-void			handle_32(t_process *process, char mode)
+void				handle_32(t_process *process, char mode)
 {
 	int						ncmds;
 	int						i;

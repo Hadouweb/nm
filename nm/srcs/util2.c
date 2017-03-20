@@ -27,3 +27,33 @@ void	add_memory_type(t_process *process, char *name, int k)
 	else if (ft_strcmp(name, SECT_BSS) == 0)
 		process->bss_nsect = k + 1;
 }
+
+int		count_nb_arg_without_flag(int ac, char **av)
+{
+	int			i;
+	int			nb_file;
+	uint8_t		flag;
+
+	i = 1;
+	nb_file = 0;
+	while (i < ac)
+	{
+		if (check_av_flag(av[i], &flag) == 0)
+			nb_file++;
+		i++;
+	}
+	return (nb_file);
+}
+
+void	clear_process(t_process *process)
+{
+	clear_symbol_list(&process->list_symbol);
+	free(process->section_64);
+	free(process->section_32);
+	process->text_nsect = 0;
+	process->data_nsect = 0;
+	process->bss_nsect = 0;
+	process->nsects = 0;
+	process->load_command = NULL;
+	process->sym = NULL;
+}

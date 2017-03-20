@@ -66,7 +66,6 @@ void	print_arch(t_process *process, char *arch)
 
 void	handle_fat_big_endian(t_process *process)
 {
-	//printf("handle_fat_big_endian %s\n", process->file_name);
 	add_all_arch(process);
 	if (process->arch[2].arch != NULL)
 	{

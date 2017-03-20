@@ -103,7 +103,6 @@ void			handle_32(t_process *process, char mode)
 	int						i;
 	struct load_command		*lc;
 
-	//printf("handle_32 %s\n", process->file_name);
 	process->is_big_endian = mode;
 	process->header_32 = (struct mach_header*)process->ptr;
 	ncmds = convert_uint32(process, process->header_32->ncmds);

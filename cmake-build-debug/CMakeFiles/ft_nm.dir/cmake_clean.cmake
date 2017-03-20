@@ -5,7 +5,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/ft_nm.dir/nm/srcs/print_64.c.o"
   "CMakeFiles/ft_nm.dir/nm/srcs/print_32.c.o"
   "CMakeFiles/ft_nm.dir/nm/srcs/print_type.c.o"
-  "CMakeFiles/ft_nm.dir/nm/srcs/debug.c.o"
   "CMakeFiles/ft_nm.dir/nm/srcs/util.c.o"
   "CMakeFiles/ft_nm.dir/nm/srcs/util2.c.o"
   "CMakeFiles/ft_nm.dir/nm/srcs/handle_fat.c.o"

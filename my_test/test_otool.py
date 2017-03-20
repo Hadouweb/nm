@@ -10,7 +10,7 @@ import shlex
 
 #"/usr/share", "/usr/bin", "/sbin", "/bin", "/usr/sbin", "/usr/lib",
 
-test_dir = ["."]
+test_dir = ["/usr/share", "/usr/bin", "/sbin", "/bin", "/usr/sbin", "/usr/lib", "."]
 
 #############################################################
 # functions

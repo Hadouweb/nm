@@ -46,7 +46,6 @@ void		handle_ar(t_process *process)
 	struct ar_hdr		*header;
 	char				*end_file;
 
-	//printf("handle_ar %s\n", process->file_name);
 	ft_putstr("Archive : ");
 	ft_putstr(process->file_name);
 	ft_putchar('\n');
