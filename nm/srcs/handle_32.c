@@ -67,6 +67,16 @@ void				add_section_32(t_process *process)
 	}
 }
 
+static void			handle_32_sub_func(t_process *process,
+	struct symtab_command *lc)
+{
+	if (lc->cmd == LC_SYMTAB)
+		process->sym = convert_symtab(process, lc);
+	else if (lc->cmd == LC_SEGMENT)
+		process->nsects += convert_uint32(process,
+		((struct segment_command *)lc)->nsects);
+}
+
 void				handle_32(t_process *process, char mode)
 {
 	int						ncmds;
@@ -81,11 +91,7 @@ void				handle_32(t_process *process, char mode)
 	i = 0;
 	while (i < ncmds)
 	{
-		if (lc->cmd == LC_SYMTAB)
-			process->sym = convert_symtab(process, (struct symtab_command*)lc);
-		else if (lc->cmd == LC_SEGMENT)
-			process->nsects += convert_uint32(process,
-			((struct segment_command *)lc)->nsects);
+		handle_32_sub_func(process, (struct symtab_command *)lc);
 		i++;
 		lc = convert_load_cmd(process, (void*)lc + lc->cmdsize);
 	}
